@@ -1,0 +1,56 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.section1{
+    display: grid;
+    grid-template-rows: 0.6fr 5fr;
+    border: 1px solid black;
+    height: 500px;
+}
+.navbar{
+    border: 1px solid black;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.logo{
+    display: flex;
+    padding-left: 30px;
+    align-items: center;
+}
+.logo svg{
+    width:124px;
+    height: 24px;
+}
+
+.menu_section{
+    display: flex;
+    padding-right: 20px;
+    justify-content: right;
+    align-items: center;
+}
+.menu_section button{
+    padding: 4px 16px;
+}
+
+
+/* This will create the horizontal scroll for images */
+.new_car_adv {
+    overflow-x: auto; /* Enable horizontal scrolling */
+    white-space: nowrap; /* Prevent the images from wrapping to the next line */
+}
+
+.adv_images {
+    display: flex; /* Arrange the images in a row */
+    gap: 20px; /* Add space between images */
+}
+
+.adv_images img {
+    max-width: 100%; /* Images will shrink to fit within the container */
+    height: auto; /* Maintain aspect ratio */
+    max-height: 400px; /* Limit the max height to prevent images from becoming too tall */
+    object-fit: contain; /* Ensure the entire image is visible without distortion */
+}
+
+
