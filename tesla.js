@@ -18,12 +18,11 @@ buttons[0].style.backgroundColor="#171a20"
 buttons.forEach((button, i) => {
     button.addEventListener("click", () => {
         // Move the container, not the NodeList
-        cardContainer.style.transform = `translateX(-${i * 670}px)`; // adjust 400px per card width
+        cardContainer.style.transform = `translateX(-${i * 600}px)`; // adjust 400px per card width
 
         // Optional: update button styles
         buttons.forEach(btn => btn.style.backgroundColor = "");
         button.style.backgroundColor = "#171a20";
     });
 });
-
 
