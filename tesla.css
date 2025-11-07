@@ -119,7 +119,7 @@
     margin-top: 50px;
     height: 480px;
     /* border: 1px solid black; */
-    padding: 0px 32px;
+    padding: 0px 25px;
     width: 100%;
 }
 .moving_window{
@@ -214,5 +214,69 @@
     border-radius: 50%;
     background-color: rgb(143, 142, 142);
     background-color: lightgray;
-    
+}
+
+/* seciton4 styling */
+
+.section4{
+    height: 2000px;
+    display: grid;
+    grid-template-rows: 1.7fr 4fr 4fr 4fr 1fr;
+    /* border: 1px solid black; */
+    padding: 25px;
+    width: 100%;
+}
+
+/* limited_offer_section */
+.limited_offer_section{
+    /* border: 1px solid black; */
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    gap: 20px;
+}
+/* card styling */
+.offer_card{
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    padding: 12px;
+    border-radius: 12px;
+    background-color:#f4f4f4;
+}
+/* card heading styling */
+.offer_card h1{
+    font-size: 28px;
+    color: #171a20;
+    font-weight: lighter;
+    margin-bottom: 10px;
+}
+.offer_card p{
+    font-size: 16px;
+    color: #171a20;
+    font-weight: lighter;
+    margin-bottom: 30px;
+}
+.offer_card button{
+    height: 40px;
+    width: 50%;
+    background-color: #fff;
+    border: none;
+    transition: background-color 0.1s linear;
+}
+.offer_card button:hover{
+    background-color:#f4f4f4;
+
+}
+
+
+/* video section */
+.video_section{
+    background-image: url("https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Homepage-FSD-Tablet-Poster.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 450px;
 }
