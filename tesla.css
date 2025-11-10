@@ -115,9 +115,9 @@
 
 /* Section 2 styling start herer */
 .section2{
-    overflow: visible;
+    overflow: hidden;
     margin-top: 50px;
-    height: 480px;
+    height: 540px;
     /* border: 1px solid black; */
     padding: 0px 25px;
     width: 100%;
@@ -219,9 +219,10 @@
 /* seciton4 styling */
 
 .section4{
-    height: 2000px;
+    height: 1400px;
+    margin-bottom: 100px;
     display: grid;
-    grid-template-rows: 1.7fr 4fr 4fr 4fr 1fr;
+    grid-template-rows: 1.2fr 3fr 4fr;
     /* border: 1px solid black; */
     padding: 25px;
     width: 100%;
@@ -333,4 +334,98 @@
 .blue_button_hover:hover{
     background-color: #2b499d;
 
+}
+
+/* image section discovery */
+
+.discovery{
+   margin-top: 50px;
+   height: 100%;
+   background-image: url("https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Homepage-Features-Desktop.png");
+   /* background-position: center; */
+   background-size: cover;
+   background-repeat: no-repeat;
+   display: grid;
+   grid-template-rows: 10fr 1fr 0fr;
+   padding: 32px;
+   align-items: flex-end;
+}
+.discovery h1{
+    font-size: 40px;
+    display: flex;
+    align-items:flex-end;
+    color: #f4f4f4;
+}
+.discovery_btn_section{
+    display: flex;
+    align-items: center;
+}
+
+.discovery_btn{
+    height: 40px;
+    width: 200px;
+    border-radius: 8px;
+    border: none;
+}
+
+
+
+/* section 4 styling start form here */
+.section5{
+    height: 400px;
+    /* border: 1px solid black; */
+    padding: 0px 32px;
+    margin-bottom: 100px;
+}
+
+
+.card2_base{
+    height: 100%;
+    width: 100%;
+}
+
+.card2{
+    width: 620px;
+    /* border:1px solid black; */
+    height: 100%;
+    display: flex;
+    gap: 5px;
+    align-items: flex-end;
+    padding: 16px;
+    border-radius: 12px;
+    background-image: url("https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Homepage-Card-Solar-Panels-Desktop.png");
+
+    background-size: cover;
+}
+.card_heading_btn{
+    height: 140px;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    padding: 10px 10px;
+
+}
+.card2_btn_base{
+    margin-top: 10px;
+    width: 300px;
+    height: 100%;
+    display: grid;
+    height: 60px;
+    gap:20px;
+    grid-template-columns: 1fr 1fr;
+
+}
+/* heading */
+.card_heading_btn h1{
+    font-size: 40px;
+    color: #f4f4f4;
+}
+.card_heading_btn p{
+    font-weight: lighter;
+    color: #f4f4f4;
+}
+
+.card2_btn{
+    height: 40px;
+    border: none;
+    border-radius: 8px;
 }
