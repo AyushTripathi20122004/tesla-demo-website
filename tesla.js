@@ -42,3 +42,41 @@ function pause() {
   }
 }
 
+
+
+// ---------card2 scrolling buttons--------
+
+let card2 = document.querySelectorAll(".card2"); 
+let card2_scrolling_btn_section = document.querySelector(".card2_scrolling_btn_section");
+
+// Create buttons dynamically
+for (let j = 0; j < card2.length; j++) {
+  let btn2 = document.createElement("button");
+  btn2.classList.add("card2_scroll_btn");
+  card2_scrolling_btn_section.appendChild(btn2);
+}
+
+// ----card2 buttons functionality------
+let card2_base = document.querySelector(".card2_base");
+let card2_btn = document.querySelectorAll(".card2_scroll_btn");
+
+// Set first one active
+card2_btn[0].style.backgroundColor = "#171a20";
+
+card2_btn.forEach((btn, j) => {
+  btn.addEventListener("click", () => {
+    
+    // Move the slider
+    card2_base.style.transform = `translateX(-${j * 490}px)`; // Adjust width if needed
+
+    // Remove active color from all
+    card2_btn.forEach(b => b.style.backgroundColor = "");
+
+    // Set current active
+    btn.style.backgroundColor = "#171a20";
+  });
+});
+
+
+
+
