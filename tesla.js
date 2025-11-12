@@ -1,3 +1,35 @@
+// ----- heading image transition -----
+
+let car_adv_base = document.querySelector(".new_car_adv_base");
+
+let car_card = document.querySelectorAll(".new_car_adv");
+
+let btn_section = document.querySelector(".pic_cange_section");
+
+let len_car_card = car_adv_base.length;
+
+for(let k=0; k<len_car_card; k++){
+    let btn = document.createElement("button");
+    btn.classList.add("pic_change");
+    btn_section.appendChild(btn); 
+};
+
+
+let pic_change_btn = document.querySelectorAll(".pic_change");
+pic_change_btn[0].style.backgroundColor = "#171a20";
+
+pic_change_btn.forEach((btn , k) => {
+    btn.addEventListener("click" ,() => {
+        car_adv_base.style.transform = `translateX(-${k*1049}px)`
+
+        pic_change_btn.forEach(btn => btn.style.backgroundColor = "");
+        btn.style.backgroundColor = "#171a20";
+
+    });
+});
+
+
+
 let cardContainer = document.querySelector(".moving_window"); // parent of all cards
 let cards = document.querySelectorAll(".car_model_card");
 let buttonSection = document.querySelector(".card_moving_button");
@@ -76,7 +108,6 @@ card2_btn.forEach((btn, j) => {
     btn.style.backgroundColor = "#171a20";
   });
 });
-
 
 
 
