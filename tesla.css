@@ -59,15 +59,14 @@
     flex-direction: row;
     transition: transform 2s ease;
     flex: 0 0 100%;
+    gap: 20px;
 }
 
 .new_car_adv{
     display: flex;
     justify-content: center;
     align-items: flex-end;
-    background-image: url("https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Homepage-Promo-Meet-Model-3-Desktop.jpg");
-    background-position: center;
-    background-size: cover;
+    border-radius: 18px;
     flex: 0 0 100%;
 
 }
@@ -80,6 +79,12 @@
     display: grid;
     grid-template-rows: 1fr 1fr 3fr;
     text-align: center;
+}
+.modle_sectio_3{
+    height: 150px;
+}
+.modle_sectio_3 a{
+    font-weight: lighter;
 }
 /* heading section styling */
 .modle_sectio h1{
@@ -95,6 +100,7 @@
     grid-template-columns: 1fr 1fr;
     justify-content: center;
     align-items: center;
+    gap: 20px;
 }
 /* buttons_styling to change picture */
 .modle_sectio_button button{
@@ -118,6 +124,23 @@
     background-color: lightgray;
     border:none;
     border-radius: 50%;
+}
+.car_adv_img1{
+     background-image: url("https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Homepage-Promo-Meet-Model-3-Desktop.jpg");
+    background-position: center;
+    background-size: cover;
+
+}
+.car_adv_img2{
+     background-image: url("https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Homepage-Promo-Meet-Model-Y-Desktop.jpg");
+    background-position: center;
+    background-size: cover;
+
+}
+.car_adv_img3{
+     background-image: url("https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Homepage-Promo-Cybertruck-Desktop-US-v2.jpg");
+    background-position: center;
+    background-size: cover;
 }
 
 
@@ -563,4 +586,3 @@
     align-items: center;
     gap: 4px;
 }
-
