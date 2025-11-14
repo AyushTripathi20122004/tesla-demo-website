@@ -1,0 +1,127 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+.menu_base{
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-rows: 0.5fr 6fr 3fr;
+    padding: 16px 32px;
+}
+
+.close_menu{
+     /* border: 1px solid black;  */
+     display: flex;
+     justify-content: flex-end;
+     align-items: center;
+     padding: 0px 16px;
+     
+
+}
+.close_menu button{
+    padding: 4px 12px;
+    border: none;
+    font-size: 18px;
+    font-weight: 300;
+    background-color: transparent;
+}
+.close_menu button:hover{
+    background-color: rgb(233, 231, 231);
+}
+
+/* -------menu list section---------- */
+.list_menu_section{
+    /* border:1px solid black; */
+    padding: 8px;
+
+}
+.list_menu_section ul{
+    height: 100%;
+    width: 100%;
+}
+.list_menu_section ul li{
+    list-style: none;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    
+}
+.list_menu button{
+    font-size: 17px;
+    font-weight: 400;
+    border: none;
+    background-color: transparent;
+    padding: 10px 4px;
+}
+.list_menu button:hover{
+    background-color: rgb(233, 231, 231);
+}
+
+/* -------login button section---------- */
+
+.account_login{
+    /* border: 1px solid black; */
+    padding: 16px 0px;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+
+}
+.account_login button:hover{
+    background-color: rgb(233, 231, 231);
+}
+.language_select_section{
+    gap: 15px;
+    border: none;
+    height: 40px;
+    width: 200px;
+    background-color: transparent;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+.language_select_section .heading{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+}
+.language_select_section .heading h3{
+    font-size: 18px;
+    font-weight: 500;
+}
+.language_select_section .heading p{
+    font-size: 14px;
+    font-weight: 200;
+    text-align: left;
+}
+
+/* -----login_base------ */
+
+.login_base{
+     gap: 15px;
+    border: none;
+    height: 40px;
+    width: 200px;
+    background-color: transparent;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+.account_heading{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+
+}
+
+.account_heading h3{
+    font-size: 18px;
+    font-weight: 500;
+}
