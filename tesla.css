@@ -15,6 +15,7 @@
     background-color: white;
     position: sticky;
     top: 0px;
+    width: 100%;
    
 }
 .logo{
@@ -62,11 +63,13 @@
     gap: 20px;
 }
 
+
+
 .new_car_adv{
     display: flex;
     justify-content: center;
     align-items: flex-end;
-    border-radius: 18px;
+    /* border-radius: 18px; */
     flex: 0 0 100%;
 
 }
@@ -125,6 +128,9 @@
     border:none;
     border-radius: 50%;
 }
+/* ------responsive base styling start here for mobile phones which have 600px width-------- */
+
+
 .car_adv_img1{
      background-image: url("https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Homepage-Promo-Meet-Model-3-Desktop.jpg");
     background-position: center;
