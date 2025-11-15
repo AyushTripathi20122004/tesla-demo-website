@@ -12,6 +12,7 @@
     display: grid;
     grid-template-rows: 0.5fr 6fr 3fr;
     padding: 16px 32px;
+    gap: 30px;
 }
 
 .close_menu{
@@ -19,15 +20,15 @@
      display: flex;
      justify-content: flex-end;
      align-items: center;
-     padding: 0px 16px;
+    
      
 
 }
 .close_menu button{
-    padding: 4px 12px;
+    padding: 0px 12px;
     border: none;
     font-size: 18px;
-    font-weight: 300;
+    font-weight: 400;
     background-color: transparent;
 }
 .close_menu button:hover{
@@ -47,10 +48,19 @@
 .list_menu_section ul li{
     list-style: none;
     height: 70px;
-    display: flex;
+    display:grid;
+    grid-template-columns: 1fr 20fr;
     align-items: center;
     
 }
+.list_menu_section ul li a{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    text-decoration: none;
+    visibility: hidden;
+}
+
 .list_menu button{
     font-size: 17px;
     font-weight: 400;
@@ -60,6 +70,10 @@
 }
 .list_menu button:hover{
     background-color: rgb(233, 231, 231);
+}
+.tds-icon{
+    height: 20px;
+    width: 20px;
 }
 
 /* -------login button section---------- */
@@ -124,4 +138,13 @@
 .account_heading h3{
     font-size: 18px;
     font-weight: 500;
+}
+
+
+/*--------resposive styling start here-------*/
+@media (max-width:820px) {
+    .list_menu_section ul li a{
+        visibility: visible;
+        color:rgb(80, 79, 79);
+    }
 }
