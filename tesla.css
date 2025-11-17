@@ -44,6 +44,23 @@
     background-color: rgb(236, 235, 235);
 }
 
+/* resposnsive for mobile */
+@media (min-width: 300px) and (max-width: 600px) {
+    .navbar {
+        background-color: transparent;
+        position: absolute;
+    }
+    .logo svg{
+        width:80px;
+        height:14px ;
+        color: white;
+    }
+    .menu_section button{
+        background-color: transparent;
+        color: white;
+    }
+}
+
 /*---------section 1  intro new car modles-------- */
 .section1{
     display: grid;
@@ -51,6 +68,7 @@
     /* border: 1px solid black; */
     height: 420px;
     overflow: hidden;
+    z-index: -1;
 }
 .new_car_adv_base{
     height: 100%;
@@ -61,9 +79,8 @@
     transition: transform 2s ease;
     flex: 0 0 100%;
     gap: 20px;
+    z-index: -1;
 }
-
-
 
 .new_car_adv{
     display: flex;
@@ -128,7 +145,6 @@
     border:none;
     border-radius: 50%;
 }
-/* ------responsive base styling start here for mobile phones which have 600px width-------- */
 
 
 .car_adv_img1{
@@ -149,8 +165,43 @@
     background-size: cover;
 }
 
-
-
+/* ------responsive base styling start here for mobile phones which have 600px width-------- */
+@media (min-width: 300px) and (max-width: 600px) {
+   
+    .new_car_adv_base{
+        width: 600px;
+    }
+    .new_car_adv{
+        background-position: center center;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex: 0 0 70%;
+        padding-left: 50px;
+        padding-top: 70px;
+    }
+    .modle_sectio {
+    padding-left: 10%;
+    width: 100px;
+    height: 200px;
+ 
+    }
+    .modle_sectio h1{
+        font-size: 32px;
+    }
+    .modle_sectio_button button{
+    height: 20px;
+    width: 100px;
+    font-size: 10px;
+    }
+    .modle_sectio_button{
+    
+    gap: 10px;
+    }
+    .modle_sectio_3{
+        height: 100px;
+    }
+  
+}
 
 /* Section 2 styling start herer */
 .section2{
@@ -258,6 +309,35 @@
     background-color: lightgray;
     cursor: pointer;
 }
+/* responsive for mobile */
+@media (min-width: 300px) and (max-width: 600px){
+    .car_model_card{
+        flex: 0 0 115%;
+        width: 320px;
+    }
+    .car_model_card{
+        width: 320px;
+    }
+    .heading_model_name h1{
+    font-size: 35px;
+    color: white;
+    width: 200px;
+}
+.car_order_button{
+    width: 200px;
+}
+    .car_model_card {
+        width: 320px;
+        background-size: 300%;
+        background-repeat: no-repeat;
+        background-position: 60% 60%;
+    }
+    
+}
+
+
+
+
 
 /* seciton4 styling */
 
