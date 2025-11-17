@@ -23,7 +23,7 @@ pic_change_btn.forEach((btn, k) => {
     });
 });
 
-
+// car model transition
 
 let cardContainer = document.querySelector(".moving_window"); // parent of all cards
 let cards = document.querySelectorAll(".car_model_card");
