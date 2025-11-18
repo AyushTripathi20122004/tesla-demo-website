@@ -6,6 +6,9 @@
     font-weight: 600;
     font-style: normal;
 }
+html body{
+    overflow-x: hidden;
+}
 
 .navbar{
     /* border: 1px solid black; */
@@ -185,6 +188,9 @@
     height: 200px;
  
     }
+    .model_name{
+        padding-top: 10px;
+    }
     .modle_sectio h1{
         font-size: 32px;
     }
@@ -335,17 +341,14 @@
     
 }
 
-
-
-
-
 /* seciton4 styling */
 
 .section4{
     height: 1200px;
-    margin-bottom: 100px;
+    margin-bottom: 300px;
     display: grid;
-    grid-template-rows: 0.2fr fr 1fr;
+    gap: 20px;
+    grid-template-rows: 0.2fr 1fr;
     /* border: 1px solid black; */
     padding: 0px 32px;
     width: 100%;
@@ -368,6 +371,11 @@
     padding: 12px;
     border-radius: 12px;
     background-color:#e3e3e3ea;
+}
+.offer_card img{
+    height: 200px;
+    object-fit: cover;
+    width: 100%;
 }
 /* card heading styling */
 .offer_card h1{
@@ -392,6 +400,18 @@
 .offer_card button:hover{
     background-color:#e3e3e3ea;
 
+}
+/* section 4 responsive for mobile width upto 300 to 600px */
+@media (min-width: 300px) and (max-width: 600px) {
+    .limited_offer_section{
+        display: flex;
+        flex-direction: column;
+    }
+    .offer_card{
+        width: 100%;
+    }
+
+    
 }
 
 
@@ -458,11 +478,17 @@
     background-color: #2b499d;
 
 }
+/* responsive for mobile */
+@media (min-width: 300px) and (max-width: 600px){
+    .demo_drive_seciton{
+        width: 100%;
+    }
+    
+}
 
 /* image section discovery */
 
 .discovery{
-   margin-top: 50px;
    height: 100%;
    height: 500px;
    background-image: url("https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Homepage-Features-Desktop.png");
@@ -505,6 +531,7 @@
 }
 
 
+
 .card2_base{
     height: 100%;
     width: 100%;
@@ -519,6 +546,7 @@
 }
 
 .card2{
+    
     width: 620px;
     /* border:1px solid black; */
     height: 100%;
@@ -527,6 +555,7 @@
     align-items: flex-end;
     padding: 16px;
     border-radius: 12px;
+    background-repeat: no-repeat;
     /* transition: transform 1s ease; */
     flex: 0 0 60%;
 }
@@ -608,6 +637,17 @@
     border-radius: 50%;
     cursor: pointer;
     transition: background-color 0.1s linear;
+}
+@media (min-width: 300px) and (max-width: 600px){
+    .section5{
+        height: 200px;
+        margin-top: 700px;
+    }
+    .card2{
+        background-size: 130%;
+    }
+    
+    
 }
 
 /* -------section 6 styling  start here------------ */
