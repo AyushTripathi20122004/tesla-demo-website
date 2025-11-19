@@ -8,7 +8,9 @@
 }
 html body{
     overflow-x: hidden;
+    width: 100%;
 }
+
 
 .navbar{
     /* border: 1px solid black; */
@@ -214,6 +216,7 @@ html body{
     overflow: hidden;
     margin-top: 50px;
     height: 540px;
+    
     /* border: 1px solid black; */
     padding: 0px 25px;
     width: 100%;
@@ -229,6 +232,7 @@ html body{
     padding: 0px 32px;
     width: auto;
     max-width: 100%;
+    z-index: -1;
     transition: transform 1s ease;
     
 }
@@ -241,6 +245,7 @@ html body{
     padding: 18px;
     background-size: cover;
     display: grid;
+     z-index: -1;
     grid-template-rows: 4fr 1.8fr;
     
 }
@@ -254,6 +259,16 @@ html body{
     align-items: flex-end;
 }
 
+.heading_model_name{
+    height: 100px;
+    display: grid;
+    grid-auto-flow: row;
+}
+.svg_height{
+    height: 100px;
+        display: grid;
+    grid-auto-flow: row;
+}
 .heading_model_name h1{
     font-size: 40px;
     color: white;
@@ -344,11 +359,11 @@ html body{
 /* seciton4 styling */
 
 .section4{
-    height: 1200px;
-    margin-bottom: 300px;
+    height: auto;
+    margin-bottom: 100px;
     display: grid;
-    gap: 20px;
-    grid-template-rows: 0.2fr 1fr;
+    gap: 40px;
+    grid-auto-flow: row;
     /* border: 1px solid black; */
     padding: 0px 32px;
     width: 100%;
@@ -423,7 +438,7 @@ html body{
     object-fit: cover;
     background-size: cover;
     width: 100%;
-    height: 450px;
+    height: 700px;
     display: grid;
     grid-template-rows: 0.5fr 3fr 1.5fr;
     padding: 8px;
@@ -490,15 +505,15 @@ html body{
 
 .discovery{
    height: 100%;
-   height: 500px;
+   height: 900px;
    background-image: url("https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Homepage-Features-Desktop.png");
    /* background-position: center; */
-   background-size: 100%;
-   background-position: center;
+   background-size: 130%;
+   background-position: left center;
    background-repeat: no-repeat;
    display: grid;
    grid-template-rows: 10fr 1fr 0fr;
-   padding: 32px;
+   padding: 10px 32px;
    align-items: flex-end;
 }
 .discovery h1{
@@ -624,7 +639,7 @@ html body{
     gap: 10px;
     height: 30px;
     transition: transform 1s ease;
-     margin-bottom: 60px;
+    
 
     
 }
@@ -639,19 +654,29 @@ html body{
     transition: background-color 0.1s linear;
 }
 @media (min-width: 300px) and (max-width: 600px){
-    .section5{
-        height: 200px;
-        margin-top: 700px;
-    }
+  
     .card2{
         background-size: 130%;
     }
-    
+    .discovery{
+        height: 400px;
+        width: 100%;
+        grid-template-rows: 0.7fr 0.2fr 0.2fr;
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+        align-items: flex-end;
+    }
+    .discovery_btn_section{
+        display: flex;
+        padding-right: 100px;
+    }
     
 }
 
 /* -------section 6 styling  start here------------ */
 .section6{
+ 
     height: 60px;
     display: flex;
     justify-content: center;
@@ -684,7 +709,7 @@ html body{
     justify-content: center;
     align-items: center;
     /* border: 1px solid black; */
-    position:sticky;
+    position:fixed;
     bottom: 0px;
     background-color: #fff;
 }
