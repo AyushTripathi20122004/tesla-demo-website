@@ -1,0 +1,100 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.navbar{
+    /* border: 1px solid black; */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 56px;
+    background-color: white;
+    position: sticky;
+    top: 0px;
+   
+}
+.logo{
+    display: flex;
+    padding-left: 30px;
+    align-items: center;
+}
+.logo svg{
+    width:124px;
+    height: 24px;
+}
+
+.menu_section{
+    display: flex;
+    padding-right: 20px;
+    justify-content: right;
+    align-items: center;
+}
+.menu_section button{
+    display: flex;
+    gap: 4px;
+    align-items: center;
+    font-size: 16px;
+    padding: 6px 18px;
+    border: none;
+    color: #171a20;
+    font-weight: light;
+    background-color: #fff;
+}
+.menu_section button:hover{
+    background-color: rgb(236, 235, 235);
+}
+
+/* section Container-base start here */
+.Container-base{
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    max-height: 100%;
+    padding: 16px;
+    border: 1px solid black;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+/* image section */
+.Car_design_img_section{
+    border: 1px solid black;
+}
+
+/* car details section */
+.Car_details_section{
+    border: 1px solid black;
+    padding: 16px;
+
+}
+.heading{
+    display: grid;
+    grid-auto-flow: row;
+    gap: 10px;
+}
+.details_link a{
+    color: #393c41 ;
+    font-weight: 500;
+}
+.car_details{
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+    
+}
+.car_details p{
+    font-size: 12px;
+}
+.car_details h2{
+    display: grid;
+    grid-auto-flow: column;
+    align-items: flex-end;
+
+}
