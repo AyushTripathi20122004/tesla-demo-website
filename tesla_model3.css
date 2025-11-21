@@ -6,6 +6,11 @@
     font-weight: 600;
     font-style: normal;
 }
+html body{
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+}
 
 .navbar{
     /* border: 1px solid black; */
@@ -52,23 +57,66 @@
 .Container-base{
     width: 100%;
     max-width: 100%;
-    height: auto;
+    height: 88.2vh;
     max-height: 100%;
     padding: 16px;
     border: 1px solid black;
     display: grid;
     grid-template-columns: 2fr 1fr;
+    overflow: hidden;
 }
 
 /* image section */
 .Car_design_img_section{
     border: 1px solid black;
+    height: 100vh;
+
+}
+
+.img1{
+    background-image:url('https://static-assets.tesla.com/configurator/compositor?context=design_studio_2&options=$MT367,$PN01,$W38C,$IBB4&view=STUD_FRONT34&model=m3&size=1920&bkba_opt=2&crop=0,0,0,0&overlay=0&') ;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 150%;
+
+}
+.card_base{
+    height: auto;
+    width: auto;
+    max-width: 100%;
+    max-height: 100%;
+    padding: 32px;
+}
+.card{
+    height: 320px;
+    width: auto;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 90%;
+}
+.arrow{
+    height: auto;
+    width: auto;
+    padding: 2px 4px;
+    background-color: transparent;
+    border: none;
+    color: gray;
+    
 }
 
 /* car details section */
 .Car_details_section{
+    height: 100vh;
+    overflow: scroll;
     border: 1px solid black;
-    padding: 16px;
+    padding: 0px;
+    display: grid;
+    grid-auto-flow: row;
+    gap:10px;
+   
 
 }
 .heading{
@@ -97,4 +145,51 @@
     grid-auto-flow: column;
     align-items: flex-end;
 
+}
+
+/* price section start here */
+.price_section{
+    height: auto;
+    overflow: hidden;
+    width: auto;
+    max-width: 100%;
+    max-height: 100%;
+    display: grid;
+    grid-auto-flow: row;
+}
+.menu_section2{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.menu_section2 button{
+     display: flex;
+  
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    padding: 0px 18px;
+    border: none;
+    color: #171a20;
+    font-weight: light;
+    
+    background-color: #fff;
+}
+.menu_section2 button:hover{
+     background-color: rgb(236, 235, 235);
+     border-bottom: 1px solid black;
+
+}
+
+.price_amount{
+    display: grid;
+    grid-auto-flow: row;
+    gap: 5px;
+    padding: 4px;
+
+}
+.price_amount div{
+    height: 60px;
+    border-radius: 8px;
+    border: 1px solid black;
 }
