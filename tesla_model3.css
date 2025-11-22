@@ -60,7 +60,7 @@ html body{
     height: 88.2vh;
     max-height: 100%;
     padding: 16px;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     display: grid;
     grid-template-columns: 2fr 1fr;
     overflow: hidden;
@@ -68,16 +68,17 @@ html body{
 
 /* image section */
 .Car_design_img_section{
-    border: 1px solid black;
+    /* border: 1px solid black; */
     height: 100vh;
-
+    
+ 
 }
 
 .img1{
     background-image:url('https://static-assets.tesla.com/configurator/compositor?context=design_studio_2&options=$MT367,$PN01,$W38C,$IBB4&view=STUD_FRONT34&model=m3&size=1920&bkba_opt=2&crop=0,0,0,0&overlay=0&') ;
     background-position: center center;
     background-repeat: no-repeat;
-    background-size: 150%;
+    background-size: 140%;
 
 }
 .card_base{
@@ -90,7 +91,7 @@ html body{
 .card{
     height: 320px;
     width: auto;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -108,16 +109,28 @@ html body{
 }
 
 /* car details section */
-.Car_details_section{
+.car_d_section{
+    width: 100%;
+    padding: 4px;
     height: 100vh;
-    overflow: scroll;
-    border: 1px solid black;
+    display: grid;
+    grid-template-rows: 2fr 0.8fr;
+    overflow: hidden;
+}
+.Car_details_section{
+    height:calc(100vh-0px);
+    overflow-y:auto;
+    /* border: 1px solid black; */
     padding: 0px;
     display: grid;
     grid-auto-flow: row;
-    gap:10px;
-   
-
+    gap:0px;
+    width: auto;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+.Car_details_section ::-webkit-scrollbar{
+    display: none;
 }
 .heading{
     display: grid;
@@ -150,7 +163,7 @@ html body{
 /* price section start here */
 .price_section{
     height: auto;
-    overflow: hidden;
+
     width: auto;
     max-width: 100%;
     max-height: 100%;
@@ -163,7 +176,6 @@ html body{
 }
 .menu_section2 button{
      display: flex;
-  
     height: 40px;
     justify-content: center;
     align-items: center;
@@ -191,5 +203,32 @@ html body{
 .price_amount div{
     height: 60px;
     border-radius: 8px;
-    border: 1px solid black;
+     border: 1px solid black;
+}
+
+/* ------ footer details----- */
+.car_details_footer{
+    height: 60px;
+    background-color: #fff;
+    padding: 8px;
+    width:100%;
+    /* border: 1px solid black; */
+    display: grid;
+    grid-auto-flow: column;
+
+}
+.car_details_footer button{
+    height: 40px;
+    background-color: #3e6ae1 ;
+    color: #ffffff;
+    border: none;
+    transition: background-color 0.3s ease;
+    border-radius: 8px;
+}
+.car_details_footer button:hover{
+    background-color: #2b499d;
+
+}
+.price{
+    height: 40px;
 }
