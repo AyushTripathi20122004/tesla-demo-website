@@ -257,6 +257,141 @@ html body{
     color: #171a20;
 }
 
+.modification{
+    margin-top: 50px;
+    display:grid;
+    grid-auto-flow: row;
+    padding: 0px 8px;
+    gap: 80px;
+    
+
+}
+.car_color_base{
+    /* border: 1px solid black; */
+    display: grid;
+    grid-auto-flow: row;
+    gap: 10px;
+}
+.car_color{
+    /* border: 1px solid black; */
+}
+.color_btn{
+    /* border: 1px solid black; */
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items:  center;
+}
+.color_btn button{
+    height: 50px;
+    /* border: 1px solid black; */
+    width: 50px;
+    border-radius: 50%;
+}
+.color_btn .btn1{
+    background-image: url("https://digitalassets.tesla.com/co1n/image/upload/c_scale,w_40,f_auto,q_auto/prod/static_assets/MODEL3_/UI/Paint_StealthGrey.png?&");
+    background-position: center center;
+    background-size: 80%;
+    background-repeat: no-repeat;
+    border: none;
+}
+.color_btn .btn2{
+    background-image: url("https://digitalassets.tesla.com/co1n/image/upload/…to/prod/static_assets/MODEL3/UI/Paint_White.png?&");
+    background-position: center center;
+    background-size: 80%;
+    background-repeat: no-repeat;
+    border: none;
+}
+.color_btn .btn3{
+    background-image: url("https://digitalassets.tesla.com/co1n/image/upload/c_scale,w_40,f_auto,q_auto/prod/static_assets/MODELY_/DiamondBlack.png?&");
+    background-position: center center;
+    background-size: 80%;
+    background-repeat: no-repeat;
+    border: none;
+}
+
+/* tyre modification section */
+.car_tyres_base{
+    display: grid;
+    grid-auto-flow: row;
+    gap: 10px;
+}
+.car_tyres{
+    /* border: 1px solid black; */
+
+}
+.tyre_btn{
+    /* border: 1px solid black; */
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items:  center;
+}
+.tyre_btn button{
+    height: 50px;
+    /* border: 1px solid black; */
+    width: 50px;
+    border-radius: 50%;
+}
+.tyre_btn .btn1{
+    background-image: url("https://digitalassets.tesla.com/co1n/image/upload/c_scale,w_40,f_auto,q_auto/prod/static_assets/MODEL3_/Prismata-Wheels.png?&");
+    background-position: center center;
+    background-size: 80%;
+    background-repeat: no-repeat;
+    border: none;
+}
+.tyre_btn .btn2{
+    background-image: url("https://digitalassets.tesla.com/co1n/image/upload/c_scale,w_40,f_auto,q_auto/prod/static_assets/MODEL3_/UI/Wheel-Swatch_19-in.png?&");
+    background-position: center center;
+    background-size: 80%;
+    background-repeat: no-repeat;
+    border: none;
+}
+
+
+/* intrior design start here */
+.interior_color_base{
+    display: grid;
+    grid-auto-flow: row;
+    gap: 10px;
+}
+.interior_color{
+    /* border: 1px solid black; */
+
+}
+.interior_btn{
+    /* border: 1px solid black; */
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items:  center;
+}
+.interior_btn button{
+    height: 50px;
+    /* border: 1px solid black; */
+    width: 50px;
+    border-radius: 50%;
+}
+.interior_btn .btn1{
+    background-image: url("https://digitalassets.tesla.com/co1n/image/upload/c_scale,w_40,f_auto,q_auto/prod/static_assets/MODEL3/UI/Interior_Black.png?&");
+    background-position: center center;
+    background-size: 80%;
+    background-repeat: no-repeat;
+    border: none;
+}
+
+
+/* safty information start here */
+.safty_section_base{
+    margin-top: 50px;
+    padding: 0px 10px;
+    display: grid;
+    gap: 20px;
+    grid-auto-flow: row;
+    justify-content: center;
+    align-items: center;
+}
+
 /* ------ footer details----- */
 .car_details_footer{
     height:80px;
