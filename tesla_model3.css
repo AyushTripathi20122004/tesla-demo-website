@@ -291,23 +291,26 @@ html body{
 .color_btn .btn1{
     background-image: url("https://digitalassets.tesla.com/co1n/image/upload/c_scale,w_40,f_auto,q_auto/prod/static_assets/MODEL3_/UI/Paint_StealthGrey.png?&");
     background-position: center center;
-    background-size: 80%;
+    background-size: 90%;
     background-repeat: no-repeat;
     border: none;
 }
 .color_btn .btn2{
     background-image: url("https://digitalassets.tesla.com/co1n/image/upload/…to/prod/static_assets/MODEL3/UI/Paint_White.png?&");
     background-position: center center;
-    background-size: 80%;
+    background-size: 90%;
     background-repeat: no-repeat;
     border: none;
 }
 .color_btn .btn3{
     background-image: url("https://digitalassets.tesla.com/co1n/image/upload/c_scale,w_40,f_auto,q_auto/prod/static_assets/MODELY_/DiamondBlack.png?&");
     background-position: center center;
-    background-size: 80%;
+    background-size: 90%;
     background-repeat: no-repeat;
     border: none;
+}
+.color_btn button:hover{
+    border: 1px solid black;
 }
 
 /* tyre modification section */
@@ -336,16 +339,19 @@ html body{
 .tyre_btn .btn1{
     background-image: url("https://digitalassets.tesla.com/co1n/image/upload/c_scale,w_40,f_auto,q_auto/prod/static_assets/MODEL3_/Prismata-Wheels.png?&");
     background-position: center center;
-    background-size: 80%;
+    background-size: 90%;
     background-repeat: no-repeat;
     border: none;
 }
 .tyre_btn .btn2{
     background-image: url("https://digitalassets.tesla.com/co1n/image/upload/c_scale,w_40,f_auto,q_auto/prod/static_assets/MODEL3_/UI/Wheel-Swatch_19-in.png?&");
     background-position: center center;
-    background-size: 80%;
+    background-size: 90%;
     background-repeat: no-repeat;
     border: none;
+}
+.tyre_btn button:hover{
+    border: 1px solid black;
 }
 
 
@@ -374,24 +380,76 @@ html body{
 }
 .interior_btn .btn1{
     background-image: url("https://digitalassets.tesla.com/co1n/image/upload/c_scale,w_40,f_auto,q_auto/prod/static_assets/MODEL3/UI/Interior_Black.png?&");
-    background-position: center center;
-    background-size: 80%;
+    background-position: center;
+    background-size: 90%;
     background-repeat: no-repeat;
     border: none;
 }
-
+.interior_btn button:hover{
+    border: 1px solid black;
+}
 
 /* safty information start here */
 .safty_section_base{
     margin-top: 50px;
-    padding: 0px 10px;
+    padding: 0px 40px;
     display: grid;
-    gap: 20px;
+    gap: 10px;
     grid-auto-flow: row;
     justify-content: center;
     align-items: center;
 }
+.safty_intructions{
+    width:fit-content;
+    border: 1px solid #9fa1a5;
+    border-radius: 8px;
+    display:grid;
+    grid-auto-flow: row;
+    justify-content: space-around;
+    gap: 30px;
+    padding: 20px 40px 20px 20px;
 
+
+}
+.inst{
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: space-between;
+    gap:20px;
+    align-items: center;
+    padding-right: 30px;
+}
+.inst_info{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.inst_info h4{
+    font-size: 15px;
+}
+.inst_info p{
+    font-size: 14px !important;
+    font-weight: 400;
+   
+}
+.learn_btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.learn_btn button{
+    height: 40px;
+    font-size: 14px;
+    border: none;
+    font-size: 14px;
+    color: #171a20;
+    padding: 0px 55px;
+    transition: background-color 0.5s ease-out;
+    
+}
+.learn_btn button:hover{
+    background-color: #e0e1e2;
+}
 /* ------ footer details----- */
 .car_details_footer{
     height:80px;
