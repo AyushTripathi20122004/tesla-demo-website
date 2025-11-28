@@ -92,7 +92,7 @@ html body{
     padding: 32px;
 }
 .card{
-    height: 320px;
+    height: 100vh;
     width: auto;
     /* border: 1px solid black; */
     display: flex;
@@ -100,15 +100,21 @@ html body{
     align-items: center;
     flex-direction: row;
     gap: 90%;
+    transition: background-image 1s ease-in;
 }
 .arrow{
     height: auto;
     width: auto;
-    padding: 2px 4px;
+    padding: 6px 8px;
     background-color: transparent;
     border: none;
     color: gray;
+    backdrop-filter: blur(10px);
     
+    
+}
+.arrow i{
+    color: #0b0c0f;
 }
 
 /* car details section */
@@ -444,7 +450,7 @@ html body{
     font-size: 14px;
     color: #171a20;
     padding: 0px 55px;
-    transition: background-color 0.5s ease-out;
+    transition: background-color 0.2s ease-out;
     
 }
 .learn_btn button:hover{
