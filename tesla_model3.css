@@ -456,6 +456,65 @@ html body{
 .learn_btn button:hover{
     background-color: #e0e1e2;
 }
+/* ------warrenty seciton------  */
+.warrenty_section_base{
+    padding: 4px;
+    margin-top: 60px;
+}
+.warrenty_section{
+    padding: 10px;
+    display: grid;
+    border: 1px solid #9fa1a5;
+    border-radius: 8px;
+    grid-auto-flow: row;
+
+    gap: 10px;
+
+}
+.warrenty_section_base h1{
+    display: flex;
+    justify-content: center;
+    height: 60px;
+    font-weight: 400;
+}
+.w_container{
+    display: grid;
+    grid-auto-flow: column;
+    /* border: 1px solid black; */
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.w_info{
+    display:grid;
+    grid-auto-flow: row;
+    gap:10px;
+    /* border: 1px solid black; */
+    padding: 8px;
+
+}
+.w_info h4{
+    font-size: 15px;
+    color: #393c41;
+}
+.w_info p{
+    font-size: 14px;
+    color: #393c41;
+    font-weight: 400;
+}
+.w_learn_link{
+    padding: 8px;
+    margin-top: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.w_learn_link a{
+    color: #0b0c0f;
+}
+
+
 /* ------ footer details----- */
 .car_details_footer{
     height:80px;
