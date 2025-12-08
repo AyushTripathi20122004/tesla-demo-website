@@ -508,11 +508,70 @@ html body{
     display: flex;
     justify-content: center;
     align-items: center;
+    color:#0b0c0f;
+    font-weight: 400;
     
 }
-.w_learn_link a{
-    color: #0b0c0f;
+/* payment container start here */
+.container_payment {
+    height: auto;
+    width: auto;
+    /* border: 1px solid black; */
+    padding: 8px;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
+/* zipcode section start here*/
+.zipCode{
+    display: grid;
+    grid-auto-flow: row;
+    /* border: 1px solid black; */
+    gap:5px;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+.zipCode h1{
+    font-size: 28px;
+    font-weight: 600;
+    height:32px;
+}
+.input input{
+    padding:8px;
+    border:none; 
+    width:100%;
+    background-color: rgb(238, 235, 235);
+    text-align: center;
+}
+.input{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.zipCode input::placeholder{
+    font-weight:400 ;
+}
+.zipCode p{
+    font-size: 14px;
+    display: flex;
+    gap:10px;
+    justify-content: center;
+    align-items: center;
+    font-weight: 400;
+
+
+}
+.zipCode p svg{
+    height:14px;
+    width:14x;
+    margin-left:4px;
+}
+
+
 
 
 /* ------ footer details----- */
