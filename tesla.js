@@ -12,11 +12,11 @@ for (let k = 0; k < len_car_card; k++) {
 }
 
 let pic_change_btn = document.querySelectorAll(".pic_change");
-pic_change_btn[0].style.backgroundColor = "#171a20";
+ pic_change_btn[0].style.backgroundColor = "#171a20";
 
 pic_change_btn.forEach((btn, k) => {
     btn.addEventListener("click", () => {
-        car_adv_base.style.transform = `translateX(-${k * 1049}px)`;
+        car_adv_base.style.transform = `translateX(-${k * 100}vw)`;
 
         pic_change_btn.forEach(btn => btn.style.backgroundColor = "");
         btn.style.backgroundColor = "#171a20";
@@ -40,12 +40,12 @@ for (let i = 0; i < n; i++) {
 // Button functionality
 let buttons = document.querySelectorAll(".button");
 
-buttons[0].style.backgroundColor="#171a20"
+buttons[0].style.backgroundColor="#171a20";
 
 buttons.forEach((button, i) => {
     button.addEventListener("click", () => {
         // Move the container, not the NodeList
-        cardContainer.style.transform = `translateX(-${i * 750}px)`; // adjust 400px per card width
+        cardContainer.style.transform = `translateX(-${i * 68}vw)`; // adjust 400px per card width
 
         // Optional: update button styles
         buttons.forEach(btn => btn.style.backgroundColor = "");
@@ -94,7 +94,7 @@ card2_btn.forEach((btn, j) => {
   btn.addEventListener("click", () => {
     
     // Move the slider
-    card2_base.style.transform = `translateX(-${j * 490}px)`; // Adjust width if needed
+    card2_base.style.transform = `translateX(-${j * 43}vw)`; // Adjust width if needed
 
     // Remove active color from all
     card2_btn.forEach(b => b.style.backgroundColor = "");
@@ -108,4 +108,10 @@ card2_btn.forEach((btn, j) => {
 
 function open_menu_section(){
     window.location.href="tesla_menu.html";
+}
+
+// Model 3 car sepecifications 
+function model_3(){
+    window.location.href="tesla_model3.html";
+    console.log("model3 button was clicked")
 }
