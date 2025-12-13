@@ -84,7 +84,7 @@ html body{
     transition: transform 2s ease;
     flex: 0 0 100%;
     gap: 20px;
-    z-index: -1;
+   
 }
 
 .new_car_adv{
