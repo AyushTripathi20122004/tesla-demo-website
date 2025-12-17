@@ -245,7 +245,7 @@ html body{
     padding: 18px;
     background-size: cover;
     display: grid;
-     z-index: -1;
+     /* z-index: -1; */
     grid-template-rows: 4fr 1.8fr;
     
 }
