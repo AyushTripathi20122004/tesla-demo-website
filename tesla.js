@@ -12,7 +12,7 @@ for (let k = 0; k < len_car_card; k++) {
 }
 
 let pic_change_btn = document.querySelectorAll(".pic_change");
- pic_change_btn[0].style.backgroundColor = "#171a20";
+ // pic_change_btn[0].style.backgroundColor = "#171a20";
 
 pic_change_btn.forEach((btn, k) => {
     btn.addEventListener("click", () => {
@@ -40,7 +40,7 @@ for (let i = 0; i < n; i++) {
 // Button functionality
 let buttons = document.querySelectorAll(".button");
 
-buttons[0].style.backgroundColor="#171a20";
+// buttons[0].style.backgroundColor="#171a20";
 
 buttons.forEach((button, i) => {
     button.addEventListener("click", () => {
