@@ -214,7 +214,7 @@ html body{
 /* Section 2 styling start herer */
 .section2{
     overflow: hidden;
-    margin-top: 50px;
+    /* margin-top: 50px; */
     height: 540px;
     
     /* border: 1px solid black; */
@@ -737,3 +737,4 @@ html body{
     align-items: center;
     gap: 4px;
 }
+
