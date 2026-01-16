@@ -11,6 +11,14 @@ html body{
     margin: 0;
     overflow: hidden;
 }
+@media (min-width: 300px) and (max-width: 600px) {
+    html body{
+        height:None;
+       margin: 0;
+       overflow: visible;
+    } 
+}
+
 
 .navbar{
     /* border: 1px solid black; */
@@ -65,8 +73,14 @@ html body{
     grid-template-columns: 2fr 1fr;
     overflow: hidden;
 }
-
-
+@media (min-width: 300px) and (max-width: 600px) {
+    .Container-base{
+        display:grid;
+        grid-template-columns:None;
+        grid-template-rows: 2fr 1fr;
+        overflow: visible;
+    } 
+}
 
 
 /* image section */
@@ -94,6 +108,15 @@ html body{
     max-height: 100%;
     padding: 32px;
 }
+@media (min-width: 300px) and (max-width: 600px) {
+    .card_base{
+        padding:0px;
+    } 
+    .Car_design_img_section{
+        height: 40vh;
+    }
+
+}
 .card{
     height: 100vh;
     width: auto;
@@ -104,6 +127,13 @@ html body{
     flex-direction: row;
     gap: 90%;
     transition: background-image 1s ease-in;
+}
+@media (min-width: 300px) and (max-width: 600px) {
+    .card{
+       height:40vh;
+       position: sticky;
+       top:0px;
+    } 
 }
 .arrow{
     height: auto;
@@ -129,6 +159,13 @@ html body{
     grid-template-rows: 2fr 0.8fr;
     overflow: hidden;
 }
+@media (min-width: 300px) and (max-width: 600px) {
+    .car_d_section{
+       display: grid;
+       grid-template-rows: 2fr 0.2fr;
+    } 
+}
+
 .Car_details_section{
     height:calc(100vh-0px);
     overflow-y:auto;
@@ -665,3 +702,4 @@ html body{
 .price{
     height: 40px;
 }
+
