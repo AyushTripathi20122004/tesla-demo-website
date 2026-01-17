@@ -73,8 +73,8 @@ html body{
     /* border: 1px solid black; */
     height: 420px;
     overflow: hidden;
-    z-index: -1;
 }
+
 .new_car_adv_base{
     height: 100%;
     width: auto;
@@ -82,18 +82,18 @@ html body{
     display: flex;
     flex-direction: row;
     transition: transform 2s ease;
-    flex: 0 0 100%;
     gap: 20px;
    
+}
+@media (min-width: 300px) and (max-width: 600px) {
+    .new_car_adv_base{
+        width: 100vh;
+
+    }
 }
 
 .new_car_adv{
     display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    /* border-radius: 18px; */
-    flex: 0 0 100%;
-
 }
 
 .modle_sectio{
@@ -158,6 +158,19 @@ html body{
     background-size: cover;
 
 }
+@media (min-width: 300px) and (max-width: 600px) {
+    .car_adv_img1{
+        background-size: 105vh;
+    }
+    .new_car_adv {
+        background-position: center;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex: 0 0 45vh;
+        padding-left: 50px;
+        padding-top: 70px;
+    }
+}
 .car_adv_img2{
      background-image: url("https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Homepage-Promo-Meet-Model-Y-Desktop.jpg");
     background-position: center;
@@ -171,45 +184,6 @@ html body{
 }
 
 /* ------responsive base styling start here for mobile phones which have 600px width-------- */
-@media (min-width: 300px) and (max-width: 600px) {
-   
-    .new_car_adv_base{
-        width: 600px;
-    }
-    .new_car_adv{
-        background-position: center center;
-        justify-content: flex-start;
-        align-items: flex-start;
-        flex: 0 0 70%;
-        padding-left: 50px;
-        padding-top: 70px;
-    }
-    .modle_sectio {
-    padding-left: 10%;
-    width: 100px;
-    height: 200px;
- 
-    }
-    .model_name{
-        padding-top: 10px;
-    }
-    .modle_sectio h1{
-        font-size: 32px;
-    }
-    .modle_sectio_button button{
-    height: 20px;
-    width: 100px;
-    font-size: 10px;
-    }
-    .modle_sectio_button{
-    
-    gap: 10px;
-    }
-    .modle_sectio_3{
-        height: 100px;
-    }
-  
-}
 
 /* Section 2 styling start herer */
 .section2{
@@ -443,6 +417,20 @@ html body{
     grid-template-rows: 0.5fr 3fr 1.5fr;
     padding: 8px;
 }
+@media (min-width: 300px) and (max-width: 600px) {
+    .video_section{
+        
+        height: none;
+        display: grid;
+        grid-auto-flow: row;
+        justify-content: center;
+        align-items: center;
+        padding: 0px;
+    }
+   
+
+}
+
 /* pause button */
 .pause_button{
     /* border: 1px solid black; */
@@ -466,6 +454,13 @@ html body{
     padding: 0px 18px;
     
 }
+@media (min-width: 300px) and (max-width: 600px) {
+    .self_drive_section{
+        padding: 0px;
+        display: grid;
+    }
+}
+
 .self_drive_section h1{
     font-size: 40px;
     color: #f4f4f4;
@@ -496,8 +491,9 @@ html body{
 /* responsive for mobile */
 @media (min-width: 300px) and (max-width: 600px){
     .demo_drive_seciton{
-        width: 100%;
+        width: 35vh;
     }
+
     
 }
 
@@ -737,4 +733,3 @@ html body{
     align-items: center;
     gap: 4px;
 }
-
