@@ -778,6 +778,8 @@ html body{
     }
     .footer_btn{
         gap: 8px;
+        padding:4px;
     }
   
 }
+
