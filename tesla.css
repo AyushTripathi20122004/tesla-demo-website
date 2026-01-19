@@ -421,6 +421,7 @@ html body{
     .section4{
         width: 100vw;
         padding: 0px;
+        margin-bottom: 0px;
     }
     .limited_offer_section{
         width: 100vw;
@@ -725,8 +726,10 @@ html body{
     .section6{
         width: 100vw;
     }
-  
-    
+    .links_base{
+        display: grid;
+        text-align: center;
+    }
 }
 
 /* ---------footer styling start from here--------- */
@@ -770,6 +773,11 @@ html body{
     .footer{
         width: 100vw;
     }
+    .footer_btn_base{
+        width: auto;
+    }
+    .footer_btn{
+        gap: 8px;
+    }
   
-    
 }
