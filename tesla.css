@@ -214,6 +214,7 @@ html body{
 /* Section 2 styling start herer */
 .section2{
     overflow: hidden;
+    scroll-behavior: smooth;
     /* margin-top: 50px; */
     height: 540px;
     
@@ -221,6 +222,11 @@ html body{
     padding: 0px 25px;
     width: 100%;
    
+}
+@media (min-width: 300px) and (max-width: 600px) {
+    .section2{
+        overflow: scroll;
+    }
 }
 .moving_window{
     display: flex;
@@ -332,6 +338,9 @@ html body{
 }
 /* responsive for mobile */
 @media (min-width: 300px) and (max-width: 600px){
+    .card_moving_button{
+        display: none;
+    }
     .car_model_card{
         flex: 0 0 115%;
         width: 320px;
@@ -688,8 +697,15 @@ html body{
 }
 /* section 5 responsive here */
 @media (min-width: 300px) and (max-width: 600px){
+    .card2_scrolling_btn_section{
+        display: none;
+
+    }
     .section5{
         padding: 0px;
+    }
+    .card2_base{
+        overflow: scroll;
     }
   
     .card2{
