@@ -504,6 +504,10 @@ html body{
     .video_section{
         width: 100vw;
     }
+    .self_drive_section{
+        display: grid;
+        grid-template-rows: 1fr 0.5fr;
+    }
     .demo_drive_seciton{
         width: 100%;
     }
@@ -551,7 +555,7 @@ html body{
         grid-template-rows: 0.7fr 0.2fr 0.2fr;
         display: flex;
         flex-direction: column;
-        justify-content: left;
+        justify-content: flex-end;
         align-items: flex-end;
     }
     .discovery_btn_section{
@@ -689,7 +693,7 @@ html body{
     }
   
     .card2{
-        background-size: 130%;
+        background-size: 200%;
     }
     
     
@@ -778,8 +782,6 @@ html body{
     }
     .footer_btn{
         gap: 8px;
-        padding:4px;
     }
   
 }
-
