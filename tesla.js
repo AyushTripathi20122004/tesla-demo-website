@@ -108,3 +108,8 @@ function model_3() {
   window.location.href = "tesla_model3.html";
   console.log("model3 button was clicked");
 }
+// Model Y car specifications
+function model_Y() {
+  window.location.href = "tesla_modelY.html";
+  console.log("modelY button was clicked");
+}
