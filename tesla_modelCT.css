@@ -1,0 +1,697 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Bruno Ace", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+html body{
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+}
+@media (min-width: 300px) and (max-width: 600px) {
+    html body{
+        height:None;
+       margin: 0;
+       overflow: visible;
+    } 
+}
+
+
+.navbar{
+    /* border: 1px solid black; */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 56px;
+    background-color: white;
+    position: sticky;
+    top: 0px;
+   
+}
+.logo{
+    display: flex;
+    padding-left: 30px;
+    align-items: center;
+}
+.logo svg{
+    width:124px;
+    height: 24px;
+}
+
+.menu_section{
+    display: flex;
+    padding-right: 20px;
+    justify-content: right;
+    align-items: center;
+}
+.menu_section button{
+    display: flex;
+    gap: 4px;
+    align-items: center;
+    font-size: 16px;
+    padding: 6px 18px;
+    border: none;
+    color: #171a20;
+    font-weight: light;
+    background-color: #fff;
+}
+.menu_section button:hover{
+    background-color: rgb(236, 235, 235);
+}
+
+/* section Container-base start here */
+.Container-base{
+    width: 100%;
+    max-width: 100%;
+    height: 88.2vh;
+    max-height: 100%;
+    padding: 16px;
+    /* border: 1px solid black; */
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    overflow: hidden;
+}
+@media (min-width: 300px) and (max-width: 600px) {
+    .Container-base{
+        display:grid;
+        grid-template-columns:None;
+        grid-template-rows: 2fr 1fr;
+        overflow: visible;
+    } 
+}
+
+
+/* image section */
+.Car_design_img_section{
+    /* border: 1px solid black; */
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+
+.img1{
+    background-image:url('https://digitalassets.tesla.com/co1n/image/upload/f_auto,q_auto/prod/static_assets/CYBERTRUCK/CT-Configurator-Hero-All-Wheel-Drive-20inch-Core-Desktop.jpg?&') ;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 140%;
+
+}
+.card_base{
+    height: auto;
+    width: 100%;
+    max-width: 100%;
+    max-height: 100%;
+    padding: 32px;
+}
+@media (min-width: 300px) and (max-width: 600px) {
+    .card_base{
+        padding:0px;
+    } 
+    .Car_design_img_section{
+        height: 40vh;
+    }
+
+}
+.card{
+    height: 100vh;
+    width: auto;
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 90%;
+    transition: background-image 1s ease-in;
+}
+@media (min-width: 300px) and (max-width: 600px) {
+    .card{
+       height:40vh;
+       position: sticky;
+       top:0px;
+    } 
+}
+.arrow{
+    height: auto;
+    width: auto;
+    padding: 6px 8px;
+    background-color: transparent;
+    border: none;
+    color: gray;
+    backdrop-filter: blur(10px);
+    
+    
+}
+.arrow i{
+    color: #0b0c0f;
+}
+
+/* car details section */
+.car_d_section{
+    width: 100%;
+    padding: 4px;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 2fr 0.8fr;
+    overflow: hidden;
+}
+@media (min-width: 300px) and (max-width: 600px) {
+    .car_d_section{
+       display: grid;
+       grid-template-rows: 2fr 0.2fr;
+    } 
+}
+
+.Car_details_section{
+    height:calc(100vh-0px);
+    overflow-y:auto;
+    /* border: 1px solid black; */
+    padding: 0px;
+    display: grid;
+    grid-auto-flow: row;
+    gap:0px;
+    width: auto;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+.Car_details_section ::-webkit-scrollbar{
+    display: none;
+}
+.heading{
+    display: grid;
+    grid-auto-flow: row;
+    gap: 10px;
+}
+
+.details_link a{
+    color: #393c41 ;
+    font-weight: 500;
+}
+
+.car_details{
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+    
+}
+.car_details p{
+    font-size: 12px;
+}
+.car_details h2{
+    display: grid;
+    grid-auto-flow: column;
+    align-items: flex-end;
+
+}
+
+/* price section start here */
+.price_section{
+    height: auto;
+
+    width: auto;
+    max-width: 100%;
+    max-height: 100%;
+    display: grid;
+    grid-auto-flow: row;
+}
+.menu_section2{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.menu_section2 button{
+     display: flex;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    padding: 0px 18px;
+    border: none;
+    color: #171a20;
+    font-weight: light;
+    
+    background-color: #fff;
+}
+.menu_section2 button:hover{
+     background-color: rgb(236, 235, 235);
+     border-bottom: 1px solid black;
+
+}
+/* price amount start here */
+.price_amount{
+    display: grid;
+    grid-auto-flow: row;
+    gap: 5px;
+    padding: 4px;
+
+}
+.price_amount li{
+    height: 60px;
+    border-radius: 4px;
+    /* border: 1px solid #7a7c80; */
+}
+.list_price_amount{
+    padding: 0px 8px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-between;
+}
+
+.price_amount li:hover{
+    border: 1px solid black;
+     background-color: rgb(240, 239, 239) !important;
+}
+.price_amount li:hover h4{
+    color: black !important;
+    font-family: 500;
+    
+}
+/* -----view_feature section here ----*/
+.view_feature{
+    margin-top: 20px;
+    display: grid;
+    grid-auto-flow: row;
+    gap: 10px;
+    align-items: center;
+    padding: 0px 4px;
+}
+.view_feature .btn1{
+    height: 60px;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 8px;
+    color: #171a20;
+    border: none;
+    border-radius: 4px;
+
+}
+.view_feature .btn2{
+    width: 50%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    border: none;
+    border-radius: 4px;
+    padding: 0px 8px;
+    color: #171a20;
+}
+
+.modification{
+    margin-top: 50px;
+    display:grid;
+    grid-auto-flow: row;
+    padding: 0px 8px;
+    gap: 80px;
+    
+
+}
+.car_color_base{
+    /* border: 1px solid black; */
+    display: grid;
+    grid-auto-flow: row;
+    gap: 10px;
+}
+.car_color{
+    /* border: 1px solid black; */
+}
+.color_btn{
+    /* border: 1px solid black; */
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items:  center;
+}
+.color_btn button{
+    height: 50px;
+    /* border: 1px solid black; */
+    width: 50px;
+    border-radius: 50%;
+}
+.color_btn .btn1{
+    background-image: url("https://digitalassets.tesla.com/co1n/image/upload/c_scale,w_40,f_auto,q_auto/prod/static_assets/MODEL3_/UI/Paint_StealthGrey.png?&");
+    background-position: center center;
+    background-size: 90%;
+    background-repeat: no-repeat;
+    border: none;
+}
+.color_btn .btn2{
+    background-image: url("https://digitalassets.tesla.com/co1n/image/upload/…to/prod/static_assets/MODEL3/UI/Paint_White.png?&");
+    background-position: center center;
+    background-size: 90%;
+    background-repeat: no-repeat;
+    border: none;
+}
+.color_btn .btn3{
+    background-image: url("https://digitalassets.tesla.com/co1n/image/upload/c_scale,w_40,f_auto,q_auto/prod/static_assets/MODELY_/DiamondBlack.png?&");
+    background-position: center center;
+    background-size: 90%;
+    background-repeat: no-repeat;
+    border: none;
+}
+.color_btn button:hover{
+    border: 1px solid black;
+}
+
+/* tyre modification section */
+.car_tyres_base{
+    display: grid;
+    grid-auto-flow: row;
+    gap: 10px;
+}
+.car_tyres{
+    /* border: 1px solid black; */
+
+}
+.tyre_btn{
+    /* border: 1px solid black; */
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items:  center;
+}
+.tyre_btn button{
+    height: 50px;
+    /* border: 1px solid black; */
+    width: 50px;
+    border-radius: 50%;
+}
+.tyre_btn .btn1{
+    background-image: url("https://digitalassets.tesla.com/co1n/image/upload/c_scale,w_40,f_auto,q_auto/prod/static_assets/MODEL3_/Prismata-Wheels.png?&");
+    background-position: center center;
+    background-size: 90%;
+    background-repeat: no-repeat;
+    border: none;
+}
+.tyre_btn .btn2{
+    background-image: url("https://digitalassets.tesla.com/co1n/image/upload/c_scale,w_40,f_auto,q_auto/prod/static_assets/MODEL3_/UI/Wheel-Swatch_19-in.png?&");
+    background-position: center center;
+    background-size: 90%;
+    background-repeat: no-repeat;
+    border: none;
+}
+.tyre_btn button:hover{
+    border: 1px solid black;
+}
+
+
+/* intrior design start here */
+.interior_color_base{
+    display: grid;
+    grid-auto-flow: row;
+    gap: 10px;
+}
+.interior_color{
+    /* border: 1px solid black; */
+
+}
+.interior_btn{
+    /* border: 1px solid black; */
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items:  center;
+}
+.interior_btn button{
+    height: 50px;
+    /* border: 1px solid black; */
+    width: 50px;
+    border-radius: 50%;
+}
+.interior_btn .btn1{
+    background-image: url("https://digitalassets.tesla.com/co1n/image/upload/c_scale,w_40,f_auto,q_auto/prod/static_assets/MODEL3/UI/Interior_Black.png?&");
+    background-position: center;
+    background-size: 90%;
+    background-repeat: no-repeat;
+    border: none;
+}
+.interior_btn button:hover{
+    border: 1px solid black;
+}
+
+/* safty information start here */
+.safty_section_base{
+    margin-top: 50px;
+    padding: 0px 40px;
+    display: grid;
+    gap: 10px;
+    grid-auto-flow: row;
+    justify-content: center;
+    align-items: center;
+}
+.safty_intructions{
+    width:fit-content;
+    border: 1px solid #9fa1a5;
+    border-radius: 8px;
+    display:grid;
+    grid-auto-flow: row;
+    justify-content: space-around;
+    gap: 30px;
+    padding: 20px 40px 20px 20px;
+
+
+}
+.inst{
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: space-between;
+    gap:20px;
+    align-items: center;
+    padding-right: 30px;
+}
+.inst_info{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.inst_info h4{
+    font-size: 15px;
+}
+.inst_info p{
+    font-size: 14px !important;
+    font-weight: 400;
+   
+}
+.learn_btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.learn_btn button{
+    height: 40px;
+    font-size: 14px;
+    border: none;
+    font-size: 14px;
+    color: #171a20;
+    padding: 0px 55px;
+    transition: background-color 0.2s ease-out;
+    
+}
+.learn_btn button:hover{
+    background-color: #e0e1e2;
+}
+/* ------warrenty seciton------  */
+.warrenty_section_base{
+    padding: 4px;
+    margin-top: 60px;
+}
+.warrenty_section{
+    padding: 10px;
+    display: grid;
+    border: 1px solid #9fa1a5;
+    border-radius: 8px;
+    grid-auto-flow: row;
+
+    gap: 10px;
+
+}
+.warrenty_section_base h1{
+    display: flex;
+    justify-content: center;
+    height: 60px;
+    font-weight: 400;
+}
+.w_container{
+    display: grid;
+    grid-auto-flow: column;
+    /* border: 1px solid black; */
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.w_info{
+    display:grid;
+    grid-auto-flow: row;
+    gap:10px;
+    /* border: 1px solid black; */
+    padding: 8px;
+
+}
+.w_info h4{
+    font-size: 15px;
+    color: #393c41;
+}
+.w_info p{
+    font-size: 14px;
+    color: #393c41;
+    font-weight: 400;
+}
+.w_learn_link{
+    padding: 8px;
+    margin-top: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:#0b0c0f;
+    font-weight: 400;
+    
+}
+/* payment container start here */
+.container_payment {
+    height: auto;
+    width: 100%;
+    /* border: 1px solid black; */
+    /* padding: 8px; */
+    margin-top: 50px;
+    display: flex;
+    gap:20px;
+    flex-direction: column;
+    /* justify-content: center;
+    align-items: center; */
+
+}
+/* zipcode section start here*/
+.zipCode{
+    display: grid;
+    grid-auto-flow: row;
+    /* border: 1px solid black; */
+    gap:5px;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+.zipCode h1{
+    font-size: 28px;
+    font-weight: 600;
+    height:32px;
+}
+.input input{
+    padding:8px;
+    border:none; 
+    width:100%;
+    background-color: rgb(238, 235, 235);
+    text-align: center;
+}
+.input{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.zipCode input::placeholder{
+    font-weight:400 ;
+}
+.zipCode p{
+    font-size: 14px;
+    display: flex;
+    gap:10px;
+    justify-content: center;
+    align-items: center;
+    font-weight: 400;
+
+
+}
+.zipCode p svg{
+    height:14px;
+    width:14x;
+    margin-left:4px;
+}
+
+/* ---------est_payment_container-------- */
+.est_payment_container{
+    /* border:1px solid black; */
+    padding:2px;
+    display:grid;
+    grid-auto-flow: row;
+    gap:30px;
+}
+.est_payment{
+    display: grid;
+    grid-auto-flow: row;
+    gap:6px;
+}
+
+.est_payment_price{
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+}
+.est_payment_price h1{
+    font-size: 20px;
+    font-weight: 500;
+    height:30px;
+}
+.est_payment p{
+    font-size:14px;
+    color:#393c41;
+    font-weight: 400;
+}
+.est_payment a{
+    font-size:14px;
+    color:#393c41;
+    font-weight: 400;
+}
+/* est_payment_container button */
+.est_payment_container button{
+    height:40px;
+    border:2px solid black;
+    color:#0b0c0f;
+    padding:2px 0px;
+    font-size:14px;
+    font-weight:600;
+    border-radius:8px;
+    transition:background-color 2s ease;
+}
+.est_payment_container button:hover{
+    background-color: #0b0c0f;
+    color: #fff;
+    
+}
+
+
+/* ------ footer details----- */
+.car_details_footer{
+    height:80px;
+    background-color: #fff;
+    padding: 8px;
+    width:100%;
+    /* border: 1px solid black; */
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+
+}
+.car_details_footer button{
+    height: 40px;
+    background-color: #3e6ae1 ;
+    color: #ffffff;
+    border: none;
+    transition: background-color 0.3s ease;
+    border-radius: 8px;
+}
+.car_details_footer button:hover{
+    background-color: #2b499d;
+
+}
+.price{
+    height: 40px;
+}
