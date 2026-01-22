@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>model 3</title>
+     <link rel="stylesheet" href="tesla_modelCT.css">
+     <!-- font cdn -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bruno+Ace&family=Bruno+Ace+SC&display=swap" rel="stylesheet">
+     <!-- font awsome cdn -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- google icons -->
+     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=pause" />
+</head>
+<body>
+    <!-- nav bar -->
+        <div class="navbar">
+            <div class="logo"><svg class="tds-icon tds-icon-logo-wordmark tds-site-logo-icon" viewBox="0 0 342 35" xmlns="http://www.w3.org/2000/svg"><path fill="currentColor" d="M0 .1a9.7 9.7 0 0 0 7 7h11l.5.1v27.6h6.8V7.3L26 7h11a9.8 9.8 0 0 0 7-7H0zm238.6 0h-6.8v34.8H263a9.7 9.7 0 0 0 6-6.8h-30.3V0zm-52.3 6.8c3.6-1 6.6-3.8 7.4-6.9l-38.1.1v20.6h31.1v7.2h-24.4a13.6 13.6 0 0 0-8.7 7h39.9v-21h-31.2v-7zm116.2 28h6.7v-14h24.6v14h6.7v-21h-38zM85.3 7h26a9.6 9.6 0 0 0 7.1-7H78.3a9.6 9.6 0 0 0 7 7m0 13.8h26a9.6 9.6 0 0 0 7.1-7H78.3a9.6 9.6 0 0 0 7 7m0 14.1h26a9.6 9.6 0 0 0 7.1-7H78.3a9.6 9.6 0 0 0 7 7M308.5 7h26a9.6 9.6 0 0 0 7-7h-40a9.6 9.6 0 0 0 7 7"></path></svg></div>
+            <div class="menu_section"><button><i class="fa-solid fa-globe fa-xl"></i>Us</button></div>
+        </div>
+    <section class="Container-base">
+
+        <!-- image of the car section-->
+        <div class="Car_design_img_section">
+            <div class="card_base">
+                <div class="card img1">
+                    <button class=" arrow arrow_button_left" onclick="left_btn()"> <i class="fa-solid fa-less-than"></i>
+                    </button>
+                    <button class=" arrow arrow_button_right" onclick="right_btn()" ><i class="fa-solid fa-greater-than"></i>
+                    </button>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- car detail section start here -->
+        <div class="car_d_section">
+            <div class="Car_details_section" >
+            <div class="heading ">
+                <h1 style="text-align: center; font-size: 53px; font-weight: 500;">
+                    <img src="https://digitalassets.tesla.com/co1n/image/upload/f_auto,q_auto/prod/static_assets/CYBERTRUCK/ct_graffiti_logo_dk.png?&"style="height:10vh; width: 20vw;" alt="" srcset="">
+                </h1>
+                <span class="details_link" style="text-align: center; font-size: 14px; color:#393c41; font-weight: 500;">
+                <a href=""></a>
+                </span>
+                <span class="car_details">
+                    <div>
+                        <h2 style="color:#393c41; width: 60px;">325<p class="font-size:12px;"> mi</p></h2> 
+                        <p style="color:#393c41; width: 100px;">Range (EPA est.)</p>
+                    </div>
+                        <div>
+                        <h2 style="color:#393c41">11,000 <p class="font-size:12px;">lbs</p></h2>
+                        <p style="color:#393c41;">Towing capacity</p>
+                    </div>
+                        <div>
+                        <h2 style="color:#393c41">4.1 <p class="font-size:12px;">sec</p></h2>
+                        <p style="color:#393c41; width: 60px;">0-60 mph</p>
+                    </div>
+                </span>
+
+            </div>
+            <!-- price section start here -->
+            <div class="price_section">
+                <div class="menu_section2">
+                    <button class="price">
+                            Cash
+                    </button>
+                    <button class="lease">
+                            Lease
+                    </button>
+                    <button class="finance">
+                            Finance
+                    </button>
+                </div>
+                <div class="price_information"></div>
+                <div class="extra_info"></div>
+            </div>
+            <!-- price amount list -->
+            <ol class="price_amount">
+                <li class="list_price_amount">
+                   <div>
+                    <h4 style="font-size: 16px; font-weight: 400; color:#393c41">All-Wheel-Drive</h4>
+                    <!-- <p style="font-size: 12px; color:#393c41;font-weight: 200; word-spacing: 2px;">Rear-Wheel Drive</p> -->
+                   </div>
+                   <h4 style="font-weight: 400;color:#393c41">$79,990</h4>
+                </li>
+
+                <li class="list_price_amount">
+                    <div>
+                    <h4 style="font-size: 16px; font-weight: 400; color:#393c41">Cyberbeast</h4>
+                    <!-- <p style="font-size: 12px; color:#393c41;font-weight: 200; word-spacing: 2px;">Rear-Wheel Drive</p> -->
+                   </div>
+                   <h4 style="font-weight: 400; color:#393c41">$114,990</h4>
+                </li>
+
+                <!-- <li class="list_price_amount">
+                    <div>
+                    <h4 style="font-size: 16px; font-weight: 400; color:#393c41">Premium</h4>
+                    <p style="font-size: 12px; color:#393c41;font-weight: 200; word-spacing: 2px;">All-Wheel Drive</p>
+                   </div>
+                   <h4 style="font-weight: 400; color:#393c41">$48,990</h4>
+                </li> -->
+
+                <!-- <li class="list_price_amount">
+                    <div>
+                    <h4 style="font-size: 16px; font-weight: 400; color:#393c41">Performance</h4>
+                    <p style="font-size: 12px; color:#393c41;font-weight: 200; word-spacing: 2px;">All-Wheel Drive</p>
+                   </div>
+                   <h4 style="font-weight: 400; color:#393c41">$79,990</h4>
+                </li> -->
+            </ol>
+            <div class="view_feature">
+                <button class="btn1">View & Compare Features<i class="fa-solid fa-greater-than" style="color: #393c41;"></i></button>
+                <button class="btn2">Get Trade-in Value</button>
+                <p style="font-size: 12px; font-weight: 400; padding: 0px 8px; word-spacing: 2px;">
+                    Upto <a href="" style="color: black;font-size: 12px; font-weight: 400;">$5,000 potential Saving </a>after delivery available
+                </p>
+            </div>
+
+            <!-- modification section start here -->
+            <div class="modification">
+
+                <!-- car color modification start here -->
+                <div class="car_color_base">
+                    <div class="car_color">
+                    <p style="font-size: 14px; color:#393c41; text-align: center;">Included</p>
+                    <h1 style="font-size: 25px; text-align: center; font-weight: 400;">
+                        Stealth Grey
+                    </h1>
+                    </div>
+                    <div class="color_btn">
+                        <button class="btn1"></button>
+                        <button class="btn2"></button>
+                        <button class="btn3"></button>
+                    </div>
+                    
+                </div>
+
+                <!-- tyre modification start here -->
+                <div class="car_tyres_base">
+                    <div class="car_tyres">
+                    <p style="font-size: 14px; color:#393c41; text-align: center;">Included</p>
+                    <h1 style="font-size: 25px; text-align: center; font-weight: 400;">
+                        18’’ Prismata Wheels
+                    </h1>
+                    </div>
+                    <div class="tyre_btn">
+                        <button class="btn1"></button>
+                        <button class="btn2"></button>
+                    </div>
+                    <p style="font-size: 14px; text-align: center; font-weight: 400;">All-Season Tires <br>
+                    Range (EPA est.) : 321mi</p>
+                </div>
+
+                <!-- car interior start here -->
+                <div class="interior_color_base">
+                    <div class="interior_color">
+                    <p style="font-size: 14px; color:#393c41; text-align: center;">Included</p>
+                    <h1 style="font-size: 25px; text-align: center; font-weight: 400;">
+                        All Black Interior
+                    </h1>
+                    </div>
+                    <div class="interior_btn">
+                        <button class="btn1"></button>
+                    </div>
+                    <p style="font-size: 14px; text-align: center; font-weight: 400;">Textile decor</p>
+                </div>
+            </div>
+            <!-- safty information start here -->
+            <div class="safty_section_base">
+                <h1 style="font-size: 25px; text-align: center; font-weight: 400;">
+                    Safety
+                </h1>
+                <p style="font-size: 14px; color:#393c41; text-align: center; font-weight: 400;">Engineered to be the safest in the world</p>
+
+                <div class="safty_intructions">
+
+                    <!-- -------inst1------- -->
+                    <div class="inst">
+                        <svg style="height:40px; width: 40px;color:#393c41"   class="tds-icon tds-icon-camera-lens coin-asset-with-description tds-text--contrast-medium tds-o-margin-top" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" classNames="coin-asset-with-description tds-text--contrast-medium tds-o-margin-top"><path fill="currentColor" d="M18 12a6 6 0 1 1-12 0 6 6 0 0 1 12 0m-8 0a2 2 0 1 0 0-4 2 2 0 0 0 0 4m4 4a1 1 0 1 0 0-2 1 1 0 0 0 0 2"></path><path fill="currentColor" d="M22 12c0 5.523-4.477 10-10 10S2 17.523 2 12 6.477 2 12 2s10 4.477 10 10m-2 0a8 8 0 1 0-16 0 8 8 0 0 0 16 0"></path></svg>
+                     <div class="inst_info">
+                
+                        <h4 style="color: #393c41;">
+                            360-Degree Visibility
+                        </h4>
+                        <p style="color:#393c41; font-size: 14px;">
+                            Onboard cameras detect nearby objects, pedestrians and vehicles
+                        </p>
+                     </div>
+                        
+                    </div>
+
+                     <!-- -------inst2------- -->
+
+                    <div class="inst">
+                        <svg style="height:60px; width:60px; color:#393c41" class="tds-icon tds-icon-security-filled coin-asset-with-description tds-text--contrast-medium tds-o-margin-top" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" classNames="coin-asset-with-description tds-text--contrast-medium tds-o-margin-top"><path fill="currentColor" d="M12 2.025c-1 0-9 3.95-9 4.95 0 10 7.765 15 9 15s9-5 9-15c0-1-8-4.95-9-4.95m4 8.083-4.327 4.343a.75.75 0 0 1-1.062 0L8.437 12.27A.75.75 0 1 1 9.5 11.21l1.642 1.65 3.796-3.81A.75.75 0 1 1 16 10.107Z"></path></svg>
+                     <div class="inst_info">
+                
+                        <h4 style="color: #393c41;">
+                            Active Safety
+                        </h4>
+                        <p style="color:#393c41; font-size: 14px;">
+                            Automatic Emergency Braking, Lane Assist, Forward and Blind-Spot Collision Warning
+
+                        </p>
+                     </div>
+                        
+                    </div>
+
+                     <!-- -------inst3------- -->
+
+                    <div class="inst">
+                        <svg  style="height:70px; width:70px; color:#393c41;" class="tds-icon tds-icon-shield-filled coin-asset-with-description tds-text--contrast-medium tds-o-margin-top" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" classNames="coin-asset-with-description tds-text--contrast-medium tds-o-margin-top"><path fill="currentColor" d="M6.555 8.415q-.086.057-.159.108a12.5 12.5 0 0 0 2.93 7.445 11.4 11.4 0 0 0 2.178 2.016 7 7 0 0 0 .496.313 7 7 0 0 0 .496-.313c.621-.43 1.408-1.1 2.178-2.017a12.5 12.5 0 0 0 2.93-7.444l-.159-.108c-.565-.376-1.37-.835-2.24-1.29a39 39 0 0 0-2.449-1.175A15 15 0 0 0 12 5.645c-.195.07-.45.173-.756.305-.703.304-1.585.725-2.449 1.176-.87.454-1.675.913-2.24 1.289"></path><path fill="currentColor" d="M4.507 7.455c.118 4.345 1.834 7.605 3.68 9.807.96 1.145 1.946 1.992 2.74 2.543a7 7 0 0 0 .973.58l.1.045.1-.045a7 7 0 0 0 .973-.58c.794-.55 1.78-1.398 2.74-2.543 1.846-2.202 3.562-5.462 3.68-9.807a8 8 0 0 0-.591-.427c-.703-.47-1.682-1.03-2.723-1.574a47 47 0 0 0-2.947-1.42 16 16 0 0 0-1.053-.421L12 3.553l-.179.06c-.267.093-.625.236-1.053.421a47 47 0 0 0-2.947 1.42c-1.04.545-2.02 1.104-2.723 1.574q-.38.255-.591.427M3 6.975c0-1 8-4.95 9-4.95s9 3.95 9 4.95c0 10-7.765 15-9 15s-9-5-9-15"></path></svg>
+                     <div class="inst_info">
+                        <h4 style="color: #393c41;">
+                            Passive Safety
+                        </h4>
+                        <p style="color:#393c41; font-size: 14px;">
+                      A rigid body, fortified battery pack and large crumple zones for greater impact protection
+                        </p>
+                     </div>
+                        
+                    </div>
+                </div>
+                <div class="learn_btn">
+                    <button>Learn</button>
+                </div>
+                <!-- ------warrenty section--- -->
+                 <div class="warrenty_section_base">
+                    <h1>Warrenties</h1>
+                    <div class="warrenty_section">
+                    <div class="w_container">
+                            <svg  style="height: 25px; width:25px;" class="tds-icon tds-icon-bookmark-filled coin-asset-with-description tds-text--contrast-medium tds-o-margin-top" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" classNames="coin-asset-with-description tds-text--contrast-medium tds-o-margin-top"><path fill="currentColor" d="M7.5 2A2.5 2.5 0 0 0 5 4.5v16.557a1 1 0 0 0 1.581.814L12 18l5.419 3.87A1 1 0 0 0 19 21.058V4.5A2.5 2.5 0 0 0 16.5 2zm4.73 4.555L13 8.403a.25.25 0 0 0 .21.153l1.995.16a.25.25 0 0 1 .143.439l-1.52 1.302a.25.25 0 0 0-.08.248l.464 1.946a.25.25 0 0 1-.374.272L12.13 11.88a.25.25 0 0 0-.26 0l-1.708 1.043a.25.25 0 0 1-.374-.272l.465-1.946a.25.25 0 0 0-.08-.248l-1.52-1.302a.25.25 0 0 1 .142-.44l1.995-.159a.25.25 0 0 0 .21-.153l.77-1.848a.25.25 0 0 1 .46 0"></path></svg>
+                            <div class="w_info">
+                            <h4>Limited Warranty</h4>
+                            <p>Repairs and replacements covered for 4 years or 50,000 miles, whichever comes first.</p>
+                            </div>
+                    </div>
+                    <div class="w_container">
+                        <svg style="height: 25px; width:25px;" class="tds-icon tds-icon-battery-filled coin-asset-with-description tds-text--contrast-medium tds-o-margin-top" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" classNames="coin-asset-with-description tds-text--contrast-medium tds-o-margin-top"><path fill="currentColor" d="M5.25 10a.25.25 0 0 0-.25.25v3.5c0 .138.112.25.25.25h12a.25.25 0 0 0 .25-.25v-3.5a.25.25 0 0 0-.25-.25z"></path><path fill="currentColor" d="M4.5 7A2.5 2.5 0 0 0 2 9.5v5A2.5 2.5 0 0 0 4.5 17H18a2.5 2.5 0 0 0 2.5-2.5V14h.5a1 1 0 0 0 1-1v-2a1 1 0 0 0-1-1h-.5v-.5A2.5 2.5 0 0 0 18 7zM18 9a.5.5 0 0 1 .5.5v5a.5.5 0 0 1-.5.5H4.5a.5.5 0 0 1-.5-.5v-5a.5.5 0 0 1 .5-.5z"></path></svg>
+                        <div class="w_info">
+                        <h4>Battery and Drive Unit Limited Warranty</h4>
+                        <p>Covered for 8 years or 100,000 miles, whichever comes first.</p>
+                        </div>
+                        </div>
+                    </div>
+                    <a href="#"  class="w_learn_link">Learn</a>
+                    <div class="container_payment">
+                        <div class="zipCode">
+                            <h1>Enter Delivery ZIP</h1>
+                            <div class="input"><input type="text" placeholder="Enter Delivery ZIP"></div>
+                        <p style="text-align: center;">
+                            show pricing deails <svg class="tds-icon tds-icon-chevron-small-180 tds-icon--small" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path fill="currentColor" d="M13.25 4.975a.748.748 0 0 1 .53 1.281l-5.264 5.25a.75.75 0 0 1-1.06 0L2.22 6.283a.75.75 0 1 1 1.06-1.062l4.706 4.695 4.734-4.722a.75.75 0 0 1 .53-.219"></path></svg>
+                            </p>
+                        </div>
+                        <div class="est_payment_container">
+                            <div class="est_payment">
+                                <div class="est_payment_price">
+                                    <h1>Est. Payment</h1>
+                                    <h1>$617 /mo</h1>
+                                </div>
+                                <p>2.99% APR, $3,300 down, 72 mo</p>
+                                <a href="#">Edit Finencing</a>
+                            </div>
+                            <div class="est_payment">
+                                <div class="est_payment_price">
+                                    <h1>Due Today</h1>
+                                    <h1>$250</h1>
+                                </div>
+                                <p>Non-refundable Order Fee</p>
+                            </div>
+                            <button>
+                                Order with Card
+                            </button>
+                        </div>
+
+                    </div>
+                    <!-- container_payment end here -->
+                     
+                    
+                    </div>
+                    </div>
+                 </div>
+            
+        
+        <!-- footer order now start here -->
+           <footer class="car_details_footer">
+                <div class="price">
+                    <h1 style="font-size: 24px; font-weight: 400;">$79,990</h1>
+                    <p style="font-size: 12px;color:#393c41">Vehical Price</p>
+                </div>
+                <button class="order_now">
+                    Order Now
+                </button>
+        </footer>
+            </div>
+        </div>
+    </section>
+    <script src="tesla_modelCT.js"></script>
+</body>
+</html>
