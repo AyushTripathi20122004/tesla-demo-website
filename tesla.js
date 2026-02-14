@@ -118,3 +118,9 @@ function model_CT() {
   window.location.href = "tesla_modelCT.html";
   console.log("modelCT button was clicked");
 }
+
+// Model S car specifications
+function model_S() {
+  window.location.href = "tesla_modelS.html";
+  console.log("modelS button was clicked");
+}
