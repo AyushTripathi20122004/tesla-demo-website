@@ -1,0 +1,218 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+html body{
+    overflow-x: hidden;
+    width: 100%;
+}
+
+
+.navbar{
+    /* border: 1px solid black; */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 56px;
+    background-color: white;
+    top: 0px;
+    width: 100%;
+   
+}
+.logo{
+    display: flex;
+    padding-left: 30px;
+    align-items: center;
+}
+.logo svg{
+    width:124px;
+    height: 24px;
+}
+
+.menu_section{
+    display: flex;
+    padding-right: 20px;
+    justify-content: right;
+    align-items: center;
+}
+.menu_section button{
+    padding: 6px 18px;
+    border: none;
+    color: #171a20;
+    font-weight: light;
+}
+.menu_section button:hover{
+    background-color: rgb(236, 235, 235);
+}
+
+/* resposnsive for mobile */
+@media (min-width: 300px) and (max-width: 600px) {
+    .navbar {
+        background-color: transparent;
+        position: absolute;
+    }
+    .logo svg{
+        width:80px;
+        height:14px ;
+        color: white;
+    }
+    .menu_section button{
+        background-color: transparent;
+        color: white;
+    }
+}
+
+
+/*---------------------------- main base container coding start here------------------------------- */
+
+.main_base_container{
+    display: grid;
+    grid-auto-flow: row;
+    row-gap: 105px;
+    /* border: 1px solid black; */
+}
+
+/* ------------------------schdule_drive_base------------------------ */
+.schdule_drive_base{
+    display:grid;
+    grid-auto-flow: row;
+    justify-content: center;
+}
+
+/* ----------------------------------schdule_drive_heading-------------------------- */
+.schdule_drive_heading{
+    font-size:40px;
+    padding :40px 40px 40px 10px ;
+    color: #171a20;
+}
+
+/* ------------------------s_d_card------------------------ */
+.s_d_card{
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid black; */
+    gap: 40px;
+    padding: 8px;
+}
+
+.card{
+    display: grid;
+    grid-template-columns: 0.2fr 2fr;
+    gap: 20px;
+}
+
+.icon1{
+    /* border: 1px solid black; */
+    object-fit: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:#393c41;
+}
+
+.card1-statement{
+    font-size: 14px;
+    font-weight: 400;
+    color:#393c41;
+}
+
+
+
+
+
+
+/* ----------------------------select_model_base-------------------------------- */
+
+.select_model_base{
+    padding: 0px 80px 0px 80px;
+    display: grid;
+    gap: 8px;
+    grid-auto-flow: row;
+}
+.select_model_heading{
+    color:#171a20;
+}
+
+.card_image_base{
+    display: grid;
+    grid-template-columns: 1.8fr 2fr;
+    gap: 18px;
+    /* border: 1px solid black; */
+}
+.card2{
+    /* border: 1px solid black; */
+    display: grid;
+    grid-auto-flow: row;
+    gap: 10px;
+}
+
+.card_section{
+    border: 1px solid black;
+    border-radius: 4px;
+    padding: 18px 12px;
+    display: grid;
+    gap: 10px;
+    grid-auto-flow: row;
+    /* filter: blur(1px); */
+}
+/* .card_section:hover{
+    filter: none;
+} */
+.card_section h4{
+    font-size: 17px;
+    color: #171a20;
+}
+.card_section p{
+    font-size: 12px;
+    color:#171a20;
+    font-weight: 400;
+}
+
+.car_images{
+    border: 1px solid black;
+    object-fit: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+
+/* -------section 6 styling  start here------------ */
+.section6{
+ 
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    /* border: 1px solid black; */
+}
+
+.links_base{
+    height: 30px;
+    width: 70%;
+    padding: 16px;
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.links{
+    font-size: 12px;
+    text-decoration: none;
+    color: #393c41;
+}
+/* section 6 responsive here */
+@media (min-width: 300px) and (max-width: 600px){
+    .section6{
+        width: 100vw;
+    }
+    .links_base{
+        display: grid;
+        text-align: center;
+    }
+}
