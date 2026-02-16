@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tesla demo drive portal</title>
+    <!-- font awsome cdn -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- google icons -->
+     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=pause" />
+    <!-- link css main file -->
+     <link rel="stylesheet" href="tesla_demodrive.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    
+    <!-- navbar -->
+    <div class="navbar">
+            <div class="logo"><svg class="tds-icon tds-icon-logo-wordmark tds-site-logo-icon" viewBox="0 0 342 35" xmlns="http://www.w3.org/2000/svg"><path fill="currentColor" d="M0 .1a9.7 9.7 0 0 0 7 7h11l.5.1v27.6h6.8V7.3L26 7h11a9.8 9.8 0 0 0 7-7H0zm238.6 0h-6.8v34.8H263a9.7 9.7 0 0 0 6-6.8h-30.3V0zm-52.3 6.8c3.6-1 6.6-3.8 7.4-6.9l-38.1.1v20.6h31.1v7.2h-24.4a13.6 13.6 0 0 0-8.7 7h39.9v-21h-31.2v-7zm116.2 28h6.7v-14h24.6v14h6.7v-21h-38zM85.3 7h26a9.6 9.6 0 0 0 7.1-7H78.3a9.6 9.6 0 0 0 7 7m0 13.8h26a9.6 9.6 0 0 0 7.1-7H78.3a9.6 9.6 0 0 0 7 7m0 14.1h26a9.6 9.6 0 0 0 7.1-7H78.3a9.6 9.6 0 0 0 7 7M308.5 7h26a9.6 9.6 0 0 0 7-7h-40a9.6 9.6 0 0 0 7 7"></path></svg></div>
+            <div class="menu_section"><button onclick="open_menu_section()">Menu</button>
+            </div>
+    </div>
+    <div class="main_base_container">
+
+        <div class="schdule_drive_base">
+            <h1 class="schdule_drive_heading">
+                Schedule a Drive
+            </h1>
+            <div class="s_d_card">
+                <div class="card">
+                    <div class="icon1">
+                        <svg class="tds-icon tds-icon-steering-wheel" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" style="height: 25px ; width: 25px;"><path fill="currentColor" fill-rule="evenodd" d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10M4.487 8.887c-.15.372.212.723.596.608a24.35 24.35 0 0 1 13.862 0c.385.115.748-.236.596-.608C18.328 5.903 15.415 3.8 12.014 3.8S5.701 5.903 4.487 8.887m-.479 4.618a.475.475 0 0 1 .478-.555h1.171a4.444 4.444 0 0 1 4.444 4.444v1.92c0 .324-.303.563-.61.463a8.18 8.18 0 0 1-5.483-6.272m15.507-.555c.3 0 .533.261.478.555a8.18 8.18 0 0 1-5.454 6.262c-.307.102-.612-.137-.612-.461v-1.912a4.444 4.444 0 0 1 4.445-4.444z" clip-rule="evenodd"></path></svg>
+                    </div>
+                    <div class="card1-statement">
+                        Experience Full Self-Driving (Supervised)1
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="icon1">
+                        <svg class="tds-icon tds-icon-smartphone" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" style="height: 25px; width:25px;"><path fill="currentColor" d="M15.5 2h-7A2.5 2.5 0 0 0 6 4.5v15A2.5 2.5 0 0 0 8.5 22h7a2.5 2.5 0 0 0 2.5-2.5v-15A2.5 2.5 0 0 0 15.5 2m1 17.5c0 .551-.449 1-1 1h-7c-.551 0-1-.449-1-1v-15c0-.551.449-1 1-1H10V4a.5.5 0 0 0 .5.5h3A.5.5 0 0 0 14 4v-.5h1.5c.551 0 1 .449 1 1z"></path></svg>
+                    </div>
+                    <div class="card1-statement">
+                        Ownership Experience in App
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="icon1">
+                        <svg class="tds-icon tds-icon-bolt" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" style="height: 25px; width:25px;"><path fill="currentColor" d="M18.566 9.5H13.75a.25.25 0 0 1-.25-.25V2.437A.433.433 0 0 0 13.06 2a.42.42 0 0 0-.357.194L5.018 13.723a.5.5 0 0 0 .416.777h4.816a.25.25 0 0 1 .25.25v6.813c0 .27.218.436.44.436.133 0 .267-.06.357-.194l7.685-11.528a.5.5 0 0 0-.416-.777M12 18.046V13.5a.5.5 0 0 0-.5-.5H7.303L12 5.954V10.5a.5.5 0 0 0 .5.5h4.197z"></path></svg>
+                    </div>
+                    <div class="card1-statement">
+                        Quick and Easy Check-in
+                    </div>
+                </div>
+
+            </div>
+
+
+
+        </div>
+
+
+        <!-- ------------------select the model section start here--------------- -->
+         <div class="select_model_base">
+            <h2 class="select_model_heading">
+                Select a Model
+            </h2>
+            <div class="card_image_base">
+                <div class="card2">
+                    <div class="card_section">
+                        <h4>
+                            Model Y
+                        </h4>
+                        <p>
+                            Midsize SUV for families ,road trips and extra cargo space
+                        </p>
+                    </div>
+                    <div class="card_section">
+                        <h4>
+                            Model 3
+                        </h4>
+                        <p>
+                            Sports sedan for families, commuting and road trips
+                        </p>
+                    </div>
+                    <div class="card_section">
+                        <h4>
+                            Cybertruck
+                        </h4>
+                        <p>
+                            More utility than a truck with more performance than a sports car
+                        </p>
+                    </div>
+                    <div class="card_section">
+                        <h4>
+                            Model S
+                        </h4>
+                        <p>
+                            Luxury sedan for range, quick acceleration and comfort
+                        </p>
+                    </div>
+                    <div class="card_section">
+                        <h4>
+                            Model X
+                        </h4>
+                        <p>
+                            Luxury SUV for comfort, storage and miximum tech
+                        </p>
+                    </div>
+                    <div class="card_section" style="display: flex; justify-content: space-between; flex-direction: row; border: none;">
+                        <h3>
+                            Help Me Choose
+                        </h3>
+                        <svg class="tds-icon tds-icon-info-small tds-icon--small" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" style="height: 15px; width: 15px;"><path fill="currentColor" d="M8 2a6 6 0 1 0 0 12A6 6 0 0 0 8 2m0 10.5c-2.481 0-4.5-2.019-4.5-4.5S5.519 3.5 8 3.5s4.5 2.019 4.5 4.5-2.019 4.5-4.5 4.5m.75-4v1.75a.75.75 0 0 1-1.5 0V8.5a.75.75 0 0 1 1.5 0M9 6a1 1 0 1 1-2 0 1 1 0 0 1 2 0"></path></svg>
+                    </div>
+
+                </div>
+                <div class="car_images">
+
+                </div>
+            </div>
+         </div>
+
+    
+    
+
+     <!-- -------section 6 start here links------ -->
+    <section class="section6">
+        <div class="links_base">
+            <a href="" class="links">Tesla © 2025</a>
+            <a href="" class="links">Privacy & Legal</a>
+            <a href="" class="links">Vehicle Recalls</a>
+            <a href="" class="links">Contact</a>
+            <a href="" class="links">News</a>
+            <a href="" class="links">Get Updates</a>
+            <a href="" class="links">Locations</a>
+            <a href="" class="links">Learn</a>
+        </div>
+    </section>
+
+    </div>
+    
+    </body>
+</html>
