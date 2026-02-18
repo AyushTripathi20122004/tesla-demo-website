@@ -51,8 +51,8 @@ html body{
 /* resposnsive for mobile */
 @media (min-width: 300px) and (max-width: 600px) {
     .navbar {
-        background-color: transparent;
-        position: absolute;
+        background-color: black;
+        position: relative;
     }
     .logo svg{
         width:80px;
@@ -140,6 +140,9 @@ html body{
     color:#171a20;
 }
 
+
+
+
 .card_image_base{
     display: grid;
     grid-template-columns: 1.8fr 2fr;
@@ -160,7 +163,7 @@ html body{
     display: grid;
     gap: 10px;
     grid-auto-flow: row;
-    /* filter: blur(1px); */
+
 }
 /* .card_section:hover{
     filter: none;
@@ -177,12 +180,40 @@ html body{
 
 .car_images{
     border-radius: 8px;
-    box-shadow: 0.5px 0px 20px rgb(31, 59, 31);
-    background-image: url("https://digitalassets.tesla.com/discovery-tesla-com/image/upload/f_auto,q_auto/Selector-Model-X-Desktop-1753921727.png");
+    
+    background-image: url("https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Homepage-Card-Model-Y-Standard-Desktop-Dynamic-Asset.jpg"); 
     /* border: 1px solid black; */
     object-fit: cover;
     background-size: cover;
+    background-position: center center;
     background-repeat: no-repeat;
+    transition:  ease-in s;
+}
+
+@media (min-width: 300px) and (max-width: 600px) {
+    .select_model_base{
+        padding: 0px;
+    }
+    .card_image_base{
+        display: grid;
+        grid-template-columns: none;
+        grid-template-rows: 2fr 1fr;
+    }
+    .card2 {
+        display: flex;
+        grid-row: 2;
+        padding: 0px 16px;
+        overflow: scroll;
+    }
+    .select_model_heading {
+    color: #171a20;
+    padding: 0px 16px;
+    }
+    .card_section{
+        flex: 0 0 40%;
+    }
+
+
 }
 
 /* -------------------location_selct section start here ------------------------ */
@@ -213,6 +244,16 @@ html body{
 
 }
 
+@media (min-width: 300px) and (max-width: 600px){
+    .location_selct_base{
+        padding: 16px;
+    }
+    .Input input{
+        width: 84vw;
+    }
+}
+
+
 
 /* ------------------------driver_details_base---------------------- */
 
@@ -225,6 +266,7 @@ html body{
 .driver_detail_card{
     display: grid;
     grid-template-columns: 0.8fr 1fr;
+    gap: 10px;   
     /* border: 1px solid black; */
 }
 
@@ -268,8 +310,6 @@ html body{
     gap: 20px;
     font-size: 18px;
 }
- 
-
 
 .submit_btn {
     display: flex;
@@ -285,15 +325,51 @@ html body{
     font-size: 14px;
 }
 
+
+@media (min-width: 300px) and (max-width: 600px) {
+    .form_car_image{
+        display: none;
+    }
+    .driver_details_base{
+        display:block;
+        padding: 16px;
+    }
+    .form_input{
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: none;
+    }
+    .driver_detail_card{
+        display: block;
+    }
+    .submit_btn{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .submit_btn button{
+        width: 40vw;
+
+    }
+
+
+}
+
 /* ----------------------------------para_base---------------------------------- */
 
 .para_base{
     padding: 0px 80px 0px 80px;
     font-size: 18px;
+    font-weight: 400;
     color:#393c41;
+    text-align: justify;
 }
 
-
+@media (min-width: 300px) and (max-width: 600px) {
+    .para_base{
+        padding: 16px;
+    }
+}
 
 
 
@@ -332,5 +408,6 @@ html body{
     .links_base{
         display: grid;
         text-align: center;
+        gap: 10px;
     }
 }
