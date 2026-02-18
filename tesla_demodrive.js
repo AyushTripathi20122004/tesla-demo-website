@@ -1,3 +1,8 @@
+// ----- menu button ------
+function open_menu_section() {
+  window.location.href = "tesla_menu.html";
+}
+
 // function for all cards here
 function modelY(){
     console.log("modelY btn was clicked");
