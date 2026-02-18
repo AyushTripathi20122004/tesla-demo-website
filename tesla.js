@@ -130,3 +130,9 @@ function model_X() {
   window.location.href = "tesla_modelX.html";
   console.log("modelS button was clicked");
 }
+
+// demodrive specifications
+function demo_drive() {
+  window.location.href = "tesla_demodrive.html";
+  console.log("demodrive button was clicked");
+}
