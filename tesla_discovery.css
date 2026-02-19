@@ -1,0 +1,206 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+html body{
+    overflow-x: hidden;
+    width: 100%;
+}
+
+
+.navbar{
+    /* border: 1px solid black; */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 56px;
+    background-color: #f4f4f4;
+    position: relative;
+    top: 0px;
+    width: 100%;
+   
+}
+.logo{
+    display: flex;
+    padding-left: 30px;
+    align-items: center;
+}
+.logo svg{
+    width:124px;
+    height: 24px;
+}
+
+.menu_section{
+    display: flex;
+    padding-right: 20px;
+    justify-content: right;
+    align-items: center;
+}
+.menu_section button{
+    padding: 6px 18px;
+    border: none;
+    color: #171a20;
+    font-weight: light;
+}
+.menu_section button:hover{
+    background-color: rgb(236, 235, 235);
+}
+
+/* resposnsive for mobile */
+@media (min-width: 300px) and (max-width: 600px) {
+    .navbar {
+        background-color: transparent;
+        position: absolute;
+    }
+    .logo svg{
+        width:80px;
+        height:14px ;
+        color: white;
+    }
+    .menu_section button{
+        background-color: transparent;
+        color: white;
+    }
+}
+
+
+/*------------------container_header-----------------*/
+.container_header{
+    display: grid;
+    gap: 10px;
+    margin-bottom: 50px;
+    background-color: #f4f4f4;
+    padding: 90px 300px 200px 160px;
+}
+.container_header h1{
+    font-size: 56px;
+    font-weight: 450;
+}
+
+.container_header p{
+    color: #5c5e62;
+    font-size: 20;
+}
+
+
+/* -----------main container start here-----------> */
+
+.container_main{
+    display: grid;
+    grid-auto-flow: row;
+    /* border: 1px solid  black; */
+    justify-items: center;
+}
+.card_container{
+    /* border: 1px solid black; */
+    object-fit: cover;
+    height: 100vh;
+    width: 100vw;
+    padding-left: 100px;
+
+}
+.card_base{
+    height: 100%;
+    display: flex;
+    /* border: 1px solid black; */
+    overflow-x: scroll;
+    gap: 30px;
+    object-fit: cover;
+
+}
+.card{
+    padding:0px;
+    position: relative;
+    /* border: 1px solid black; */
+    flex: 0 0 45%;
+    overflow: hidden;
+    border-radius: 8px;
+    display: flex;
+    align-items: flex-end;
+
+}
+.card video {
+    z-index: -1;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.card h1{
+    width: 32vw;
+    color: white;
+    /* border: 1px solid white; */
+    padding: 35px;
+
+}
+/* card sliding btn start here */
+.card_sliding_btn_base{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 200px;
+    gap: 5px;
+}
+.card_sliding_btn_base button{
+    border: none;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-color: #b4b4b4;
+}
+
+/* ---------footer styling start from here--------- */
+.footer{
+    height: 60px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid black; */
+    position:fixed;
+    bottom: 0px;
+    background-color: #fff;
+    box-shadow: -90px -0px 6px rgb(43, 43, 43);
+}
+.footer_btn_base{
+    height: 100%;
+    width: 50%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* border: 1px solid black; */
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 12px;
+    background-color: transparent;
+}
+.footer_btn{
+    color: #393c41;
+    font-weight:460;
+    background-color: #e9e7e7;
+    height: 40px;
+    border:1px solid #9e9e9e;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+}
+/* footerresponsive here */
+@media (min-width: 300px) and (max-width: 600px){
+    .footer{
+        width: 100vw;
+    }
+    .footer_btn_base{
+        width: auto;
+    }
+    .footer_btn{
+        gap: 8px;
+    }
+  
+}
