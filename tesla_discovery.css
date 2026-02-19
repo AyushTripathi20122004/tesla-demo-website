@@ -91,6 +91,7 @@ html body{
 .container_main{
     display: grid;
     grid-auto-flow: row;
+    gap: 300px;
     /* border: 1px solid  black; */
     justify-items: center;
 }
@@ -106,9 +107,13 @@ html body{
     height: 100%;
     display: flex;
     /* border: 1px solid black; */
-    overflow-x: scroll;
+    overflow-x: visible;
+    scroll-behavior: smooth;
     gap: 30px;
     object-fit: cover;
+    transition: 0.4s ease-in;
+    position: relative;
+
 
 }
 .card{
@@ -120,6 +125,7 @@ html body{
     border-radius: 8px;
     display: flex;
     align-items: flex-end;
+    z-index: -1;
 
 }
 .card video {
@@ -140,19 +146,145 @@ html body{
 /* card sliding btn start here */
 .card_sliding_btn_base{
     display: flex;
+    margin-top: 20px;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    margin-bottom: 200px;
+    /* margin-bottom: 200px;/ */
     gap: 5px;
 }
-.card_sliding_btn_base button{
+.card_sliding_btn{
     border: none;
     height: 15px;
     width: 15px;
     border-radius: 50%;
     background-color: #b4b4b4;
 }
+
+.right_left_btn{
+    position: relative;
+    z-index: 2;
+    top: 50%;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 16px;
+}
+.left_btn{
+    padding: 16px 22px;
+    background-color: white;
+    border: none;
+    color: black;
+    font-size: 18px;
+    border-radius: 4px;
+}
+
+.right_btn{
+    padding: 16px 22px;
+    margin-left: 50px;
+    background-color: white;
+    border: none;
+    color: black;
+    font-size: 18px;
+    border-radius: 4px;
+}
+/*----------compare model section start here-------------*/
+
+.compare_model_base{
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    /* border: 1px solid black; */
+    padding: 0px 60px;
+
+}
+
+.compare_model_container{
+    display: grid;
+    grid-auto-flow: row;
+    /* border: 1px solid black; */
+    padding: 8px;
+}
+
+.header_btn{
+    display: grid;
+    grid-auto-flow: row;
+    gap: 20px;
+    /* border: 1px solid black; */
+    object-fit: cover;
+    padding: 4px;
+
+}
+.compare_model_heading{
+    padding-top: 16px;
+}
+
+.compare_model_btn{
+    display: grid;
+    grid-auto-flow: column;
+    gap: 10px;
+    /* border: 1px solid black; */
+    object-fit: cover;
+
+}
+
+
+.compare_model_image{
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.compare_model_image img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+
+
+/* -------------------links section code here-------------------- */
+
+.containter_links{
+    display:grid;
+    grid-auto-flow: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+    margin-bottom: 100px;
+}
+
+.containter_links a{
+    text-decoration: none;
+    color:#5c5e62;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* ---------footer styling start from here--------- */
 .footer{
