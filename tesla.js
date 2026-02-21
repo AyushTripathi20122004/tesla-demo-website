@@ -136,3 +136,9 @@ function demo_drive() {
   window.location.href = "tesla_demodrive.html";
   console.log("demodrive button was clicked");
 }
+
+// discovery specifications
+function discovery() {
+  window.location.href = "tesla_discovery.html";
+  console.log("discovery button was clicked");
+}
