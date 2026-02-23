@@ -255,6 +255,7 @@ html body{
 @media (min-width: 300px) and (max-width: 600px) {
     .container_info_base{
         overflow: visible;
+        gap:20px;
     }
     .heading_para h1{
         width: 80%;
