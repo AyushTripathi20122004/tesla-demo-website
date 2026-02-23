@@ -279,11 +279,9 @@ html body{
         font-size: 13px;
         font-weight: 400;
         color: #393c4a;
-
-
     }
     .btn_base button {
         font-size: 14px;
-        padding: 12px 4px;
+        padding: 8px 4px;
     }
 }
