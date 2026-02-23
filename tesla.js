@@ -156,3 +156,10 @@ function solar_roof(){
   window.location.href = "tesla_solarroof.html"
   console.log("solar panes button was clicked")
 }
+
+// powerwell specifications
+
+function powerwell(){
+  window.location.href = "tesla_powerwell.html"
+  console.log("powerwell button was clicked")
+}
