@@ -149,3 +149,10 @@ function solar_panels(){
   window.location.href = "tesla_solarpanel.html"
   console.log("solar panes button was clicked")
 }
+
+// solar roof specifications
+
+function solar_roof(){
+  window.location.href = "tesla_solarroof.html"
+  console.log("solar panes button was clicked")
+}
