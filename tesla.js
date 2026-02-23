@@ -142,3 +142,10 @@ function discovery() {
   window.location.href = "tesla_discovery.html";
   console.log("discovery button was clicked");
 }
+
+// solar panels specifications
+
+function solar_panels(){
+  window.location.href = "tesla_solarpanel.html"
+  console.log("solar panes button was clicked")
+}
