@@ -54,6 +54,7 @@ html body{
     .navbar {
         background-color: transparent;
         position: absolute;
+        background-color: black;
     }
     .logo svg{
         width:80px;
@@ -74,6 +75,15 @@ html body{
     padding:0px 32px;
     gap: 10px;
     /* border: 1px solid black; */
+}
+@media (min-width: 300px) and (max-width: 600px) {
+    .container_base{
+        grid-template-columns: none;
+        margin-top: 60px;
+        padding: 0px;
+    }
+    
+
 }
 
 
@@ -136,6 +146,28 @@ html body{
 
 }
 
+@media (min-width: 300px) and (max-width: 600px) {
+    .icons_container{
+        display: none;
+    }
+    .container_video_base{
+        grid-template-rows: 0fr 0fr;
+        gap: 0px;
+        
+    }
+
+    .video_container{
+        border-radius: 0%;
+        height: 300px;
+
+    }
+    .video_container video{
+        border-radius: 0%;
+
+    }
+
+}
+
 
 
 /* --------------information section start here ---------------*/
@@ -157,6 +189,17 @@ html body{
     /* border: 1px solid black; */
     gap: 30px;
 }
+.heading_para h1{
+    color:#171a20;
+    font-size: 50px;
+    text-align: center;
+    width: 60%;
+}
+.heading_para p{
+    color:#5c5e62;
+    font-weight: 450;
+}
+
 
 .select_product {
     display: grid;
@@ -185,6 +228,11 @@ html body{
     justify-content: center;
 
 }
+.btn_para_base p{
+    text-align: center;
+    padding: 0px 64px;
+    }
+
 .btn_base{
     display: flex;
     justify-content: center;
@@ -202,4 +250,40 @@ html body{
 .btn_base button:hover{
     background-color: #243e86;
 
+}
+
+@media (min-width: 300px) and (max-width: 600px) {
+    .container_info_base{
+        overflow: visible;
+    }
+    .heading_para h1{
+        width: 80%;
+        font-size: 28px;
+        text-align: center;
+    }
+    .heading_para p{
+        text-align: center;
+        font-size: 14px;
+        color: #393c4a;
+        width: 80%;
+    }
+    .product{
+        padding: 11px;
+        font-size: 12px;
+        font-weight: 500;
+        border-radius: 4px;
+    }
+
+    .btn_para_base p{
+        padding: 0px 8px;
+        font-size: 13px;
+        font-weight: 400;
+        color: #393c4a;
+
+
+    }
+    .btn_base button {
+        font-size: 14px;
+        padding: 12px 4px;
+    }
 }
