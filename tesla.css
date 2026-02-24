@@ -102,7 +102,8 @@ html body{
     height: 375px;
     /* border: 1px solid black; */
     display: grid;
-    grid-template-rows: 1fr 1fr 3fr;
+    grid-template-rows: 0.2fr 0fr 0.2fr;
+    gap: 10px;
     text-align: center;
 }
 .modle_sectio_3{
@@ -118,6 +119,10 @@ html body{
     display: flex;
     justify-content: center;
     align-items: flex-end;
+}
+.modle_sectio a{
+    display: none;
+    color: white;
 }
 /* buttons section styling */
 .modle_sectio_button{
@@ -156,18 +161,23 @@ html body{
      background-image: url("https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Homepage-Promo-Meet-Model-3-Desktop.jpg");
     background-position: center;
     background-size: cover;
+    transition: transform 4s ease;
 
 }
 .car_adv_img2{
      background-image: url("https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Homepage-Promo-Meet-Model-Y-Desktop.jpg");
     background-position: center;
     background-size: cover;
+    transition: transform 1s ease;
+
 
 }
 .car_adv_img3{
      background-image: url("https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Homepage-Promo-Cybertruck-Desktop-US-v2.jpg");
     background-position: center;
     background-size: cover;
+    transition: transform 1s ease;
+
 }
 
 /* ------responsive base styling start here for mobile phones which have 600px width-------- */
