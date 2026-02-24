@@ -146,7 +146,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 // ----- menu button ------
 function open_menu_section() {
-  window.location.href = "index.html";
+  window.location.href = "tesla_menu.html";
 }
 
 // Model 3 car specifications
