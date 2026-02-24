@@ -62,7 +62,7 @@ document.addEventListener("DOMContentLoaded", () => {
         
             text.style.display="block";
             text.innerText="Lease From $729/mo";
-
+            let btn=document.querySelector(".blue_button_hover")
             btn.addEventListener("click",()=>{
                 model_CT()
             });
