@@ -89,7 +89,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     buttons.forEach((btn, i) => {
       btn.addEventListener("click", () => {
-        cardContainer.style.transform = `translateX(-${i * 68}vw)`;
+        cardContainer.style.transform = `translateX(-${i * 70}%)`;
         buttons.forEach(b => b.style.backgroundColor = "");
         btn.style.backgroundColor = "#171a20";
       });
@@ -135,7 +135,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     card2_btn.forEach((btn, j) => {
       btn.addEventListener("click", () => {
-        card2_base.style.transform = `translateX(-${j * 43}vw)`;
+        card2_base.style.transform = `translateX(-${j * 50}%)`;
         card2_btn.forEach(b => b.style.backgroundColor = "");
         btn.style.backgroundColor = "#171a20";
       });
