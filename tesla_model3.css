@@ -10,6 +10,12 @@ html body{
     height: 100vh;
     margin: 0;
     overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+.container_window{
+    max-width: 1400px;
+    width: 100%;
 }
 @media (min-width: 300px) and (max-width: 600px) {
     html body{
@@ -318,9 +324,9 @@ html body{
     grid-auto-flow: row;
     gap: 10px;
 }
-.car_color{
-    /* border: 1px solid black; */
-}
+/* .car_color{
+    /* border: 1px solid black; 
+}*/
 .color_btn{
     /* border: 1px solid black; */
     display: flex;
@@ -365,10 +371,10 @@ html body{
     grid-auto-flow: row;
     gap: 10px;
 }
-.car_tyres{
-    /* border: 1px solid black; */
+/* .car_tyres{
+    /* border: 1px solid black; 
 
-}
+} */
 .tyre_btn{
     /* border: 1px solid black; */
     display: flex;
@@ -407,10 +413,10 @@ html body{
     grid-auto-flow: row;
     gap: 10px;
 }
-.interior_color{
-    /* border: 1px solid black; */
+/* .interior_color{
+    /* border: 1px solid black; 
 
-}
+} */
 .interior_btn{
     /* border: 1px solid black; */
     display: flex;
@@ -702,4 +708,3 @@ html body{
 .price{
     height: 40px;
 }
-
