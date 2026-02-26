@@ -11,6 +11,12 @@ html body{
     height: 100vh;
     margin: 0;
     overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+.container_window{
+    max-width: 1400px;
+    width: 100%;
 }
 @media (min-width: 300px) and (max-width: 600px) {
     html body{
@@ -384,7 +390,18 @@ html body{
     border: 1px solid black;
 }
 
-/* tyre modification section */
+@media (min-width: 300px) and (max-width: 600px) {
+    .color_btn{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 10px;
+    }
+}
+
+
+
+
+/*----------------tyre modification section--------------------------- */
 .car_tyres_base{
     display: grid;
     grid-auto-flow: row;
