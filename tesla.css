@@ -63,52 +63,73 @@ html body{
     border: none;
     font-weight: 450;
     background-color: transparent;
+    transition: background-color 0.5s ease;
+    border-radius: 4px;
 }
 .nav_icons_btn:hover{
     background-color: #f0f0f0;
 }
 .info_btn_section{
+    max-width: 1400px;
     padding: 16px 32px;
     position: absolute;
     top: 80%;
     left: 0px;
     width: 100vw;
-    height: 50vh;
+    height:70vh;
     /* border: 1px solid black; */
     background-color: #fff;
     display: none;
     overflow-y: scroll;
+    animation: window_open 0.4s ease-out;
     
 }
+
 .vehical_btn:hover .info_btn_section{
     display: block;
+    animation: window_open 2s linear delay 1 ;
     
 }
 .Energy_btn:hover .info_btn_section{
     display: block;
+    animation: window_open 2s linear delay 1 ;
 }
 .Charging_btn:hover .info_btn_section{
     display: block;
+    animation: window_open 2s linear delay 1 ;
 }
 .Discover_btn:hover .info_btn_section{
     display: block;
+    animation: window_open 2s linear delay 1 ;
 }
 .Shop_btn:hover .info_btn_section{
     display: block;
+    animation: window_open 2s linear delay 1 ;
 }
 
+@keyframes window_open {
+    0%{
+        height: 0;
+    }
+    100%{
+        height:70vh;
+    }
+    
+}
 /* -------------------vehical btn section styling------------ */
 .vehical_info{
+    padding: 16px;
     display: grid;
-    grid-template-columns: 1fr 0.5fr; 
+    grid-template-columns: 2fr 1fr; 
     /* border: 1px solid black; */
 }
 .vehicles_card_base{
-    padding: 4px;
+    overflow: visible;
+    padding: 8px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr ;
-    column-gap: 10px;
-    row-gap: 30px;
+    column-gap: 20px;
+    row-gap: 50px;
     border-right: 1px solid #5c5e62;
     grid-template-rows: 2fr 2fr 2fr;
     /* border: 1px solid black; */
@@ -120,18 +141,55 @@ html body{
     grid-template-rows: 100px 50px;
     /* border: 1px solid black; */
 }
-.model3_image{
-    background-image: url("https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto,w_220,c_scale/dpr_2.0/Mega-Menu-Vehicles-Model-S-New-NA-TW-KR.png");
+.model_image{
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
     object-fit: contain;
 }
-.model3_links{
+/* ----------------all model images----------------------- */
+.modelS_img{
+    background-image: url("https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto,w_220,c_scale/dpr_2.0/Mega-Menu-Vehicles-Model-S-New-NA-TW-KR.png");
+
+}
+
+.model3_img{
+    background-image: url("https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto,w_220,c_scale/dpr_2.0/Mega-Menu-Vehicles-Model-3-Performance-LHD.png");
+
+}
+
+.modelY_img{
+    background-image: url("https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto,w_220,c_scale/dpr_2.0/Mega-Menu-Vehicles-Model-Y-2-v3.jpg");
+
+}
+
+.modelX_img{
+    background-image: url("https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto,w_220,c_scale/dpr_2.0/Mega-Menu-Vehicles-Model-X-New.png");
+
+}
+
+.modelCBT_img{
+    background-image: url("https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto,w_220,c_scale/dpr_2.0/Mega-Menu-Vehicles-Cybertruck-1x.png");
+
+}
+
+.modelINVENTORY_img{
+    background-image: url("https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto,w_220,c_scale/dpr_2.0/Mega-Menu-Vehicles-Inventory.png");
+
+}
+
+.modelself_drive_img{
+    background-image: url("https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto,w_220,c_scale/dpr_2.0/Mega-Menu-Vehicles-FSD.jpg");
+
+}
+
+
+
+.model_links{
     display: grid;
     gap: 10px;
 }
-.model3_links h3{
+.model_links h3{
     text-align: center;
 }
 .order_lernmore{
@@ -144,12 +202,17 @@ html body{
     font-size: 14px;
     font-weight: 400;
 }
+.order_lernmore a:hover{
+    text-decoration: 2.5px  underline black;
+}
 
 
 /* --------------vehical_links------------------- */
 .vehical_links{
     padding-left: 64px;
-    display: grid;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 .vehical_links a{
     text-decoration: none;
@@ -161,9 +224,73 @@ html body{
     text-decoration: underline;
 
 }
+/* ------- buttons show in navbar at 1200px widht-------------- */
+.max_width_btn{
+    display: flex;
+    justify-content: flex-end;
+    /* border: 1px solid black; */
 
-@media(min-width:1400px){
+}
+.max_width_btn a{
+    text-decoration: none;
+    color: #171a20;
+    padding: 4px 8px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.max_width_btn a:hover{
+    background-color: #0000000d;
+}
+
+
+
+/* ---------------- Energy button card  styling here-------------- */
+
+.solar_pannel_img{
+    background-image: url("https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto,w_220,c_scale/dpr_2.0/Mega-Menu-Energy-Solar-Panels.png");
+}
+
+.solar_roof_img{
+    background-image: url("https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto,w_220,c_scale/dpr_2.0/Mega-Menu-Energy-Solar-Roof.png");
+}
+
+.powerwall_img{
+    background-image: url("https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto,w_220,c_scale/dpr_2.0/Mega-Menu-Energy-Powerwall-US.png");
+}
+
+.megapack_img{
+    background-image: url("https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto,w_220,c_scale/dpr_2.0/Mega-Menu-Energy-Megapack.png");
+}
+
+
+/* ---------------- Charging button card  styling here-------------- */
+.charging_img{
+    background-image: url("https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto,w_220,c_scale/dpr_2.0/Mega-Menu-Charging-Charging.png");
+}
+.Home_Charging_img{
+    background-image: url("https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto,w_220,c_scale/dpr_2.0/Mega-Menu-Charging-Home-Charging.png");
+}
+.Supercharging_img{
+    background-image: url("https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto,w_220,c_scale/dpr_2.0/Mega-Menu-Charging-Supercharging-NA.png");
+}
+.Wall_Connector_img{
+    background-image: url("https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto,w_220,c_scale/dpr_2.0/Mega-Menu-Charging-Charging-for-Business.png");
+}
+.Business_charging_img{
+    background-image: url("https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto,w_220,c_scale/dpr_2.0/Mega-Menu-Charging-Supercharger-For-Business.png");
+}
+
+
+
+
+
+@media(max-width:1200px){
     .nav_icons{
+        display: none;
+    }
+    .max_width_btn{
         display: none;
     }
     .navbar{
@@ -173,6 +300,12 @@ html body{
 
 
 }
+@media(min-width:1200px){
+    .menu_button{
+        display: none;
+    }
+}
+
 
 
 .menu_section{
