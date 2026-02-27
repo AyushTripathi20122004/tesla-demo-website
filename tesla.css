@@ -61,6 +61,7 @@ html body{
 .nav_icons_btn{
     padding: 8px 16px;
     border: none;
+    font-weight: 450;
     background-color: transparent;
 }
 .nav_icons_btn:hover{
