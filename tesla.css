@@ -24,7 +24,7 @@ html body{
 .navbar{
     /* border: 1px solid black; */
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1.5fr 1fr;
     height: 56px;
     background-color: white;
     position: sticky;
@@ -41,6 +41,138 @@ html body{
     width:124px;
     height: 24px;
 }
+/* ----------------nav icons--------------- */
+.nav_icons{
+    padding: 8px;
+    display: flex;
+    justify-content: center;
+}
+.nav_icons ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.nav_icons ul li{
+    float: left;
+    list-style-type: none;
+    font-weight: 450;
+    
+}
+.nav_icons_btn{
+    padding: 8px 16px;
+    border: none;
+    background-color: transparent;
+}
+.nav_icons_btn:hover{
+    background-color: #f0f0f0;
+}
+.info_btn_section{
+    padding: 16px 32px;
+    position: absolute;
+    top: 80%;
+    left: 0px;
+    width: 100vw;
+    height: 50vh;
+    /* border: 1px solid black; */
+    background-color: #fff;
+    display: none;
+    overflow-y: scroll;
+    
+}
+.vehical_btn:hover .info_btn_section{
+    display: block;
+    
+}
+.Energy_btn:hover .info_btn_section{
+    display: block;
+}
+.Charging_btn:hover .info_btn_section{
+    display: block;
+}
+.Discover_btn:hover .info_btn_section{
+    display: block;
+}
+.Shop_btn:hover .info_btn_section{
+    display: block;
+}
+
+/* -------------------vehical btn section styling------------ */
+.vehical_info{
+    display: grid;
+    grid-template-columns: 1fr 0.5fr; 
+    /* border: 1px solid black; */
+}
+.vehicles_card_base{
+    padding: 4px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    column-gap: 10px;
+    row-gap: 30px;
+    border-right: 1px solid #5c5e62;
+    grid-template-rows: 2fr 2fr 2fr;
+    /* border: 1px solid black; */
+}
+
+.vehi_cards{
+    width: 100%;
+    display: grid;
+    grid-template-rows: 100px 50px;
+    /* border: 1px solid black; */
+}
+.model3_image{
+    background-image: url("https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto,w_220,c_scale/dpr_2.0/Mega-Menu-Vehicles-Model-S-New-NA-TW-KR.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    object-fit: contain;
+}
+.model3_links{
+    display: grid;
+    gap: 10px;
+}
+.model3_links h3{
+    text-align: center;
+}
+.order_lernmore{
+    display: flex;
+    justify-content:center;
+    gap: 10px;
+}
+.order_lernmore a{
+    color: #5c5e62;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+
+/* --------------vehical_links------------------- */
+.vehical_links{
+    padding-left: 64px;
+    display: grid;
+}
+.vehical_links a{
+    text-decoration: none;
+    color:#171a20;
+    font-weight: 450;
+    font-size: 14px;
+}
+.vehical_links a:hover{
+    text-decoration: underline;
+
+}
+
+@media(min-width:1400px){
+    .nav_icons{
+        display: none;
+    }
+    .navbar{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+
+}
+
 
 .menu_section{
     display: flex;
