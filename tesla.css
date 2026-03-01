@@ -9,6 +9,8 @@
 html{
     margin: 0;
     padding: 0;
+    height: 100%;
+    width: 100%;
 }
 html body{
     display: flex;
@@ -453,23 +455,6 @@ html body{
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 @media(max-width:1200px){
     .nav_icons{
         display: none;
@@ -770,6 +755,8 @@ html body{
 }
 .car_order_button button{
     border:none;
+    border-radius: 4px;
+    font-weight: 450;
 }
 .img1{
     background-image: url("https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Homepage-Card-Model-Y-Standard-Desktop-Dynamic-Asset.jpg");
@@ -811,29 +798,29 @@ html body{
 }
 /* responsive for mobile */
 @media (min-width: 300px) and (max-width: 600px){
+    .moving_window{
+        padding: 0px;
+        margin-top: 30px;
+    }
     .card_moving_button{
         display: none;
     }
-    .car_model_card{
-        flex: 0 0 115%;
-        width: 320px;
-    }
-    .car_model_card{
-        width: 320px;
+    .heading_model_name{
+        display: block;
+        height: auto;
     }
     .heading_model_name h1{
     font-size: 35px;
     color: white;
     width: 200px;
-}
-.car_order_button{
+    }
+    .car_order_button{
     width: 200px;
-}
+    }
     .car_model_card {
-        width: 320px;
-        background-size: 300%;
-        background-repeat: no-repeat;
-        background-position: 60% 60%;
+    flex: 0 0 20rem;
+    background-repeat: no-repeat;
+    background-position: center;
     }
     
 }
@@ -892,6 +879,8 @@ html body{
     width: 50%;
     background-color: #fff;
     border: none;
+    border-radius: 4px;
+    font-weight: 450;
     transition: background-color 0.1s linear;
 }
 .offer_card button:hover{
@@ -957,6 +946,7 @@ html body{
 .self_drive_section h1{
     font-size: 40px;
     color: #f4f4f4;
+    font-weight: 450;
 }
 .demo_drive_seciton{
     display: grid;
@@ -1003,7 +993,7 @@ html body{
    height: 700px;
    background-image: url("https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Homepage-Features-Desktop.png");
    /* background-position: center; */
-   background-size:100%;
+   background-size:cover;
    background-position: center 30%;
    background-repeat: no-repeat;
    display: grid;
@@ -1014,6 +1004,7 @@ html body{
 .discovery h1{
     font-size: 40px;
     display: flex;
+    font-weight: 450;
     align-items:flex-end;
     color: #f4f4f4;
 }
@@ -1032,13 +1023,12 @@ html body{
 /* image section discovery responsive for mobile width upto 300 to 600px */
 @media (min-width: 300px) and (max-width: 600px){
     .discovery{
-        height: 400px;
         width: 100vw;
         display: grid;
-        grid-template-rows:1fr 0.2fr;
         flex-direction: column;
         justify-content: flex-end;
         align-items: flex-end;
+        background-position: center;
     }
     .discovery_btn_section{
         display: flex;
@@ -1110,16 +1100,21 @@ html body{
 .card_heading_btn h1{
     font-size: 40px;
     color: #f4f4f4;
+    font-weight: 450;
 }
 .card_heading_btn p{
     font-weight: lighter;
     color: #f4f4f4;
+    font-weight: 450;
+    font-size: 14px;
+
 }
 
 .card2_btn{
     height: 40px;
     border: none;
     border-radius: 8px;
+    font-weight: 450;
 }
 
 /* card2 background images */
@@ -1170,6 +1165,10 @@ html body{
 }
 /* section 5 responsive here */
 @media (min-width: 300px) and (max-width: 600px){
+    .card2_base{
+        overflow-x: scroll;
+        padding: 0px 4px;
+    }
     .card2_scrolling_btn_section{
         display: none;
 
@@ -1177,12 +1176,23 @@ html body{
     .section5{
         padding: 0px;
     }
-    .card2_base{
-        overflow: scroll;
-    }
+    
   
     .card2{
-        background-size: 200%;
+        background-size: cover;
+        border-radius: 4px;
+        width:auto;
+        padding:8px;
+    }
+    .card_heading_btn{
+        height: auto;
+        display: grid;
+        padding: 0px 8px;
+
+    }
+    .card2_btn_base{
+        margin-top: 0px;
+        height: auto;
     }
     
     
@@ -1218,10 +1228,14 @@ html body{
 @media (min-width: 300px) and (max-width: 600px){
     .section6{
         width: 100vw;
+        height: auto;
+        margin-bottom: 60px;
     }
     .links_base{
+        height: auto;
         display: grid;
         text-align: center;
+        gap: 10px;
     }
 }
 
@@ -1271,6 +1285,7 @@ html body{
     }
     .footer_btn{
         gap: 8px;
+        padding: 8px;
     }
   
 }
