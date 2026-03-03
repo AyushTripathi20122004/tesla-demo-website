@@ -1247,7 +1247,7 @@ html body{
     justify-content: center;
     align-items: center;
     /* border: 1px solid black; */
-    position:fixed;
+    position:sticky;
     bottom: 0px;
     background-color: #fff;
 }
@@ -1288,3 +1288,4 @@ html body{
         padding: 8px;
     }
 }
+
