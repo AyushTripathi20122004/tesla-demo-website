@@ -267,7 +267,7 @@ html body{
     /* border: 1px solid black; */
 
 }
-.max_width_btn a{
+/* .max_width_btn button{
     text-decoration: none;
     color: #171a20;
     padding: 4px 8px;
@@ -278,7 +278,7 @@ html body{
 }
 .max_width_btn a:hover{
     background-color: #0000000d;
-}
+} */
 
 
 
@@ -488,6 +488,8 @@ html body{
     border: none;
     color: #171a20;
     font-weight: light;
+    background-color: transparent;
+    border-radius: 4px;
 }
 .menu_section button:hover{
     background-color: rgb(236, 235, 235);
@@ -1288,4 +1290,3 @@ html body{
         padding: 8px;
     }
 }
-
