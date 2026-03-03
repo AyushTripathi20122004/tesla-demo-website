@@ -165,12 +165,17 @@ document.addEventListener("DOMContentLoaded", () => {
 }
 });
 
+let signIn_btn=document.querySelector("#sign_in");
+signIn_btn.addEventListener("click",()=>{
+    signin();
+});
 
 
 // ----- menu button ------
 function open_menu_section() {
   window.location.href = "tesla_menu.html";
 }
+
 
 // ----- sign in button ------
 function signin() {
