@@ -1,0 +1,222 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+html body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container_window{
+    height: 100vh;
+    max-width: 1400px;
+    width: 100%;
+    /* border: 1px solid black */
+}
+
+
+
+.navbar{
+    /* border: 1px solid black; */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 56px;
+    background-color: #f4f4f4;
+    position: relative;
+    top: 0px;
+    width: 100%;
+   
+}
+.logo{
+    display: flex;
+    padding-left: 30px;
+    align-items: center;
+}
+.logo svg{
+    width:124px;
+    height: 24px;
+}
+
+.menu_section{
+    display: flex;
+    padding-right: 20px;
+    justify-content: right;
+    align-items: center;
+}
+.menu_section button{
+    padding: 6px 18px;
+    border: none;
+    color: #171a20;
+    font-weight: 500;
+}
+.menu_section button:hover{
+    background-color: rgb(236, 235, 235);
+}
+
+/* resposnsive for mobile */
+@media (min-width: 300px) and (max-width: 600px) {
+    .navbar {
+        background-color: black;
+        position: absolute;
+    }
+    .logo svg{
+        width:80px;
+        height:14px ;
+        color: white;
+    }
+    .menu_section button{
+        background-color: transparent;
+        color: white;
+    }
+}
+
+/* --------------sign in section code start here----------------------------- */
+
+.sign_in_base{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid black; */
+    object-fit: contain;
+    padding: 32px;
+}
+.sign_in_card{
+    width: 25rem;
+    padding: 4px;
+    display: grid;
+    grid-template-rows: 0fr 2fr 0fr;
+    gap: 30px;
+}
+
+/*----------- sign_in heading -----------*/
+.sign_in_heading{
+    padding: 8px 0px;
+    color: #171a20;
+    font-weight: 600;
+}
+
+/*----------- email  -----------*/
+.email_container{
+    display: flex;
+    flex-direction: column;
+}
+.email_container label{
+    font-weight: 500;
+}
+.email_container input{
+    width: 100%;
+    padding: 12px;
+    font-size: 14px;
+    font-weight: 500;
+}
+/* ---------------------button-------------------  */
+
+.button_container button{
+    width: 100%;
+    padding: 12px;
+    background-color: #3e6ae4;
+    color: #FFF;
+    border: none;
+    border-radius: 4px;
+    transition: background-color 0.5s ease;
+    font-weight: 500;
+    font-size: 16px;
+}
+.button_container button:hover{
+    background-color: #2659e6;
+}
+
+/* -------------------truble_signin------------------ */
+.truble_signin{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.truble_signin a{
+    color:#393c41;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+/* ---------------or section-------------------- */
+.devider{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #5c5e62;
+    font-weight: 500;
+}
+
+.devider::before,.devider::after{
+    content:"";
+    flex:1;
+    border-bottom: 1px solid #5c5e62;
+}
+
+
+
+
+/* --------------------create account btn----------------------- */
+.crate_account button{
+    font-size: 16px;
+    width: 100%;
+    padding: 12px;
+    color: #393c41;
+    font-weight: 500;
+    border: none;
+    border-radius: 4px;
+    transition: background-color 0.5s ease;
+
+}
+.crate_account button:hover{
+    background-color:#dad8d8 ;
+}
+
+/* -------section 6 styling  start here------------ */
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top: 100%;
+    width: 100%;
+
+    /* border: 1px solid black; */
+}
+
+.links_base{
+    width: 70%;
+    padding: 16px;
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.links{
+    font-size: 14px;
+    text-decoration: none;
+    color: #393c41;
+    font-weight: 500;
+}
+/* section 6 responsive here */
+@media (min-width: 300px) and (max-width: 600px){
+    .footer{
+        width: 100vw;
+        height: auto;
+        margin-bottom: 60px;
+    }
+    .links_base{
+        height: auto;
+        display: grid;
+        text-align: center;
+        gap: 10px;
+    }
+}
+
