@@ -172,6 +172,12 @@ function open_menu_section() {
   window.location.href = "tesla_menu.html";
 }
 
+// ----- sign in button ------
+function signin() {
+  window.location.href = "tesla_signIn.html";
+  console.log("sign in button was clicked");
+}
+
 // Model 3 car specifications
 function model_3() {
   window.location.href = "tesla_model3.html";
