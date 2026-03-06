@@ -117,25 +117,37 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
   // ----- video pause/play toggle -----
-  function toggleVideo() {
-    const btn = document.getElementById("pauseBtn");
-    const video = document.getElementById("video");
+    const btn = document.querySelector(".pauseBtn");
+    const icon = document.querySelector(".icon");
+    const video = document.querySelector(".car_video");
 
-    if (!btn || !video) return;
+    // force autoplay after page load (mobile fix)
+    window.addEventListener("load", () => {
+        video.muted = true;
+        video.setAttribute("muted", "");
+        video.setAttribute("playsinline", "");
+    
+        video.play().catch(() => {});
 
+        icon.classList.remove("fa-play");
+        icon.classList.add("fa-pause");
+    });
+
+    // pause/play button
+    btn.addEventListener("click", () => {
     if (video.paused) {
-      video.play();
-      btn.classList.remove("fa-play");
-      btn.classList.add("fa-pause");
+        video.play();
+        icon.classList.remove("fa-play");
+        icon.classList.add("fa-pause");
     } else {
-      video.pause();
-      btn.classList.remove("fa-pause");
-      btn.classList.add("fa-play");
+        video.pause();
+        icon.classList.remove("fa-pause");
+        icon.classList.add("fa-play");
     }
-  }
+    });
 
-  // Make toggleVideo globally accessible for onclick
-  window.toggleVideo = toggleVideo;
+
+  
 
   // --------- card2 scrolling buttons --------
   const card2 = document.querySelectorAll(".card2");
