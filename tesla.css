@@ -32,6 +32,7 @@ html body{
     position: sticky;
     top: 0px;
     width: 100%;
+    z-index: 2;
    
 }
 .logo{
@@ -911,16 +912,25 @@ html body{
 
 /* video section */
 .video_section{
-    background-image: url("https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Homepage-FSD-Tablet-Poster.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    object-fit: cover;
-    background-size: cover;
+    position: relative;
+    overflow: hidden;
+    height: 35rem;
+}
+
+.video_section video{
+    height: 100%;
     width: 100%;
-    height: 700px;
+    object-fit: cover;
+}
+.video_info{
+    width: 100%;
+    height: 100%;
     display: grid;
-    grid-template-rows: 0.5fr 3fr 1.5fr;
+    grid-template-rows: 0fr 2fr;
     padding: 8px;
+    position: absolute;
+    top: 0%;
+
 }
 /* pause button */
 .pause_button{
@@ -936,6 +946,9 @@ html body{
     width: 30px;
     border: none;
     
+}
+.pauseBtn i{
+    color: white;
 }
 .self_drive_section{
     /* border: 1px solid black; */
@@ -978,10 +991,6 @@ html body{
     .video_section{
         width: 100vw;
     }
-    .self_drive_section{
-        display: grid;
-        grid-template-rows: 1fr 0.5fr;
-    }
     .demo_drive_seciton{
         width: 100%;
     }
@@ -991,8 +1000,7 @@ html body{
 /* image section discovery */
 
 .discovery{
-   height: 100%;
-   height: 700px;
+    height: 40rem;
    background-image: url("https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Homepage-Features-Desktop.png");
    /* background-position: center; */
    background-size:cover;
