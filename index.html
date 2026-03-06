@@ -579,20 +579,32 @@
         </div>
         <!-- --------video section--------- -->
         <div class="video_section">
-            <div class="pause_button">
-                    <button onclick="toggleVideo()" id="pauseBtn" class="fa-solid fa-pause fa-lg" style="color: #ffffff;"></button>
-            </div>
-            <div></div>
-            <div class="self_drive_section">
-                <h1>
-                    Full Self-Driving (Supervised)
-                </h1>
-                <div class="demo_drive_seciton">
-                    <button class="demodrive blue_button_hover" onclick="demo_drive()">Demo-drive</button>
-                     <button class="demodrive" style="color:#393c41;">Learn More</button>
+            <video class=" car_video"
+            poster="https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Homepage-Promo-Carousel-FSD-Supervised-Tablet-Poster.jpg"
+            preload="metadata"
+            autoplay
+            muted
+            loop
+            playsinline
+        >
+            <source src="https://digitalassets.tesla.com/tesla-contents/video/upload/f_auto,q_auto:best/Homepage-Promo-Carousel-FSD-Supervised-Tablet.mp4" type="video/mp4">
+        </video>
+            <div class="video_info">
+                <div class="pause_button">
+                    <button class="pauseBtn">
+                        <i class="icon  fa-solid fa-play fa-2xl"></i>
+                    </button>
                 </div>
-            </div>
-           
+                <div class="self_drive_section">
+                    <h1>
+                    Full Self-Driving (Supervised)
+                    </h1>
+                    <div class="demo_drive_seciton">
+                        <button class="demodrive blue_button_hover" onclick="demo_drive()">Demo-drive</button>
+                        <button class="demodrive" style="color:#393c41;">Learn More</button>
+                    </div>
+                </div>
+           </div>
         </div>
         <div class="discovery">
             <div class="discovery_into">
@@ -682,7 +694,6 @@
     <script src="tesla.js"></script>
 </body>
 </html>
-
 
 
 
