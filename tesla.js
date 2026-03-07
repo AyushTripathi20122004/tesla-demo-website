@@ -111,33 +111,94 @@ document.addEventListener("DOMContentLoaded", () => {
             model_CT()
         });
     }
-  }
-  
+  }// ----- car model transition -----
+const cardContainer = document.querySelector(".moving_window");
+const cards = document.querySelectorAll(".car_model_card");
+const buttonSection = document.querySelector(".card_moving_button");
 
-  // ----- car model transition -----
-  const cardContainer = document.querySelector(".moving_window");
-  const cards = document.querySelectorAll(".car_model_card");
-  const buttonSection = document.querySelector(".card_moving_button");
 
-  if (cardContainer && buttonSection && cards.length) {
-    cards.forEach((_, i) => {
-      const btn = document.createElement("button");
-      btn.classList.add("button");
-      buttonSection.appendChild(btn);
-    });
+let bt_section = document.querySelector(".sac2_moving_btn")
+let sac2_left_btn = document.querySelector(".sac2_left");
+let sac2_right_btn = document.querySelector(".sac2_right");
 
-    const buttons = document.querySelectorAll(".button");
-    // DEFAULT ACTIVE BUTTON
-    if (buttons.length) buttons[0].style.backgroundColor = "#171a20";
+// create buttons
+for(let i = 0; i < cards.length; i++){
+  const btn = document.createElement("button");
+  btn.classList.add("button");
+  buttonSection.appendChild(btn);
+}
 
-    buttons.forEach((btn, i) => {
-      btn.addEventListener("click", () => {
-        cardContainer.style.transform = `translateX(-${i * 70}%)`;
-        buttons.forEach(b => b.style.backgroundColor = "");
-        btn.style.backgroundColor = "#171a20";
-      });
-    });
-  }
+let buttons = document.querySelectorAll(".button");
+
+// DEFAULT ACTIVE BUTTON
+buttons[0].style.backgroundColor = "#171a20";
+
+// current index
+let curr_idx = 0;
+
+// initially remove left scrolling btn
+sac2_left_btn.style.display="None";
+bt_section.style.justifyContent="flex-end";
+
+
+function card1_model_scroll(){
+  cardContainer.style.transform = `translateX(-${curr_idx * 70}%)`;
+  buttons.forEach(b => b.style.backgroundColor = "");
+  buttons[curr_idx].style.backgroundColor = "#171a20";
+
+  if (curr_idx==0){
+    sac2_left_btn.style.display="None";
+    bt_section.style.justifyContent="flex-end";
+
+    }
+    else{
+        sac2_left_btn.style.display="Block";
+        bt_section.style.justifyContent="space-between";
+
+    }
+
+    if (curr_idx==cards.length-1){
+        sac2_right_btn.style.display="None";
+    }
+    else{
+        sac2_right_btn.style.display="Block";
+    }
+}
+
+// button click
+buttons.forEach((btn, i) => {
+  btn.addEventListener("click", () => {
+      curr_idx = i;
+      card1_model_scroll();
+  });
+});
+
+
+
+// LEFT BUTTON
+sac2_left_btn.addEventListener("click", () => {
+    if(curr_idx > 0){
+        curr_idx--;
+        
+        card1_model_scroll();
+    }
+});
+
+// RIGHT BUTTON
+sac2_right_btn.addEventListener("click", () => {
+    if(curr_idx < cards.length-1){
+        curr_idx++;
+        card1_model_scroll();
+    }
+});
+
+
+
+
+
+
+
+
 
 
   // ----- video pause/play toggle -----
