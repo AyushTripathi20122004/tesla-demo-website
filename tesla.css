@@ -521,8 +521,28 @@ html body{
     /* border: 1px solid black; */
     height: 420px;
     overflow: hidden;
-    z-index: -1;
+    position: relative;
 }
+.left_right_btn_section{
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 32px;
+    position: absolute;
+    top: 40%;
+    width: 100%;
+
+}
+.left_right_btn_section button{
+    padding: 16px 16px;
+    border: none;
+    border-radius: 4px;
+    background-color: rgba(255,255,255,0.7);
+}
+.left_right_btn_section button svg{
+    height: 1rem;
+    width: 1rem;
+}
+
 .new_car_adv_base{
     height: 100%;
     width: auto;
@@ -589,17 +609,20 @@ html body{
 }
 
 .pic_cange_section{
+    width: 100%;
     height: 20px;
     /* border: 1px solid black; */
     display: flex;
     justify-content: center;
     align-items: center;
     gap:10px;
+    position: absolute;
+    bottom: 0px;
 }
 .pic_change{
-    height: 10px;
-    width: 10px;
-    background-color: lightgray;
+    height: 15px;
+    width: 15px;
+    background-color: rgba(255,255,255,0.5);
     border:none;
     border-radius: 50%;
 }
@@ -629,6 +652,12 @@ html body{
 }
 
 /* ------responsive base styling start here for mobile phones which have 600px width-------- */
+@media(max-width:1200px){
+    .left_right_btn_section{
+        display: none;
+    }
+}
+
 @media (min-width: 300px) and (max-width: 600px) {
    
     .new_car_adv_base{
@@ -641,6 +670,9 @@ html body{
         flex: 0 0 70%;
         padding-left: 50px;
         padding-top: 70px;
+    }
+    .left_right_btn_section{
+        display: none;
     }
     .modle_sectio {
     padding-left: 10%;
@@ -679,12 +711,39 @@ html body{
     scroll-behavior: smooth;
     /* margin-top: 50px; */
     height: 540px;
-    
+    position: relative;
     /* border: 1px solid black; */
     padding: 0px 25px;
     width: 100%;
    
 }
+/* ---------left right buttton styling here----------- */
+.sac2_moving_btn{
+    width: 100%;
+    position: absolute;
+    top: 45%;
+    display: flex;
+    justify-content: space-between;
+    padding: 4px 64px;
+    z-index: 1;
+    align-items: center;
+}
+.sac2_moving_btn button{
+    padding: 16px 8px;
+    border: none;
+    border-radius: 4px;
+    background-color: rgba(255,255,255,0.7);
+}
+.sac2_moving_btn button svg{
+    height: 1rem;
+    width: 1rem;
+}
+@media(max-width:1200px){
+    .sac2_moving_btn{
+        display: none;
+    }
+}
+
 @media (min-width: 300px) and (max-width: 600px) {
     .section2{
         overflow: scroll;
@@ -720,7 +779,7 @@ html body{
 
 .model_name{
     color: white;
-    font-size: 14px;
+    font-size: 18px;
 }
 .Car_info{
     display: grid;
@@ -770,7 +829,7 @@ html body{
     background-image: url("https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Homepage-Card-Model-3-Standard-Desktop.jpg");
 }
 .img3{
-    background-image: url("https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Homepage-Card-Cybertruck-Desktop-US-v2.jpg");
+    background-image: url("https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Homepage-Card-Cybertruck-Desktop-US_PR_MX.jpg");
 }
 .img4{
     background-image: url("https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Homepage-Card-Model-X-New-Desktop-US-v4.jpg");
