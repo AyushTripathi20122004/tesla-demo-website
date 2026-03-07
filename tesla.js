@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     const pic_change_btn = document.querySelectorAll(".pic_change");
-    if (pic_change_btn.length) pic_change_btn[0].style.backgroundColor = "#171a20";
+    if (pic_change_btn.length) pic_change_btn[0].style.backgroundColor ="white";
 
     let i = 0; // global index
 
@@ -25,20 +25,44 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
+
+
   // single interval (not inside forEach)
   setInterval(() => {
     i = (i + 1) % car_cards.length;
     heading_pic_change(i);
-  }, 5000);
+  }, 8000);
 
   // initial load
   heading_pic_change(i);
 
 
+
+
+  //left button configuration
+  let idx=0;
+  let l_btn=document.querySelector(".left");
+  l_btn.addEventListener("click",()=>{
+    console.log("left button was clicked");
+    idx=(idx-1 + car_cards.length)%car_cards.length
+    heading_pic_change(idx);
+  });
+
+  //right button configuration
+  let r_btn=document.querySelector(".right");
+  r_btn.addEventListener("click",()=>{
+    console.log("right button was clicked");
+    idx=(idx+1)%car_cards.length
+    heading_pic_change(idx);
+  });
+
+
+
+
   function heading_pic_change(index){
     // car_adv_base.style.transform = `translateX(-${k * 100}vw)`;
     pic_change_btn.forEach(b => b.style.backgroundColor = "");
-    pic_change_btn[index].style.backgroundColor = "#171a20";
+    pic_change_btn[index].style.backgroundColor = "white";
     // a tag default nont
     let text=document.querySelector(".model_text");
     text.style.display="none";
@@ -149,6 +173,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
   
 
+
+
+
+
   // --------- card2 scrolling buttons --------
   const card2 = document.querySelectorAll(".card2");
   const card2_scrolling_btn_section = document.querySelector(".card2_scrolling_btn_section");
@@ -176,6 +204,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
 }
 });
+
+
+
+
+
+
 
 // ----- menu button ------
 function open_menu_section() {
