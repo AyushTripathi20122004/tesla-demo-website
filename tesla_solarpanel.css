@@ -60,7 +60,7 @@ html body{
 @media (min-width: 300px) and (max-width: 600px) {
     .navbar {
         background-color: transparent;
-        position: absolute;
+        position: fixed;
         background-color: black;
     }
     .logo svg{
@@ -265,7 +265,7 @@ html body{
 @media (min-width: 300px) and (max-width: 600px) {
     .container_info_base{
         overflow: visible;
-        gap:20px;
+        gap:70px;
     }
     .heading_para h1{
         width: 80%;
