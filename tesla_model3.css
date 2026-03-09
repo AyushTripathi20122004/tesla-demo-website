@@ -67,6 +67,13 @@ html body{
     background-color: rgb(236, 235, 235);
 }
 
+@media (min-width: 300px) and (max-width: 600px) {
+    .navbar{
+        position: relative;
+        
+    }
+}
+
 /* section Container-base start here */
 .Container-base{
     width: 100%;
@@ -139,21 +146,24 @@ html body{
        height:40vh;
        position: sticky;
        top:0px;
+       padding: 0px 16px;
     } 
 }
 .arrow{
-    height: auto;
-    width: auto;
-    padding: 6px 8px;
+    border-radius: 4px;
+    padding: 8px 4px;
     background-color: transparent;
     border: none;
     color: gray;
-    backdrop-filter: blur(10px);
+    background-color: rgba(67, 67, 67, 0.5);
     
     
 }
-.arrow i{
-    color: #0b0c0f;
+.arrow svg{
+    height: 1.5rem;
+    width: 1.5rem;
+    font-size: 2px;
+    color: black;
 }
 
 /* car details section */
@@ -169,6 +179,7 @@ html body{
     .car_d_section{
        display: grid;
        grid-template-rows: 2fr 0.2fr;
+       overflow: visible;
     } 
 }
 
@@ -214,6 +225,15 @@ html body{
     align-items: flex-end;
 
 }
+@media (min-width: 300px) and (max-width: 600px) {
+    .Car_details_section{
+        overflow:visible;
+    } 
+}
+
+
+
+
 
 /* price section start here */
 .price_section{
@@ -707,4 +727,12 @@ html body{
 }
 .price{
     height: 40px;
+}
+
+@media (min-width: 300px) and (max-width: 600px) {
+    .car_details_footer{
+        position: fixed;
+        top: 92%;
+        padding: 0px 30px 0px 8px;
+    } 
 }
