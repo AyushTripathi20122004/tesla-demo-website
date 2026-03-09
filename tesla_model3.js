@@ -16,7 +16,7 @@ function updateImage() {
     card.style.backgroundImage = `url("${list_image[currentIndex]}")`;
 }
 
-// 👉 Buttons (NO animation)
+//  Buttons (NO animation)
 function right_btn() {
     card.style.transition = "none";
     currentIndex = (currentIndex + 1) % list_image.length;
@@ -29,7 +29,7 @@ function left_btn() {
     updateImage();
 }
 
-// 👉 Auto slide (WITH animation)
+//  Auto slide (WITH animation)
 setInterval(() => {
     card.style.transition = "background-image 2s ease-in";
     currentIndex = (currentIndex + 1) % list_image.length;
