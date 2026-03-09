@@ -152,6 +152,9 @@ html body{
     border-radius: 8px;
 
 }
+.icons_container button:hover{
+    background-color: #dedddd;
+}
 
 @media (min-width: 300px) and (max-width: 600px) {
     .icons_container{
@@ -225,7 +228,7 @@ html body{
 }
 .product:hover{
     color :#171a20;
-    /* border: 2px solid #171a20; */
+    border: 2px solid #171a20; 
 }
 
 .btn_para_base {
