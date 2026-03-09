@@ -1271,6 +1271,7 @@ html body{
     .card2_base{
         overflow-x: scroll;
         padding: 0px 4px;
+        height: 20rem;
     }
     .card2_scrolling_btn_section{
         display: none;
@@ -1338,7 +1339,7 @@ html body{
         height: auto;
         display: grid;
         text-align: center;
-        gap: 10px;
+        gap: 15px;
     }
 }
 
