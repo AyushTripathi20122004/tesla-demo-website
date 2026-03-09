@@ -58,6 +58,9 @@ html body{
 
 /* resposnsive for mobile */
 @media (min-width: 300px) and (max-width: 600px) {
+    html body{
+        overflow: visible;
+    }
     .navbar {
         background-color: transparent;
         position: fixed;
