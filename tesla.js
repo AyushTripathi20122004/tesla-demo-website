@@ -1,3 +1,11 @@
+// nav logo tranformation
+let nav_logo=document.querySelector(".logo");
+nav_logo.addEventListener("click",()=>{
+  window.location.href = "index.html";
+});
+
+
+
 document.addEventListener("DOMContentLoaded", () => {
 
   // ----- heading image transition -----
@@ -242,7 +250,7 @@ sac2_right_btn.addEventListener("click", () => {
   const card2 = document.querySelectorAll(".card2");
   const card2_scrolling_btn_section = document.querySelector(".card2_scrolling_btn_section");
   const card2_base = document.querySelector(".card2_base");
-
+  let sac5_idx=0;
   if (card2.length && card2_scrolling_btn_section && card2_base) {
     card2.forEach((_, j) => {
       const btn2 = document.createElement("button");
@@ -256,20 +264,66 @@ sac2_right_btn.addEventListener("click", () => {
 
     card2_btn.forEach((btn, j) => {
       btn.addEventListener("click", () => {
-        card2_base.style.transform = `translateX(-${j * 50}%)`;
-        card2_btn.forEach(b => b.style.backgroundColor = "");
-        btn.style.backgroundColor = "#171a20";
+        sac5_idx=j;
+        sac5_update_slider();
       });
     });
+    let s5_btn_section=document.querySelector(".sec5_right_left");
+    let s5_l_btn=document.querySelector(".s5_l_btn");
+    let s5_r_btn=document.querySelector(".s5_r_btn");
+
+    // by default hide left button 
+    s5_l_btn.style.display="none";
+    s5_btn_section.style.justifyContent="flex-end";
+
+
+
+    // left button
+    s5_l_btn.addEventListener("click",()=>{
+      sac5_idx-=1
+      if (sac5_idx>=0){
+        sac5_update_slider()
+      }
+    });
+
+    // right button
+    s5_r_btn.addEventListener("click",()=>{
+      sac5_idx+=1
+      if (sac5_idx<=card2.length-1){
+        sac5_update_slider()
+      }
+    });
+
+
+    function sac5_update_slider(){
+      card2_base.style.transform = `translateX(-${sac5_idx * 50}%)`;
+      card2_btn.forEach(b => b.style.backgroundColor = "");
+      card2_btn[sac5_idx].style.backgroundColor = "#171a20";
+
+      // hide left button
+      if (sac5_idx<=0){
+        s5_l_btn.style.display="none";
+        s5_btn_section.style.justifyContent="flex-end";
+        
+      }
+      else{
+        s5_l_btn.style.display="block";
+        s5_btn_section.style.justifyContent="space-between";
+      }
+
+
+      // hide righrt button
+      if (sac5_idx >= card2.length-1){
+        s5_r_btn.style.display="none";
+      }
+      else{
+        s5_r_btn.style.display="block";
+      }
+    }
   }
 
 }
 });
-
-
-
-
-
 
 
 // ----- menu button ------
