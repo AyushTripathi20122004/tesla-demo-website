@@ -7,7 +7,13 @@
     font-style: normal;
 }
 html body{
-    overflow-x: hidden;
+    overflow:hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container_window{
+    max-width: 1400px;
     width: 100%;
 }
 
@@ -51,9 +57,12 @@ html body{
 
 /* resposnsive for mobile */
 @media (min-width: 300px) and (max-width: 600px) {
+    html body{
+        overflow:visible;
+    }
     .navbar {
         background-color: transparent;
-        position: absolute;
+        position: fixed;
         background-color: black;
     }
     .logo svg{
@@ -74,6 +83,7 @@ html body{
     grid-template-columns: 1fr 1fr ;
     padding:0px 32px;
     gap: 10px;
+    height: 40rem;
     /* border: 1px solid black; */
 }
 @media (min-width: 300px) and (max-width: 600px) {
@@ -93,9 +103,9 @@ html body{
 
 .container_video_base{
     /* border: 1px solid black; */
-    display: grid;
-    grid-template-rows: 0.8fr 0.1fr;
-      gap: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 
 
 }
@@ -116,20 +126,7 @@ html body{
     border-radius: 32px;
 
 }
-.pause_play_btn{
-    object-fit: cover;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-}
-.pause_play_btn{
-    display: none;
-}
-.pause_play_btn_base:hover{
-    .pause_play_btn{
-        display: block;
-    }
-}
+
 
 .icons_container{
     /* border: 1px solid black; */
@@ -144,6 +141,9 @@ html body{
     box-shadow: 1px 1px 4px black;
     border-radius: 8px;
 
+}
+.icons_container button:hover{
+    background-color: #dedddd;
 }
 
 @media (min-width: 300px) and (max-width: 600px) {
@@ -178,7 +178,7 @@ html body{
     padding: 32px 8px;
     /* border: 1px solid black; */
     gap: 80px;
-    height: 91vh;
+    height: 100%;
 }
 
 .heading_para{
@@ -218,7 +218,7 @@ html body{
 }
 .product:hover{
     color :#171a20;
-    /* border: 2px solid #171a20; */
+    border: 2px solid #171a20;/
 }
 
 .btn_para_base {
@@ -255,6 +255,7 @@ html body{
 @media (min-width: 300px) and (max-width: 600px) {
     .container_info_base{
         overflow: visible;
+        gap: 70px;
     }
     .heading_para h1{
         width: 80%;
