@@ -42,8 +42,13 @@ html body{
     align-items: center;
 }
 .logo svg{
-    width:124px;
-    height: 24px;
+    padding: 2px;
+    height: 50% ;
+    width: 8rem;
+}
+.logo svg:hover{
+    border: 2px solid black;
+    border-radius: 4px;
 }
 /* ----------------nav icons--------------- */
 .nav_icons{
@@ -502,6 +507,10 @@ html body{
     .navbar {
         background-color: transparent;
         position: absolute;
+    }
+    .logo svg:hover{
+    border: 2px solid white;
+    border-radius: 4px;
     }
     .logo svg{
         width:80px;
@@ -1108,13 +1117,40 @@ html body{
 
 
 
+
+
 /* section5 styling start form here */
 .section5{
     height: 400px;
     /* border: 1px solid black; */
     padding: 0px 32px;
     overflow-x: hidden; 
-   
+    position: relative;
+}
+.sec5_right_left{
+    width: 100%;
+    position: absolute;
+    top: 45%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0rem 3rem;
+    z-index: 1;
+}
+.sec5_right_left button{
+    padding: 16px 8px;
+    border: none;
+    border-radius: 4px;
+    background-color: rgba(255,255,255,0.7);
+}
+.sec5_right_left button svg{
+    height: 1rem;
+    width: 1rem;
+}
+
+@media(max-width:1200px){
+    .sec5_right_left{
+        display: none;
+    }
 }
 
 
