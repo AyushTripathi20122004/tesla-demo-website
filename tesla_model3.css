@@ -731,6 +731,8 @@ html body{
 
 @media (min-width: 300px) and (max-width: 600px) {
     .car_details_footer{
+        height:100vh;
+        align-items:flex-start;
         position: fixed;
         top: 92%;
         padding: 0px 30px 0px 8px;
