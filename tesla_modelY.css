@@ -67,6 +67,13 @@ html body{
     background-color: rgb(236, 235, 235);
 }
 
+@media (min-width: 300px) and (max-width: 600px) {
+    .navbar{
+        position: relative;
+        
+    }
+}
+
 /* section Container-base start here */
 .Container-base{
     width: 100%;
@@ -101,7 +108,7 @@ html body{
 }
 
 .img1{
-    background-image:url('https://static-assets.tesla.com/configurator/compositor?context=design_studio_2&options=$MTY61,$PN01,$WY19P,$IBB3&view=FRONT34&model=my&size=1920&bkba_opt=2&crop=0,0,0,0&overlay=0&') ;
+    background-image: url("https://static-assets.tesla.com/configurator/compositor?context=design_studio_2&options=$MTY61,$PN01,$WY19P,$IBB3&view=FRONT34&model=my&size=1920&bkba_opt=2&crop=0,0,0,0&overlay=0&");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: 140%;
@@ -139,21 +146,24 @@ html body{
        height:40vh;
        position: sticky;
        top:0px;
+       padding: 0px 16px;
     } 
 }
 .arrow{
-    height: auto;
-    width: auto;
-    padding: 6px 8px;
+    border-radius: 4px;
+    padding: 8px 4px;
     background-color: transparent;
     border: none;
     color: gray;
-    backdrop-filter: blur(10px);
+    background-color: rgba(67, 67, 67, 0.5);
     
     
 }
-.arrow i{
-    color: #0b0c0f;
+.arrow svg{
+    height: 1.5rem;
+    width: 1.5rem;
+    font-size: 2px;
+    color: black;
 }
 
 /* car details section */
@@ -169,6 +179,7 @@ html body{
     .car_d_section{
        display: grid;
        grid-template-rows: 2fr 0.2fr;
+       overflow: visible;
     } 
 }
 
@@ -192,12 +203,10 @@ html body{
     grid-auto-flow: row;
     gap: 10px;
 }
-
 .details_link a{
     color: #393c41 ;
     font-weight: 500;
 }
-
 .car_details{
     display: grid;
     grid-auto-flow: column;
@@ -216,6 +225,15 @@ html body{
     align-items: flex-end;
 
 }
+@media (min-width: 300px) and (max-width: 600px) {
+    .Car_details_section{
+        overflow:visible;
+    } 
+}
+
+
+
+
 
 /* price section start here */
 .price_section{
@@ -326,9 +344,9 @@ html body{
     grid-auto-flow: row;
     gap: 10px;
 }
-.car_color{
-    /* border: 1px solid black; */
-}
+/* .car_color{
+    /* border: 1px solid black; 
+}*/
 .color_btn{
     /* border: 1px solid black; */
     display: flex;
@@ -373,10 +391,10 @@ html body{
     grid-auto-flow: row;
     gap: 10px;
 }
-.car_tyres{
-    /* border: 1px solid black; */
+/* .car_tyres{
+    /* border: 1px solid black; 
 
-}
+} */
 .tyre_btn{
     /* border: 1px solid black; */
     display: flex;
@@ -415,10 +433,10 @@ html body{
     grid-auto-flow: row;
     gap: 10px;
 }
-.interior_color{
-    /* border: 1px solid black; */
+/* .interior_color{
+    /* border: 1px solid black; 
 
-}
+} */
 .interior_btn{
     /* border: 1px solid black; */
     display: flex;
@@ -673,6 +691,16 @@ html body{
 }
 
 
+
+
+
+
+
+
+
+
+
+
 /* ------ footer details----- */
 .car_details_footer{
     height:80px;
@@ -699,4 +727,14 @@ html body{
 }
 .price{
     height: 40px;
+}
+
+@media (min-width: 300px) and (max-width: 600px) {
+    .car_details_footer{
+        height:100vh;
+        align-items:flex-start;
+        position: fixed;
+        top: 92%;
+        padding: 0px 30px 0px 8px;
+    } 
 }
