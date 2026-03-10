@@ -676,7 +676,7 @@ html body{
         background-position: center center;
         justify-content: flex-start;
         align-items: flex-start;
-        flex: 0 0 70%;
+        flex: 0 0 80%;
         padding-left: 50px;
         padding-top: 70px;
     }
@@ -831,7 +831,7 @@ html body{
     font-weight: 450;
 }
 .img1{
-    background-image: url("https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Homepage-Card-Model-Y-Standard-Desktop-Dynamic-Asset.jpg");
+    background-image: url("https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Homepage-Card-Model-3-Desktop-US_PR_MX.jpg");
 
 }
 .img2{
@@ -1152,6 +1152,12 @@ html body{
         display: none;
     }
 }
+@media (min-width: 300px) and (max-width: 600px){
+    .section5{
+        height: auto;
+    }
+}
+
 
 
 
@@ -1237,7 +1243,7 @@ html body{
     background-size: 130%;
 }
 .card2_4{
-    background-image: url("https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Homepage-Card-Solar-Roof-Desktop.png");
+    background-image: url("https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Homepage-Card-Solar-Roof-Desktop-v2.jpg");
     background-position: center center;
     background-size: 130%;
 }
@@ -1278,7 +1284,7 @@ html body{
 
     }
     .section5{
-        padding: 0px;
+        padding: 0px 25px 0px 0px;
     }
     
   
@@ -1333,7 +1339,7 @@ html body{
     .section6{
         width: 100vw;
         height: auto;
-        margin-bottom: 60px;
+        margin-top: 60px;
     }
     .links_base{
         height: auto;
@@ -1378,6 +1384,10 @@ html body{
     justify-content: center;
     align-items: center;
     gap: 4px;
+    transition: background-color 0.5s ease;
+}
+.footer_btn:hover{
+    background-color: #d8d8d8;
 }
 /* footerresponsive here */
 @media (min-width: 300px) and (max-width: 600px){
