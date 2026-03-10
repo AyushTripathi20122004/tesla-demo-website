@@ -77,21 +77,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     if (index==0){
         let heading=document.querySelector(".modle_sectio_h1");
-        let img=document.querySelector(".car_adv_img1");
-
-        img.style.backgroundImage='url("https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Homepage-Promo-Meet-Model-3-Desktop.jpg")';
-        img.style.transition="background-image 1s ease-out";
-        heading.innerText="Model 3";
-        heading.style.transition="all 1s ease"
-        // order now button 
-        let btn=document.querySelector(".blue_button_hover")
-        btn.addEventListener("click",()=>{
-            model_3();
-        });
-    }
-    else if (index==1){
-        let heading=document.querySelector(".modle_sectio_h1");
-        let img=document.querySelector(".car_adv_img1");
+        let img=document.querySelector(".car_adv_img2");
             
         img.style.backgroundImage='url("https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Homepage-Promo-Meet-Model-Y-Desktop.jpg")';
         img.style.transition="background-image 1s ease";
@@ -103,10 +89,24 @@ document.addEventListener("DOMContentLoaded", () => {
             model_Y();
         });
     }
+    else if (index==1){
+        let heading=document.querySelector(".modle_sectio_h1");
+        let img=document.querySelector(".car_adv_img2");
+
+        img.style.backgroundImage='url("https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Homepage-Promo-Meet-Model-3-Desktop.jpg")';
+        img.style.transition="background-image 1s ease-out";
+        heading.innerText="Model 3";
+        heading.style.transition="all 1s ease"
+        // order now button 
+        let btn=document.querySelector(".blue_button_hover")
+        btn.addEventListener("click",()=>{
+            model_3();
+        });
+    }
     if (index==2){
         let heading=document.querySelector(".modle_sectio_h1");
             
-        let img=document.querySelector(".car_adv_img1");
+        let img=document.querySelector(".car_adv_img2");
             
         img.style.backgroundImage='url("https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Homepage-Promo-Cybertruck-Desktop-US-v2.jpg")';
         heading.style.transition="all 1s ease"
