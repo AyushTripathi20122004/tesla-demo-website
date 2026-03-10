@@ -730,6 +730,9 @@ html body{
 }
 
 @media (min-width: 300px) and (max-width: 600px) {
+    .safty_section_base{
+        margin-bottom:50px;
+    }
     .car_details_footer{
         height:100vh;
         align-items:flex-start;
