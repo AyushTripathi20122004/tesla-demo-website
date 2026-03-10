@@ -1155,7 +1155,7 @@ html body{
 @media (min-width: 300px) and (max-width: 600px){
     .section5{
         height: auto;
-        padding: 0px 0px 0px 25px;
+        padding: 0px ;
     }
 }
 
@@ -1277,7 +1277,7 @@ html body{
 @media (min-width: 300px) and (max-width: 600px){
     .card2_base{
         overflow-x: scroll;
-        padding: 0px 4px;
+        padding: 0px 0px 0px 25px;
         height: 20rem;
     }
     .card2_scrolling_btn_section{
