@@ -296,7 +296,7 @@ sac2_right_btn.addEventListener("click", () => {
 
 
     function sac5_update_slider(){
-      card2_base.style.transform = `translateX(-${sac5_idx * 50}%)`;
+      card2_base.style.transform = `translateX(-${sac5_idx * 75}%)`;
       card2_btn.forEach(b => b.style.backgroundColor = "");
       card2_btn[sac5_idx].style.backgroundColor = "#171a20";
 
@@ -397,4 +397,4 @@ function solar_roof(){
 function powerwell(){
   window.location.href = "tesla_powerwell.html"
   console.log("powerwell button was clicked")
-}
+}d
