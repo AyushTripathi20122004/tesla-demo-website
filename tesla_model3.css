@@ -16,6 +16,7 @@ html body{
 .container_window{
     max-width: 1400px;
     width: 100%;
+    
 }
 @media (min-width: 300px) and (max-width: 600px) {
     html body{
@@ -78,9 +79,8 @@ html body{
 .Container-base{
     width: 100%;
     max-width: 100%;
-    height: 88.2vh;
+    height: 100vh;
     max-height: 100%;
-    padding: 16px;
     /* border: 1px solid black; */
     display: grid;
     grid-template-columns: 2fr 1fr;
@@ -95,11 +95,18 @@ html body{
     } 
 }
 
+@media (min-width: 768px) and (max-width: 1023px) {
+    .Container-base{
+        display: flex;
+        flex-direction: column;
+        overflow: visible;
+    }
+}
 
 /* image section */
 .Car_design_img_section{
     /* border: 1px solid black; */
-    height: 90vh;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -111,7 +118,7 @@ html body{
     background-image:url('https://static-assets.tesla.com/configurator/compositor?context=design_studio_2&options=$MT367,$PN01,$W38C,$IBB4&view=STUD_FRONT34&model=m3&size=1920&bkba_opt=2&crop=0,0,0,0&overlay=0&') ;
     background-position: center center;
     background-repeat: no-repeat;
-    background-size: 140%;
+    background-size: cover;
 
 }
 .card_base{
@@ -119,7 +126,7 @@ html body{
     width: 100%;
     max-width: 100%;
     max-height: 100%;
-    padding: 32px;
+
 }
 @media (min-width: 300px) and (max-width: 600px) {
     .card_base{
@@ -130,6 +137,8 @@ html body{
     }
 
 }
+
+
 .card{
     height: 100vh;
     width: auto;
@@ -148,6 +157,17 @@ html body{
        top:0px;
        padding: 0px 16px;
     } 
+}
+
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .Car_design_img_section{
+        height: 30rem;
+    }
+    .card{
+       height:30vh;
+       background-size:cover;
+    }
 }
 .arrow{
     border-radius: 4px;
@@ -172,7 +192,7 @@ html body{
     padding: 4px;
     height: 100vh;
     display: grid;
-    grid-template-rows: 2fr 0.8fr;
+    grid-template-rows: 2fr 0.52fr;
     overflow: hidden;
 }
 @media (min-width: 300px) and (max-width: 600px) {
@@ -181,6 +201,13 @@ html body{
        grid-template-rows: 2fr 0.2fr;
        overflow: visible;
     } 
+}
+
+
+@media (min-width: 768px) and (max-width: 1023px) {
+.car_d_section{
+    height: 50rem;
+}
 }
 
 .Car_details_section{
@@ -486,11 +513,16 @@ html body{
 .inst{
     /* border: 1px solid black; */
     display: flex;
-    justify-content: space-between;
     gap:20px;
     align-items: center;
     padding-right: 30px;
 }
+.inst svg{
+    height:70px;
+    width:70px;
+    color:#393c41;
+}
+
 .inst_info{
     display: flex;
     flex-direction: column;
@@ -691,16 +723,6 @@ html body{
 }
 
 
-
-
-
-
-
-
-
-
-
-
 /* ------ footer details----- */
 .car_details_footer{
     height:80px;
@@ -737,4 +759,11 @@ html body{
         top: 92%;
         padding: 0px 30px 0px 8px;
     } 
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+
+.car_details_footer button{
+    height: auto;
+    padding: 16px 32px;
+}
 }
