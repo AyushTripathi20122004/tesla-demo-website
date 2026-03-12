@@ -140,7 +140,7 @@ html body{
 
 
 .card{
-    height: 100vh;
+    height: 700px;
     width: auto;
     /* border: 1px solid black; */
     display: flex;
@@ -355,6 +355,18 @@ html body{
     padding: 0px 8px;
     color: #171a20;
 }
+.view_feature_link{
+    color: black;
+    font-size: 12px;
+    font-weight: 400;
+    transition: all 0.25s ease;
+
+}
+.view_feature_link:hover{
+    font-size: 12.6px;
+    text-decoration: 1.5px underline #171a20;
+
+}
 
 .modification{
     margin-top: 50px;
@@ -518,9 +530,15 @@ html body{
     padding-right: 30px;
 }
 .inst svg{
-    height:70px;
-    width:70px;
+    height:4rem;
+    width:4rem;
     color:#393c41;
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+    .inst svg{
+        height: 2rem;
+        width: 2rem;
+    }
 }
 
 .inst_info{
@@ -583,6 +601,12 @@ html body{
     align-items: center;
     gap: 20px;
 }
+@media (min-width: 768px) and (max-width: 1023px) {
+    .w_container{
+        display: flex;
+        justify-content:unset;
+    }
+}
 .w_info{
     display:grid;
     grid-auto-flow: row;
@@ -608,7 +632,13 @@ html body{
     align-items: center;
     color:#0b0c0f;
     font-weight: 400;
+    transition: all 0.25s ease;
     
+}
+.w_learn_link:hover{
+    font-size: 16.7px;
+    color:#171a20;
+    text-decoration: 2px underline #171a20;
 }
 /* payment container start here */
 .container_payment {
@@ -759,6 +789,9 @@ html body{
         top: 92%;
         padding: 0px 30px 0px 8px;
     } 
+    .est_payment_container{
+        margin-bottom: 100px;
+    }
 }
 @media (min-width: 768px) and (max-width: 1023px) {
 
