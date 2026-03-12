@@ -690,7 +690,11 @@ html body{
     
 }
 
-
+@media (min-width: 300px) and (max-width: 600px) {
+    .est_payment_container{
+        margin-buttom:100px;
+    }
+}
 
 
 
