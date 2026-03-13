@@ -266,23 +266,24 @@ html body{
     gap: 10px;
 }
 .Input{
+    width: 40vw;
     display: flex;
     flex-direction: row;
-    /* border: 1px solid black; */
+    border: 1px solid black;
 }
 .Input input{
     font-size: 14px;
     padding: 14px 14px 14px 0px;
     width: 40vw;
-    border: 1px solid rgb(112, 112, 112);/
-    border-left: None;
+    border: none;
+
 }
-.Input input:focus {
+.Input input:focus{
   outline: none;
   
 }
 .Input i{
-    border: 1px solid rgb(112, 112, 112);
+    /* border: 1px solid rgb(112, 112, 112); */
     border-right: None;
     padding: 0px 14px;
     display: flex;
@@ -292,17 +293,23 @@ html body{
 }
 
 @media (min-width: 300px) and (max-width: 600px){
+    .Input{
+        width: 100%;
+    }
     .location_selct_base{
         padding: 16px;
     }
     .Input input{
-        width: 84vw;
+        width: 100%;
     }
 }
 
 /*------------ responsive for tablets ------------------ */
 
 @media (min-width: 768px) and (max-width: 1023px) {
+    .Input{
+        width: 100%;
+    }
     .main_base_container{
         row-gap: 100px;
     }
