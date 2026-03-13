@@ -7,8 +7,14 @@
     font-style: normal;
 }
 html body{
-    overflow-x: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+.container_window{
+    max-width: 1400px;
     width: 100%;
+
 }
 
 
@@ -20,11 +26,11 @@ html body{
     background-color: white;
     top: 0px;
     width: 100%;
+    padding:0px 30px;
    
 }
 .logo{
     display: flex;
-    padding-left: 30px;
     align-items: center;
 }
 .logo svg{
@@ -34,7 +40,6 @@ html body{
 
 .menu_section{
     display: flex;
-    padding-right: 20px;
     justify-content: right;
     align-items: center;
 }
@@ -52,7 +57,6 @@ html body{
 @media (min-width: 300px) and (max-width: 600px) {
     .navbar {
         background-color: black;
-        position: relative;
     }
     .logo svg{
         width:80px;
@@ -69,8 +73,8 @@ html body{
 /*---------------------------- main base container coding start here------------------------------- */
 
 .main_base_container{
-    height: 100vh;
-    width: 100vw;
+    height: 100%;
+    width: 100%;
     max-width: 100%;
     max-height: 100%;
     display: grid;
@@ -191,6 +195,11 @@ html body{
 }
 
 @media (min-width: 300px) and (max-width: 600px) {
+    
+    .main_base_container{
+        row-gap: 100px;
+    }
+    
     .select_model_base{
         padding: 0px;
     }
@@ -216,6 +225,39 @@ html body{
 
 }
 
+/*------------ responsive for tablets ------------------ */
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    
+    .select_model_base{
+        padding: 0px;
+    }
+    .card_image_base{
+        display: grid;
+        grid-template-columns: none;
+        grid-template-rows: 3fr 1fr;
+    }
+    .car_images{
+        grid-row: 1;
+    }
+    .card2 {
+        display: grid;
+        grid-auto-flow: column;
+        grid-row: 2;
+        padding: 0px 0px 0px 64px;
+        overflow: scroll;
+    }
+    .card_section{
+        height: 8rem;
+        width: 18rem;
+        display: flex;
+        flex-direction: column;
+    }
+
+}
+
+
+
 /* -------------------location_selct section start here ------------------------ */
 .location_selct_base{
     padding: 0px 80px 0px 80px;
@@ -226,6 +268,7 @@ html body{
 .Input{
     display: flex;
     flex-direction: row;
+    border: 1px solid black;
 }
 .Input input{
     font-size: 14px;
@@ -233,6 +276,10 @@ html body{
     width: 40vw;
     border: 1px solid rgb(112, 112, 112);
     border-left: None;
+}
+.Input input:focus {
+  outline: none;
+  
 }
 .Input i{
     border: 1px solid rgb(112, 112, 112);
@@ -253,6 +300,25 @@ html body{
     }
 }
 
+/*------------ responsive for tablets ------------------ */
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .main_base_container{
+        row-gap: 100px;
+    }
+    .Input input{
+        width: 100%;
+    }
+    .location_selct_base{
+        padding: 0px 20px;
+    }
+    .location_selct_base h2{
+        text-align: center;
+    }
+    .location_selct_base p{
+        text-align: center;
+    }
+}
 
 
 /* ------------------------driver_details_base---------------------- */
@@ -355,6 +421,28 @@ html body{
 
 }
 
+
+/*------------ responsive for tablets ------------------ */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .form_car_image{
+        display: none;
+    }
+    .driver_detail_card{
+        display: block;
+    }
+    .form_input{
+        grid-template-columns: unset;
+
+    }
+        
+    .submit_btn button{
+        width: 100%;
+    }
+
+    
+
+}
+
 /* ----------------------------------para_base---------------------------------- */
 
 .para_base{
@@ -368,6 +456,13 @@ html body{
 @media (min-width: 300px) and (max-width: 600px) {
     .para_base{
         padding: 16px;
+    }
+}
+/*------------ responsive for tablets ------------------ */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .para_base{
+        color: #393c41;
+        font-weight: 500;
     }
 }
 
@@ -409,5 +504,12 @@ html body{
         display: grid;
         text-align: center;
         gap: 10px;
+    }
+}
+
+/*------------ responsive for tablets ------------------ */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .links_base{
+        width: 100%;
     }
 }
