@@ -499,7 +499,7 @@ html body{
 /* resposnsive for mobile */
 @media (min-width: 300px) and (max-width: 600px) {
     .navbar {
-        background-color: transparent;
+        background-color: black;
         position: absolute;
     }
     .logo svg:hover{
@@ -547,18 +547,19 @@ html body{
 
 /* -----------main container start here-----------> */
 
-.container_main{
-    display: grid;
-    grid-auto-flow: row;
-    gap: 300px;
-    /* border: 1px solid  black; */
-    justify-items: center;
-}
+/* .container_main{
+    /* border: 1px solid  black; 
+
+}*/
 .card_container{
     /* border: 1px solid black; */
     object-fit: cover;
-    height: 50rem;
-    width: 70rem;
+    overflow: hidden;
+    max-width: 1400px;
+    width: 100%;
+    position: relative;
+    margin-bottom: 10rem;
+    padding-left: 5rem;
 }
 .card_base{
     height: 100%;
@@ -574,6 +575,7 @@ html body{
 
 }
 .card{
+    height: 33rem;
     padding:0px;
     position: relative;
     /* border: 1px solid black; */
@@ -619,10 +621,11 @@ html body{
 }
 
 .right_left_btn{
-    position: relative;
+    position: absolute;
     z-index: 2;
     top: 50%;
     display:flex;
+    width: 90%;
     justify-content: space-between;
     align-items: center;
     padding: 0px 16px;
@@ -664,7 +667,8 @@ html body{
         overflow-x: scroll;
     }
     .card {
-        flex: 0 0 95%;
+        flex: 0 0 88%;
+        height: 100%;
 
     }
     .card h1{
@@ -684,6 +688,7 @@ html body{
     grid-template-columns: 1.5fr 1fr;
     /* border: 1px solid black; */
     padding: 0px 60px;
+    margin-bottom: 5rem;
 
 }
 
@@ -766,6 +771,30 @@ html body{
     }
 }
 
+@media (min-width: 700px) and (max-width: 1023px) {
+    .compare_model_base{
+        display: grid;
+        grid-template-rows: 0.8fr 0fr;
+        grid-template-columns: none;
+        padding: 0rem 5rem;
+    }
+    .compare_model_image{
+        grid-row: 1;
+    }
+    .compare_model_heading h1{
+        font-size: 32px;
+    }
+    .compare_model_heading p{
+        font-size: 14px;
+        font-weight: 400;
+        
+    }
+    .compare_model_btn button{
+        font-size: 12px;
+        font-weight: 400;
+        padding: 16px;
+    }
+}
 
 /* -------------------links section code here-------------------- */
 
@@ -775,12 +804,13 @@ html body{
     justify-content: center;
     align-items: flex-start;
     gap: 20px;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
 }
 
 .containter_links a{
     text-decoration: none;
     color:#5c5e62;
+    font-weight: 450;
 }
 
 @media (min-width: 300px) and (max-width: 600px) {
@@ -790,6 +820,7 @@ html body{
 }
 
 /* ---------footer styling start from here--------- */
+/* ---------footer styling start from here--------- */
 .footer{
     height: 60px;
     width: 100%;
@@ -797,10 +828,9 @@ html body{
     justify-content: center;
     align-items: center;
     /* border: 1px solid black; */
-    position:fixed;
+    position:sticky;
     bottom: 0px;
     background-color: #fff;
-    box-shadow: -90px -0px 6px rgb(43, 43, 43);
 }
 .footer_btn_base{
     height: 100%;
@@ -825,6 +855,10 @@ html body{
     justify-content: center;
     align-items: center;
     gap: 4px;
+    transition: background-color 0.5s ease;
+}
+.footer_btn:hover{
+    background-color: #d8d8d8;
 }
 /* footerresponsive here */
 @media (min-width: 300px) and (max-width: 600px){
@@ -836,6 +870,6 @@ html body{
     }
     .footer_btn{
         gap: 8px;
+        padding: 8px;
     }
-  
 }
