@@ -36,7 +36,7 @@ let currentIndex = 0;
 function updateSlider() {
 
     // Move slider
-    card_base.style.transform = `translateX(-${currentIndex * 40}vw)`;
+    card_base.style.transform = `translateX(-${currentIndex * 40}%)`;
 
     // Update dot color
     sliding_btn.forEach(b => b.style.backgroundColor = "");
@@ -46,7 +46,8 @@ function updateSlider() {
     if (currentIndex === 0) {
         left_btn.style.display = "none";
         right_left_btn.style.justifyContent = "flex-end";
-    } else {
+    } 
+    else {
         left_btn.style.display = "block";
         right_left_btn.style.justifyContent = "space-between";
     }
@@ -54,7 +55,8 @@ function updateSlider() {
     // Hide right button if last card
     if (currentIndex === n - 1) {
         right_btn.style.display = "none";
-    } else {
+    } 
+    else {
         right_btn.style.display = "block";
     }
 }
