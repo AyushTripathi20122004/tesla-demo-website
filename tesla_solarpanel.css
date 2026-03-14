@@ -539,7 +539,7 @@ html body{
     
 
 }
-@media (min-width: 700px) and (max-width: 1023px) {
+@media (min-width: 700px) and (max-width: 1025px) {
 
     html body{
         overflow: visible;
@@ -581,7 +581,7 @@ html body{
     height: 100%;
     width: 100%;
     object-fit:  cover;
-    border-radius: 32px;
+    border-radius: 8px;
 
 }
 .pause_play_btn{
@@ -639,7 +639,7 @@ html body{
 
 }
 /* -------------responsive for tablets------------ */
-@media (min-width: 700px) and (max-width: 1023px) {
+@media (min-width: 700px) and (max-width: 1025px) {
     .icons_container{
         display: none;
     }
@@ -768,7 +768,7 @@ html body{
 }
 
 /* -------------responsive for tablets------------ */
-@media (min-width: 700px) and (max-width: 1023px) {
+@media (min-width: 700px) and (max-width: 1025px) {
     .heading_para h1{
         width: 100%;
     }
