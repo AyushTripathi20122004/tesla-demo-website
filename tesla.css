@@ -888,7 +888,8 @@ html body{
         display: none;
     }
     .heading_model_name{
-        display: block;
+        display: flex;
+        flex-direction: column;
         height: auto;
     }
     .heading_model_name h1{
