@@ -24,6 +24,13 @@ html body{
        overflow: visible;
     } 
 }
+@media (min-width: 700px) and (max-width: 1024px) {
+    html body{
+        height:None;
+       margin: 0;
+       overflow: visible;
+    } 
+}
 
 
 .navbar{
@@ -73,6 +80,12 @@ html body{
         
     }
 }
+@media (min-width: 700px) and (max-width: 1024px) {
+    .navbar{
+        position: relative;
+        
+    }
+}
 
 /* section Container-base start here */
 .Container-base{
@@ -95,6 +108,14 @@ html body{
     } 
 }
 
+@media (min-width: 700px) and (max-width: 1024px) {
+    .Container-base{
+        grid-template-columns:None;
+        grid-template-rows: 1fr 1fr;
+        overflow: visible;
+    }
+
+}
 
 /* image section */
 .Car_design_img_section{
@@ -130,6 +151,15 @@ html body{
     }
 
 }
+@media (min-width: 700px) and (max-width: 1024px) {
+    .card_base{
+        padding:0px;
+    } 
+    .Car_design_img_section{
+        height: auto;
+    }
+
+}
 .card{
     height: 100vh;
     width: auto;
@@ -146,6 +176,13 @@ html body{
        height:40vh;
        position: sticky;
        top:0px;
+       padding: 0px 16px;
+    } 
+}
+
+@media (min-width: 700px) and (max-width: 1024px) {
+    .card{
+       height:30rem;
        padding: 0px 16px;
     } 
 }
@@ -173,7 +210,8 @@ html body{
     height: 100vh;
     display: grid;
     grid-template-rows: 2fr 0.8fr;
-    overflow: hidden;
+    
+    position: relative;
 }
 @media (min-width: 300px) and (max-width: 600px) {
     .car_d_section{
@@ -231,6 +269,11 @@ html body{
     } 
 }
 
+@media (min-width: 700px) and (max-width: 1024px) {
+    .Car_details_section{
+        overflow:visible;
+    } 
+}
 
 
 
@@ -486,10 +529,14 @@ html body{
 .inst{
     /* border: 1px solid black; */
     display: flex;
-    justify-content: space-between;
     gap:20px;
     align-items: center;
     padding-right: 30px;
+}
+.inst svg{
+    height:60px; 
+    width:60px; 
+    color:#393c41;
 }
 .inst_info{
     display: flex;
@@ -550,6 +597,9 @@ html body{
     justify-content: center;
     align-items: center;
     gap: 20px;
+}
+.w_container svg{
+    color: #393c41;
 }
 .w_info{
     display:grid;
@@ -639,6 +689,29 @@ html body{
     margin-left:4px;
 }
 
+@media (min-width: 300px) and (max-width: 600px) {
+    .inst svg{
+        height: 4rem;
+        width: 4rem;
+    }
+}
+
+@media (min-width: 700px) and (max-width: 1024px) {
+    .inst svg{
+        height: 2rem;
+        width: 2rem;
+    }
+    .w_container{
+    display: flex;
+    justify-content: unset;
+    align-items: center;
+    gap: 20px;
+    }
+
+}
+
+
+
 /* ---------est_payment_container-------- */
 .est_payment_container{
     /* border:1px solid black; */
@@ -690,31 +763,14 @@ html body{
     
 }
 
-@media (min-width: 300px) and (max-width: 600px) {
-    .est_payment_container{
-        margin-bottom:100px;
-    }
-}
-
-
-
-
-
-
-
-
-
 
 /* ------ footer details----- */
 .car_details_footer{
-    height:80px;
-    background-color: #fff;
-    padding: 8px;
-    width:100%;
-    /* border: 1px solid black; */
     display: grid;
-    grid-auto-flow: column;
-    align-items: center;
+    grid-template-columns: 1fr 1fr;
+    padding: 4px;
+    background-color: #fff;
+    
 
 }
 .car_details_footer button{
@@ -732,16 +788,46 @@ html body{
 .price{
     height: 40px;
 }
+.price h1{
+    font-size: 24px; 
+    font-weight: 400;
+}
+.price p{
+    font-size: 12px;
+    color:#393c41;
+}
 
 @media (min-width: 300px) and (max-width: 600px) {
     .safty_section_base{
         margin-bottom:50px;
     }
     .car_details_footer{
-        height:100vh;
-        align-items:flex-start;
-        position: fixed;
-        top: 92%;
-        padding: 0px 30px 0px 8px;
+        position: sticky;
+        bottom: 0px;
     } 
+    
+}
+
+@media (min-width: 700px) and (max-width: 1024px) {
+        
+    .car_details_footer{
+        position: sticky;
+        bottom: 0px;
+        height: 6rem;
+    }
+    .car_details_footer button{
+        padding:28px 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .price h1{
+        font-size: 38px; 
+        font-weight: 400;
+    }
+    .price p{
+        font-size: 18px;
+        color:#393c41;
+    }
+
 }
