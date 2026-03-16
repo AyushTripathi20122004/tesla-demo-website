@@ -375,6 +375,11 @@ html body{
     padding: 0px 8px;
     color: #171a20;
 }
+.view_feature_link{
+    color: black;
+    font-size: 12px;
+    font-weight: 400;
+}
 
 .modification{
     margin-top: 50px;
