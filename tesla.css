@@ -608,6 +608,7 @@ html body{
     justify-content: center;
     align-items: center;
     gap: 20px;
+    z-index: 1;
 }
 /* buttons_styling to change picture */
 .modle_sectio_button button{
