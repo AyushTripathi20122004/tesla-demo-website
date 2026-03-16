@@ -361,6 +361,10 @@ html body{
     border-radius: 4px;
 
 }
+.view_feature .btn1 svg{
+    height: 1.5rem;
+    width: 1.5rem;
+}
 .view_feature .btn2{
     width: 50%;
     height: 40px;
