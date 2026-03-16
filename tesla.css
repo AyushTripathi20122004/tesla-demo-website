@@ -913,7 +913,7 @@ html body{
 
 .section4{
     height: auto;
-    margin-bottom: 100px;
+    /* margin-bottom: 100px; */
     display: grid;
     gap: 40px;
     grid-auto-flow: row;
