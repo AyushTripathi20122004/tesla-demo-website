@@ -397,4 +397,4 @@ function solar_roof(){
 function powerwell(){
   window.location.href = "tesla_powerwell.html"
   console.log("powerwell button was clicked")
-}d
+}
