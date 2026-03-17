@@ -4,7 +4,22 @@ nav_logo.addEventListener("click",()=>{
   window.location.href = "index.html";
 });
 
+// language button logic here
+let lang_btn=document.querySelector(".language_icon");
+let lang_container=document.querySelector(".language_container");
+lang_btn.addEventListener("click",()=>{
+    console.log("language btn was clicked");
+    if(lang_container.style.display==="none"){
+        lang_container.style.display="block";
+    }else{
+        lang_container.style.display="none";
+    }
 
+});
+
+
+
+// sliding cards logic here
 
 document.addEventListener("DOMContentLoaded", () => {
 
