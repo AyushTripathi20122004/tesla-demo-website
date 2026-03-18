@@ -1435,6 +1435,10 @@ html body{
     text-decoration: none;
     color: #393c41;
 }
+.links:hover{
+    color:#171a20;
+    text-decoration: 2px underline #171a20;
+}
 /* section 6 responsive here */
 @media (min-width: 300px) and (max-width: 600px){
     .section6{
