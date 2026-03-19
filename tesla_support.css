@@ -1,0 +1,249 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+html{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+html body{
+    display: flex;
+    justify-content: center;
+    overflow-x: hidden;
+   
+}
+.window_container{
+    max-width: 1400px;
+    width: 100%;
+}
+.nav_search_base{
+    position: relative;
+    height: 280px;
+    width: 100%;
+    display: grid;
+    /* border: 1px solid black; */
+    grid-template-rows: 1fr 0fr;
+    
+}
+.nav_base{
+    /* border: 1px solid black; */
+    background-image: url("https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Support-Main-Hero-01-Desktop.jpg");
+    background-position: center;
+    background-size:cover;
+    background-repeat: no-repeat;
+    
+}
+
+/*---------- search bar code here------------ */
+.search_bar_base{
+    padding: 8px;
+    position: absolute;
+    top: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.search_bar{
+    display:flex;
+    border:1px solid white;
+    width: 25%;
+    height: 2.5rem;
+    position: absolute;
+    border-radius: 4px;
+
+}
+.search_bar svg{
+    background-color:white;
+    color: gray;
+    height: auto;
+    width: 2rem;
+}
+.search_bar input{
+    width: 100%;
+    border: none;
+    font-size: 16px;
+    font-weight: 400;
+    padding-left: 8px;
+    color: gray;
+
+}
+.search_bar input::placeholder{
+    font-weight: 400;
+    font-size: 16px;
+}
+.search_bar input:focus{
+    outline: none;
+}
+
+@media (min-width: 300px) and (max-width: 600px) {
+    .search_bar_base{
+        position: relative;
+        top: 0%;
+        align-items: center;
+    }
+    .nav_search_base{
+        grid-template-rows: 1fr 0.2fr;
+        gap: 40px;
+    }
+    .search_bar{ 
+        width: 70%;
+        border: 2px solid #e0e0e0;
+    }
+}
+
+
+
+
+
+
+
+.navbar{
+    /* border: 1px solid black; */
+    display: grid;
+    grid-template-columns: 1fr 2.5fr 1fr;
+    height: 56px;
+    background-color: transparent;
+    position: sticky;
+    top: 0px;
+    width: 100%;
+    z-index: 2;
+   
+}
+.logo{
+    display: flex;
+    padding-left: 30px;
+    align-items: center;
+}
+.logo svg{
+    padding: 2px;
+    height: 50% ;
+    width: 8rem;
+    color:#f0f0f0
+}
+.logo svg:hover{
+    border: 2px solid #f0f0f0;
+    border-radius: 4px;
+}
+/* ----------------nav icons--------------- */
+.nav_icons{
+    padding: 8px;
+    display: flex;
+    justify-content: center;
+}
+.nav_icons ul{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+.nav_icons ul li{
+    float: left;
+    list-style-type: none;
+    font-weight: 450;
+    
+}
+.nav_icons_btn{
+    padding: 8px 8px;
+    border: none;
+    font-weight: 450;
+    background-color: transparent;
+    transition: background-color 0.5s ease;
+    border-radius: 4px;
+    color: white;
+    /* border: 1px solid black; */
+}
+.nav_icons_btn:hover{
+    background-color: rgba(255, 255, 255, 0.5);
+    color:#171a20;
+}
+
+
+/* ------- buttons show in navbar at 1200px widht-------------- */
+.max_width_btn{
+    display: flex;
+    justify-content: flex-end;
+    /* border: 1px solid black; */
+
+}
+
+ 
+@media(max-width:1200px){
+    .nav_icons{
+        display: none;
+    }
+    .max_width_btn{
+        display: none;
+    }
+    .navbar{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+
+}
+@media(min-width:1200px){
+    .menu_button{
+        display: none;
+    }
+}
+
+
+
+.menu_section{
+    display: flex;
+    padding-right: 20px;
+    justify-content: right;
+    align-items: center;
+    position: relative;
+    /* border: 1px solid black; */
+    
+}
+
+.menu_section button{
+    padding: 6px 18px;
+    border: none;
+    color: #171a20;
+    font-weight: light;
+    background-color: transparent;
+    border-radius: 4px;
+    color: #f0f0f0;
+
+}
+
+.menu_section button:hover{
+    color:#171a20;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+
+
+
+
+/* resposnsive for mobile */
+@media (min-width: 300px) and (max-width: 600px) {
+    .navbar {
+        background-color: transparent;
+        position: absolute;
+    }
+    .logo svg:hover{
+    border: 2px solid white;
+    border-radius: 4px;
+    }
+    .logo svg{
+        width:80px;
+        height:14px ;
+        color: white;
+    }
+    .menu_section button{
+        background-color: transparent;
+        color: white;
+    }
+}
+
