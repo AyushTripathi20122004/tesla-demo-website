@@ -108,7 +108,7 @@ html body{
 .navbar{
     /* border: 1px solid black; */
     display: grid;
-    grid-template-columns: 1fr 2.5fr 1fr;
+    grid-template-columns: 0.5fr 2.5fr 0.5fr;
     height: 56px;
     background-color: transparent;
     position: sticky;
@@ -247,3 +247,156 @@ html body{
     }
 }
 
+
+
+/* ----------container info base code here ---------*/
+.container_info_base{
+    padding: 0px 8rem;
+    display: grid;
+    gap: 2rem;
+    width: 100%;
+    /* border: 1px solid black; */
+    margin-top: 5rem;
+}
+.tran_topic_base{
+    width: 100%;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+/* 
+    border: 1px solid black; */
+}
+
+.trend_links{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.treand_heading h1{
+    color: #171a20;
+    font-weight: 450;
+    padding: 16px 0px;
+    /* border: 1px solid black; */
+}
+.trend_links a{
+    text-decoration: none;
+    color: #171a20;
+    font-size: 14px;
+    font-weight: 400;
+}
+.trend_links a:hover{
+   
+    text-decoration: 1px solid underline;
+    color: #3e6ae1;
+    cursor: pointer;
+}
+
+
+/* resposnsive for mobile */
+@media (min-width: 300px) and (max-width: 600px) {
+
+    .container_info_base{
+        padding: 0rem 1rem;
+        margin-top: 2.5rem;
+    }
+    .tran_topic_base{
+        grid-template-rows: unset;
+        gap: 10px;
+    }
+    .trend_links{
+        display: grid;
+        gap: 15px;
+    }
+}
+
+
+/*---------- Vehical and Energy code here----------- */
+
+.vehical_energy_base{
+    display: grid;
+    gap: 10px;
+    /* border: 1px solid black; */
+}
+.v_e_heading{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+}
+.vehical_container {
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+    border-bottom: 4px solid #171a20;
+}
+.vehical_container h1{
+    font-weight: 450;
+    font-size: 20px;
+}
+.energy_container {
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+}
+.energy_container h1{
+    font-size: 20px;
+    font-weight: 450;
+}
+.vehical_container:hover{
+    border-bottom: 4px solid #171a20;
+
+}
+.energy_container:hover{
+    border-bottom: 4px solid #171a20;
+
+}
+
+.v_e_info1{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    /* border: 1px solid black; */
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+
+
+.vehical_card1 h3{
+    padding: 16px 4px;
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 16px;
+}
+.vehical_card2 h3{
+    padding: 16px 4px;
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 16px;
+}
+.vehical_card3 h3{
+    padding: 16px 4px;
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 16px;
+}
+.vehical_links{
+    display: grid;
+    grid-auto-flow: row;
+    gap: 20px;
+    justify-content: center;
+    
+}
+.vehical_links a{
+    text-decoration: none;
+    color: #5c5e62;
+    font-size: 13px;
+    font-weight: 450;
+}
+.vehical_links a:hover{
+    text-decoration: 1px solid underline;
+    color: #3e6ae1;
+    cursor: pointer;
+}
