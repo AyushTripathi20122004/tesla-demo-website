@@ -22,6 +22,8 @@ html body{
 .window_container{
     max-width: 1400px;
     width: 100%;
+    display: grid;
+    gap: 2rem;
 }
 .nav_search_base{
     position: relative;
@@ -111,8 +113,6 @@ html body{
     grid-template-columns: 0.5fr 2.5fr 0.5fr;
     height: 56px;
     background-color: transparent;
-    position: sticky;
-    top: 0px;
     width: 100%;
     z-index: 2;
    
@@ -482,7 +482,7 @@ html body{
     /* border : 1px solid black; */
     width: 100%;
     height: 400px;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
     gap: 2rem;
 }
 .v_g_image{
@@ -537,6 +537,246 @@ html body{
     }
 }
 
+
+
+/* ------getting started section start here --------*/
+
+.getting_start{
+    display: grid;
+    grid-template-columns: 0.8fr 1fr;
+    /* border : 1px solid black; */
+    width: 100%;
+    height: 400px;
+    margin-bottom: 100px;
+    gap: 2rem;
+}
+
+.g_s_image{
+    background-image: url("https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/support-getting-started.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.gs_image_context_base{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 2rem;
+}
+.gs_image_context{
+    display: grid;
+    gap: 2rem;
+    text-align: right;
+    align-items: center;
+    padding: 4px 42px 4px 0px;
+}
+.gs_image_context p{
+    color: #393c41;
+    font-weight: 400;
+    font-size: 14px;
+}
+.gs_image_context h2{
+    font-size: 20px;
+    color:#171a20;
+    font-weight: 450;
+}
+.gs_image_context_links{
+    display: grid;
+    width: 100%;
+    gap:1rem;
+    
+}
+
+.gs_image_context a{
+    color: #171a20;
+    font-weight: 450;
+    font-size: 14px;
+    transition: color 0.25s ease;
+}
+.gs_image_context a:hover{
+    text-decoration: 1px solid underline;
+    color: #3e6ae1;
+    cursor: pointer;
+}
+
+
+
+
+/* -------get personal support section start here----- */
+.s_footer{
+    display: grid;
+    /* border: 1px solid black; */
+    width: 100%;
+}
+.get_pers_support_base{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    /* border: 1px solid black; */
+    background-color: #f4f4f4;
+    padding: 4rem 0rem 2rem 0px;
+}
+.gps_container{
+    display: grid;
+    gap: 1rem;
+    text-align: center;
+    /* border: 1px solid black; */
+    width: 50rem;
+}
+.gps_btn_base{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.gps_btn_base button{
+    border: 2.5px solid #171a20;
+    border-radius: 4px;
+    padding: 10px 64px;
+    font-size: 12px;
+    font-weight: 450;
+    transition: all 0.5s ease;
+    background-color: #fff;
+}
+.gps_btn_base button:hover{
+    border: 2.5px solid #f4f4f4;
+    background-color: #171a20;
+    outline: 1px solid #171a20;
+    color: #f4f4f4;
+}
+.gps_container h1{
+    font-size: 28px;
+    font-weight: 500;
+    color: #171a20;
+}
+.gps_container p{
+    color: #393c41;
+    font-weight: 500;
+    font-size: 12px;
+    word-spacing: 1px;
+    padding: 0px 16px;
+}
+
+
+
+
+/* ----------footer code start here----------------- */
+.support_footer{
+    /* border: 1px solid black; */
+    background-color:#393c41;
+    padding: 2rem;
+    /* height: 30rem; */
+}
+.footer_container{
+    display: grid;
+    grid-template-columns: 1.5fr 0.5fr;
+}
+
+.footer_map{
+    display: flex;
+    gap: 2rem;
+    justify-content: right;
+    border-right: 1px solid #5c5e62;
+    border-bottom:1px solid #5c5e62;
+    height: 100%;
+    padding: 1rem;
+}
+.store_location a{
+    font-size: 14px;
+    font-weight: 450;
+    color: #f4f4f4;
+    text-decoration: none;
+}
+.location_map{
+    display: flex;
+    flex-direction: column;
+}
+.location_map a{
+    text-decoration: none;
+    color: #f4f4f4;
+    font-weight: 450;
+    font-size: 14px;
+    margin-bottom: 1rem;
+}
+
+
+.footer_links1{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    padding-left: 2rem;
+    gap: 2rem;
+    border-bottom: 1px solid #5c5e62;
+}
+.link_container1 ul{
+    display: grid;
+    gap: 0.5rem;
+
+}
+.link_container1 ul li{
+    list-style-type: none;
+
+}
+.link_container1 ul li a{
+    text-decoration: none;
+    color: #f4f4f4;
+    font-weight: 450;
+    font-size: 14px;
+}
+
+
+/* ---------list 2 -------------- */
+.link_container2 ul{
+    display: grid;
+    gap: 0.5rem;
+
+}
+.link_container2 ul li{
+    list-style-type: none;
+
+}
+.link_container2 ul li a{
+    text-decoration: none;
+    color: #f4f4f4;
+    font-weight: 450;
+    font-size: 14px;
+}
+
+/* ------------------list 3---------------- */
+
+
+.link_container3 ul{
+    display: grid;
+    gap: 0.5rem;
+
+}
+.link_container3 ul li{
+    list-style-type: none;
+
+}
+.link_container3 ul li a{
+    text-decoration: none;
+    color: #f4f4f4;
+    font-weight: 450;
+    font-size: 14px;
+}
+
+
+
+/* ------footer_links2 code here------ */
+.footer_links2{
+    padding: 1rem;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+}
+.footer_links2 a{
+    text-decoration: none;
+    color: #f4f4f4;
+    font-weight: 450;
+    font-size: 14px;
+}
 
 
 
