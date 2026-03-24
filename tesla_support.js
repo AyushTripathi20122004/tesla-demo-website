@@ -26,7 +26,10 @@ energy_btn.addEventListener("click",()=>{
         vehical_btn.style.borderBottom="none";
     }
 });
-
+// ----- menu button ------
+function open_menu_section() {
+  window.location.href = "tesla_menu.html";
+}
 
 
 
