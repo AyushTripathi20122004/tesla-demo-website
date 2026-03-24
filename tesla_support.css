@@ -97,6 +97,7 @@ html body{
     }
     .search_bar{ 
         width: 70%;
+        height: 4rem;
         border: 2px solid #e0e0e0;
     }
 }
@@ -292,6 +293,12 @@ html body{
     color: #3e6ae1;
     cursor: pointer;
 }
+/* resposnsive for tablet */
+@media (min-width: 700px) and (max-width: 1024px) {
+    .container_info_base{
+        padding: 0rem 1rem;
+    }
+}
 
 
 /* resposnsive for mobile */
@@ -308,6 +315,13 @@ html body{
     .trend_links{
         display: grid;
         gap: 15px;
+    }
+    .treand_heading h1{
+        font-size: 32px;
+    }
+    .trend_links a{
+        font-size: 18px;
+        font-weight: 450;
     }
 }
 
@@ -356,9 +370,21 @@ html body{
     margin-top: 2rem;
     padding: 0px 4rem;
 }
-
-
-
+/* .vehical_card1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.vehical_card2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.vehical_card3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+} */
 .vehical_card1 h3{
     padding: 16px 4px;
     /* text-align: center; */
@@ -450,6 +476,15 @@ html body{
     cursor: pointer;
 }
 
+/* resposnsive for tablet */
+@media (min-width: 700px) and (max-width: 1024px) {
+    .v_e_info2{
+        padding: 0px 1rem;
+    }
+    .v_e_info1{
+        padding: 0px 1rem;
+    }
+}
 /* resposnsive for mobile */
 @media (min-width: 300px) and (max-width: 600px) {
     .v_e_info1{
@@ -469,9 +504,43 @@ html body{
         justify-content: normal;
         gap: 1.5rem;
     }
+    .energy_container h1{
+        font-size: 28px;
+    }
+    .vehical_container h1{
+        font-size: 28px;
+    }
 
+    .vehical_card1 h3{
+        font-size: 22px;
+    }
+    .vehical_card2 h3{
+        font-size: 22px;
+    }
+    .vehical_card3 h3{
+        font-size: 22px;
+    }
+    .vehical_links a{
+        font-size: 18px;
+        font-weight: 600;
+    }
+    
 
+    .energy_card1 h3{
+        font-size: 22px;
+    }
+    .energy_card2 h3{
+        font-size: 22px;
+    }
 
+    .energy_card3 h3{
+        font-size: 22px;
+    }
+
+    .energy_links a{
+        font-size: 18px;
+        font-weight: 600;
+    }
 }
 
 
@@ -523,6 +592,15 @@ html body{
     color: #3e6ae1;
     cursor: pointer;
 }
+/* resposnsive for tablet */
+@media (min-width: 700px) and (max-width: 1024px) {
+    .video_guide{
+        grid-template-columns: 1fr 1fr;
+    }
+    .image_context{
+        padding: 0rem;
+    }
+}
 
 
 /* resposnsive for mobile */
@@ -534,6 +612,16 @@ html body{
     }
     .image_context_base{
         margin-left:0px;
+    }
+
+    .image_context h2{
+        font-size: 28px;
+    }
+    .image_context a {
+        font-size: 18px;
+    }
+    .image_context p {
+        font-size: 18px;
     }
 }
 
@@ -599,6 +687,45 @@ html body{
     cursor: pointer;
 }
 
+/* resposnsive for tablet */
+@media (min-width: 700px) and (max-width: 1024px) {
+    .getting_start{
+        grid-template-columns: 1fr 1fr;
+    }
+    .gs_image_context_base{
+        margin: 0rem;
+    }
+
+}
+
+
+/* resposnsive for mobile */
+@media (min-width: 300px) and (max-width: 600px) {
+   .getting_start{
+        height: auto;
+        grid-template-columns: unset;
+        grid-template-rows: 1fr 1fr;
+    }
+    .gs_image_context_base{
+        margin-left:0px;
+    }
+    .g_s_image{
+        grid-row: 1;
+    }
+    .gs_image_context{
+        text-align: left;
+    }
+    .gs_image_context h2 {
+        font-size: 28px;
+    }
+    .gs_image_context p {
+        font-size: 18px;
+    }
+    .gs_image_context a {
+        font-size: 14px;
+    }
+}
+
 
 
 
@@ -658,6 +785,23 @@ html body{
     padding: 0px 16px;
 }
 
+/* resposnsive for mobile */
+@media (min-width: 300px) and (max-width: 600px) {
+    .gps_container{
+        width: 100%;
+    }
+    .gps_btn_base button{
+        width: 100%;
+        font-size: 18px;
+    }
+     .gps_container p{
+        font-size: 18px;
+        word-spacing: 0px;
+    }
+    .get_pers_support_base{
+        padding: 4rem 1rem 2rem 1rem;
+    }
+}
 
 
 
@@ -724,6 +868,9 @@ html body{
     font-weight: 450;
     font-size: 14px;
 }
+.link_container1 ul li a:hover{
+    text-decoration: 1px solid underline;
+}
 
 
 /* ---------list 2 -------------- */
@@ -741,6 +888,9 @@ html body{
     color: #f4f4f4;
     font-weight: 450;
     font-size: 14px;
+}
+.link_container2 ul li a:hover{
+    text-decoration: 1px solid underline;
 }
 
 /* ------------------list 3---------------- */
@@ -761,7 +911,9 @@ html body{
     font-weight: 450;
     font-size: 14px;
 }
-
+.link_container3 ul li a:hover{
+    text-decoration: 1px solid underline;
+}
 
 
 /* ------footer_links2 code here------ */
@@ -769,6 +921,7 @@ html body{
     padding: 1rem;
     height: 2rem;
     display: flex;
+    gap: 1rem;
     align-items: center;
 }
 .footer_links2 a{
@@ -776,8 +929,32 @@ html body{
     color: #f4f4f4;
     font-weight: 450;
     font-size: 14px;
+    transition: all 1.5s ease;
+}
+.footer_links2 a:hover{
+    text-decoration: 1px solid underline;
 }
 
+/* resposnsive for tablet */
+@media (min-width: 700px) and (max-width: 1024px) {
+    .footer_container{
+        grid-template-columns: 1.5fr 0.8fr;
+    }
 
+}
+/* resposnsive for mobile */
+@media (min-width: 300px) and (max-width: 600px) {
+    .footer_container{
+        grid-template-columns:unset;
+    }
+    .footer_links1{
+        grid-row: 1;
+        border: none;
+    }
+    .footer_map{
+        border: none;
+    }
+
+}
 
 
