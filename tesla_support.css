@@ -316,13 +316,6 @@ html body{
         display: grid;
         gap: 15px;
     }
-    .treand_heading h1{
-        font-size: 32px;
-    }
-    .trend_links a{
-        font-size: 18px;
-        font-weight: 450;
-    }
 }
 
 
@@ -504,43 +497,6 @@ html body{
         justify-content: normal;
         gap: 1.5rem;
     }
-    .energy_container h1{
-        font-size: 28px;
-    }
-    .vehical_container h1{
-        font-size: 28px;
-    }
-
-    .vehical_card1 h3{
-        font-size: 22px;
-    }
-    .vehical_card2 h3{
-        font-size: 22px;
-    }
-    .vehical_card3 h3{
-        font-size: 22px;
-    }
-    .vehical_links a{
-        font-size: 18px;
-        font-weight: 600;
-    }
-    
-
-    .energy_card1 h3{
-        font-size: 22px;
-    }
-    .energy_card2 h3{
-        font-size: 22px;
-    }
-
-    .energy_card3 h3{
-        font-size: 22px;
-    }
-
-    .energy_links a{
-        font-size: 18px;
-        font-weight: 600;
-    }
 }
 
 
@@ -612,16 +568,6 @@ html body{
     }
     .image_context_base{
         margin-left:0px;
-    }
-
-    .image_context h2{
-        font-size: 28px;
-    }
-    .image_context a {
-        font-size: 18px;
-    }
-    .image_context p {
-        font-size: 18px;
     }
 }
 
@@ -715,15 +661,6 @@ html body{
     .gs_image_context{
         text-align: left;
     }
-    .gs_image_context h2 {
-        font-size: 28px;
-    }
-    .gs_image_context p {
-        font-size: 18px;
-    }
-    .gs_image_context a {
-        font-size: 14px;
-    }
 }
 
 
@@ -792,12 +729,8 @@ html body{
     }
     .gps_btn_base button{
         width: 100%;
-        font-size: 18px;
     }
-     .gps_container p{
-        font-size: 18px;
-        word-spacing: 0px;
-    }
+
     .get_pers_support_base{
         padding: 4rem 1rem 2rem 1rem;
     }
