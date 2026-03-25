@@ -26,10 +26,23 @@ energy_btn.addEventListener("click",()=>{
         vehical_btn.style.borderBottom="none";
     }
 });
-// ----- menu button ------
-function open_menu_section() {
-  window.location.href = "tesla_menu.html";
-}
 
 
 
+// menu open/close code here
+let menu_close_btn=document.querySelector(".menu_close")
+let menu_open_btn=document.querySelector(".menu_button")
+let menu_container=document.querySelector(".menu_container_base")
+let menu=document.querySelector(".menu_container")
+menu_container.style.display="none";
+
+menu_open_btn.addEventListener("click",()=>{
+    if(menu_container.style.display==="none"){
+        menu_container.style.display="flex";
+    }
+})
+menu_close_btn.addEventListener("click",()=>{
+    if(menu_container.style.display==="flex"){
+        menu_container.style.display="none";
+    }
+})
