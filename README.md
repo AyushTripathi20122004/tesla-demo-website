@@ -1,3 +1,4 @@
-This is just a Clove model of Tesla Car website
+This is just a Clone website of Tesla.com
+and it is also my first project
 I Hope that You like it 💕💕
 
