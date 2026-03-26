@@ -665,21 +665,21 @@ html body{
 .new_car_adv{
     display: flex;
     justify-content: center;
-    align-items: flex-end;
-    /* border-radius: 18px; */
-    flex: 0 0 100%;
+    width: 100%;
+    padding: 2rem;
+    align-items: flex-start;
 
 }
 
 .modle_sectio{
     padding: 4px;
-    width: 350px;
-    height: 375px;
+    width: max-content;
+    height: max-content;
     /* border: 1px solid black; */
-    display: grid;
-    grid-template-rows: 0.2fr 0fr 0.2fr;
-    gap: 10px;
     text-align: center;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
 }
 .modle_sectio_3{
     height: 150px;
@@ -694,6 +694,10 @@ html body{
     display: flex;
     justify-content: center;
     align-items: flex-end;
+}
+.tds-icon{
+    height: 5rem;
+    width: 20rem;
 }
 .modle_sectio a{
     display: none;
@@ -761,13 +765,13 @@ html body{
 
 /* responsive base styling start here for i pads which have 700px-1024 width*/
 
-@media (min-width: 768px) and (max-width: 1023px) {
-    .new_car_adv{
-        flex: 0 0 100%;
+@media (min-width: 700px) and (max-width: 1024px) {
+    .tds-icon{
+        height: 5rem;
+        width: 15rem;
     }
-
-
 }
+
 
 /* ------responsive base styling start here for mobile phones which have 600px width-------- */
 @media(max-width:1200px){
@@ -778,31 +782,22 @@ html body{
 
 @media (min-width: 300px) and (max-width: 600px) {
    
-    .new_car_adv_base{
-        width: 600px;
-    }
     .new_car_adv{
         background-position: center center;
-        justify-content: flex-start;
-        align-items: flex-start;
-        flex: 0 0 100%;
-        padding-left: 50px;
-        padding-top: 70px;
+        padding-top: 4rem;
     }
     .left_right_btn_section{
         display: none;
-    }
-    .modle_sectio {
-    padding-left: 10%;
-    width: 100px;
-    height: 200px;
- 
     }
     .model_name{
         padding-top: 10px;
     }
     .modle_sectio h1{
         font-size: 32px;
+    }
+    .tds-icon{
+        height: 4rem;
+        width: 15rem;
     }
     .modle_sectio_button button{
     height: 20px;
