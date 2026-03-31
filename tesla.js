@@ -67,7 +67,7 @@ document.addEventListener("DOMContentLoaded", () => {
   let l_btn=document.querySelector(".left");
   l_btn.addEventListener("click",()=>{
     console.log("left button was clicked");
-    idx=(idx-1 + car_cards.length) % 3
+    idx=(idx-1 + 3) % 3
     heading_pic_change(idx);
   });
 
