@@ -341,6 +341,32 @@ sac2_right_btn.addEventListener("click", () => {
 }
 });
 
+// ask question card code here
+let ask_btn=document.querySelector(".ask_btn");
+let question_card=document.querySelector(".ask_question");
+let close_btn=document.querySelector(".askClose");
+
+close_btn.addEventListener("click",()=>{
+    if (question_card.style.display==="grid"){
+        question_card.style.display="none";
+    }
+});
+
+ask_btn.addEventListener("click",()=>{
+    if (question_card.style.display==="none"){
+        question_card.style.display="grid"
+    }
+    else{
+        question_card.style.display="none"
+    }
+})
+
+
+
+
+
+
+
 
 // ----- menu button ------
 function open_menu_section() {
