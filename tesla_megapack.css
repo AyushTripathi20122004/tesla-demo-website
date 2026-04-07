@@ -23,6 +23,7 @@ html body{
 .window_container{
     max-width: 1400px;
     width: 100%;
+;
 }
 
 .navheader{
@@ -74,7 +75,6 @@ html body{
     height: 56px;
     background-color: transparent;
     position: absolute;
-    top: 0px;
     width: 100%;
     z-index: 2;
     color:white;
@@ -121,9 +121,8 @@ html body{
     border-radius: 4px;
     color:white;
 }
-.nav_icons_btn:hover{
-    background-color: #f0f0f0;
-}
+
+
 .info_btn_section{
     max-width: 1400px;
     padding: 16px 32px;
@@ -133,13 +132,15 @@ html body{
     width: 100vw;
     height:auto;
     /* border: 1px solid black; */
-    background-color: #fff;
+    background-color: white;
+    backdrop-filter: blur(30px);
     display: none;
     overflow-y: scroll;
     animation: window_open 0.4s ease-out;
     transition: display 2s ease;
     
 }
+
 
 .vehical_btn:hover .info_btn_section{
     display: block;
@@ -659,17 +660,4 @@ html body{
         background-color: transparent;
         color: white;
     }
-}
-
-/* opetation contaier start here */
-
-.opration_container{
-    padding: 8px 16px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.opration_container div{
-    padding:8px 64px; 
-    height: min-content;
 }
