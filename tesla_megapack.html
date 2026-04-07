@@ -11,7 +11,7 @@
     <!-- google icons -->
      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=pause" />
     <!-- tailwindcss cdn -->
-     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+     <script src="https://cdn.tailwindcss.com"></script>
     
     <!-- link css main file -->
      <link rel="stylesheet" href="tesla_megapack.css" >
@@ -24,7 +24,7 @@
 </head>
 <body>
 <div class="window_container">
-    <div class="navheader">
+    <div class="navheader h-screen">
     <!-- navbar -->
         <div class="navbar">
             <div class="logo"><svg class="tds-icon tds-icon-logo-wordmark tds-site-logo-icon" viewBox="0 0 342 35" xmlns="http://www.w3.org/2000/svg"><path fill="currentColor" d="M0 .1a9.7 9.7 0 0 0 7 7h11l.5.1v27.6h6.8V7.3L26 7h11a9.8 9.8 0 0 0 7-7H0zm238.6 0h-6.8v34.8H263a9.7 9.7 0 0 0 6-6.8h-30.3V0zm-52.3 6.8c3.6-1 6.6-3.8 7.4-6.9l-38.1.1v20.6h31.1v7.2h-24.4a13.6 13.6 0 0 0-8.7 7h39.9v-21h-31.2v-7zm116.2 28h6.7v-14h24.6v14h6.7v-21h-38zM85.3 7h26a9.6 9.6 0 0 0 7.1-7H78.3a9.6 9.6 0 0 0 7 7m0 13.8h26a9.6 9.6 0 0 0 7.1-7H78.3a9.6 9.6 0 0 0 7 7m0 14.1h26a9.6 9.6 0 0 0 7.1-7H78.3a9.6 9.6 0 0 0 7 7M308.5 7h26a9.6 9.6 0 0 0 7-7h-40a9.6 9.6 0 0 0 7 7"></path></svg></div>
@@ -867,39 +867,96 @@
         </div>
         <video preload poster="https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Megapack-Hero-V5-Tablet-Poster.jpg" autoplay playsinline muted loop class="tcl-react-media__asset" crossorigin  src="https://digitalassets.tesla.com/tesla-contents/video/upload/f_auto,q_auto:best/v1759521007/Megapack_Hero_Tablet_V6.mp4"><source src="https://digitalassets.tesla.com/tesla-contents/video/upload/f_auto,q_auto:best/v1759521007/Megapack_Hero_Tablet_V6.mp4" type="video/mp4"></video>
         
-        <div class="megapack_card flex flex-col gap-8 w-full  ">
-            <div class="herotext flex flex-col gap-1">
-            <h1 class="text-7xl font-semibold text-white text-center">Megapack</h1>
-            <span class="text-s text-white font-lighter text-center">Large-Scale Energy Storage</span>
+        <div class="megapack_card flex flex-col gap-8 w-1/2 justify-center align-center ">
+
+            <div class="herotext flex flex-col gap-1 ">
+                <h1 class="text-7xl font-semibold text-white text-center">Megapack</h1>
+                <span class="text-s text-white font-lighter text-center">Large-Scale Energy Storage</span>
             </div>
-            <div class="meg_btn w-full flex gap-4 justify-between">
+
+            <div class="meg_btn  flex gap-4 align-center justify-center gap-4">
                 <button class="mb-1 w-full rounded text-xs text-white bg-blue-600">Get Updates</button>
                 <button class="mb-2 w-full rounded text-xs text-[#171a0b] bg-gray-300">Learn More</button>
             </div>
+
         </div>
 
         </div> <!-- navheader closed here -->
 
-        <div class="opration_container h-90 w-full ">
-            <div class="flex flex-col p-4 justify-center border-r border-[#393c41]">
+        <div class="mg_card1 h-90 w-full flex justify-center py-20 mb-15 mt-10 ">
+
+            <div class="flex flex-col px-20 justify-center border-r border-[#5c5e62]">
                 <h1 class="text-7xl font-semibold">>47<span class="text-3xl">GWh</span></h1>
-                <span class="text-lg text-[#393c41]">Operational Globally</span>
+                <span class="text-lg text-[#393c41] font-medium">Operational Globally</span>
             </div>
-            <div class="flex flex-col p-4 justify-center ">
+
+            <div class="flex flex-col px-20  justify-center ">
                 <h1 class="text-7xl font-semibold">99.2<span class="text-3xl">%</span></h1>
-                <span class="text-lg text-[#393c41]">Uptime<sup>1</sup></span>
-            </div>
-            <div class="flex flex-col p-4 border-l border-[#393c41]  justify-center">
+                <span class="text-lg text-[#393c41] font-medium">Uptime<sup>1</sup></span>
+            </div >
+
+            <div class="flex flex-col px-20  border-l border-[#5c5e62]  justify-center">
                 <h1 class="text-7xl font-semibold">99.2<span class="text-3xl">%</span></h1>
-                <span class="text-lg text-[#393c41]">Real-World Tested</span>
+                <span class="text-lg text-[#393c41] font-medium">Real-World Tested</span>
             </div>
+    
+        </div>  <!-- opration_container end here -->
+
+
+
+
+        <div class="mg_card2 w-full mb-20 mt-20  p-10 flex flex-col gap-10 ">
+            <img class="rounded shadow-black h-full w-full " src="https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Megapack-Building-a-Sustainable-V1-Desktop.png" alt="">
+            <div class="mg_card2_text px-20 py-2 flex flex-col align-center justify-center ">
+                <h1 class="text-4xl p-2">
+                    Building a Sustainable, More Resilient Grid
+                </h1>
+                <p class="text-[#5c5e62] font-normal text-xl p-2 leading-relaxed ">The future of renewable energy relies on large-scale industrial energy storage. Megapack is a powerful, integrated battery system that provides clean, reliable, cost-effective energy storage to help stabilize the grid and prevent outages. Reducing our reliance on fossil fuels and strengthening our grid infrastructure will make sustainable energy more accessible and affordable for everyone on Earth. <a href="#" class="underline decoration-1 hover:decoration-2 ">Learn more in our Master Plan Part 3.</a></p>
+        </div> 
+        </div><!-- mg_card2 end here -->
+
+                
+                
+                
+
+        <div class=" mg-card3 p-10 mt-60  flex flex-col gap-10 ">
+                    <img class="rounded shadow-black h-full w-full" src="https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Megapack-Transforming-Industrial-Energy-V1-Desktop.png" alt="">
             
+            <div class="mg_card2_text px-20 py-2 flex flex-col align-center justify-center">
+                <h1 class="text-4xl p-2">
+                    Transforming Industrial Energy Storage
+                </h1>
+                <p class="text-[#5c5e62] font-normal text-xl p-2 leading-relaxed ">Megapack is changing the way the grid is powered. Operating in over 65 countries, Megapack provides critical grid support globally and can support multi-GWh projects.</p>
+                
+            <div class="mt-10 flex">
+                <div class="">
+                    <h1 class="text-2xl font-medium px-2 mb-4" >
+                    Easy to Install
+                    </h1>
+                    <p class="px-2 text-s  font-normal  text-[#393c41]"> Each unit ships fully assembled with a built-in foundation and integrated wireways, reducing installation costs by 25%.2 Its flexible configuration allows for faster installation, and over 99% of deployments are delivered on time. We also offer support during installation and throughout operation.</p>
+                </div>
+
+                <div class="">
+                    <h1 class="text-2xl font-medium px-2 mb-4" >
+                    Safe to Operate
+                    </h1>
+                    <p class="px-2 text-s font-normal text-[#393c41] ">Megapack offers reliable and safe energy storage. It is designed as a single, vertically integrated system with hardware and controls that reduce fire risk. It meets over 40 global safety requirements, ensuring a safe environment for site workers and local communities.</p>
+                </div>
 
 
+                <div class="">
+                    <h1 class="text-2xl font-medium px-2 mb-4 " >
+                    Built for Performance
+                    </h1>
+                    <p class="px-2 text-s font-normal  text-[#393c41]"> Megapack comes with a 20-year warranty and performance guarantees, ensuring operational capacity throughout the lifetime of the system. Each installation receives 24/7 support and automated diagnostics, with an average uptime of over 99%, even in harsh environments.</p>
+                </div>
+            </div>
         </div>
-
-
     </div>
+
+
+
+    </div> <!-- window container end here -->
     <script src="tesla_megapack.js"></script>
 </body>
 </html>
