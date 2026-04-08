@@ -447,3 +447,9 @@ function tesla_support(){
   window.location.href = "tesla_support.html";
   console.log("tesla support button was clicked");
 }
+
+function megapack(){
+  window.location.href = "tesla_megapack.html";
+  console.log("tesla megapack button was clicked");
+}
+  
