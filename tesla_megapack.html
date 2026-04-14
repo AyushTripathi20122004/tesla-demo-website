@@ -10,880 +10,90 @@
     
     <!-- google icons -->
      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=pause" />
-    <!-- tailwindcss cdn -->
-     <script src="https://cdn.tailwindcss.com"></script>
     
-    <!-- link css main file -->
-     <link rel="stylesheet" href="tesla_megapack.css" >
-
     <link rel="icon" href="favicon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    
+    <!-- Tailwind CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
 </head>
-<body>
-<div class="window_container">
-    <div class="navheader h-screen">
+<body class="flex items-center justify-center">
+<div class="window_container h-screen w-screen max-w-[1400px]">
     <!-- navbar -->
-        <div class="navbar">
-            <div class="logo"><svg class="tds-icon tds-icon-logo-wordmark tds-site-logo-icon" viewBox="0 0 342 35" xmlns="http://www.w3.org/2000/svg"><path fill="currentColor" d="M0 .1a9.7 9.7 0 0 0 7 7h11l.5.1v27.6h6.8V7.3L26 7h11a9.8 9.8 0 0 0 7-7H0zm238.6 0h-6.8v34.8H263a9.7 9.7 0 0 0 6-6.8h-30.3V0zm-52.3 6.8c3.6-1 6.6-3.8 7.4-6.9l-38.1.1v20.6h31.1v7.2h-24.4a13.6 13.6 0 0 0-8.7 7h39.9v-21h-31.2v-7zm116.2 28h6.7v-14h24.6v14h6.7v-21h-38zM85.3 7h26a9.6 9.6 0 0 0 7.1-7H78.3a9.6 9.6 0 0 0 7 7m0 13.8h26a9.6 9.6 0 0 0 7.1-7H78.3a9.6 9.6 0 0 0 7 7m0 14.1h26a9.6 9.6 0 0 0 7.1-7H78.3a9.6 9.6 0 0 0 7 7M308.5 7h26a9.6 9.6 0 0 0 7-7h-40a9.6 9.6 0 0 0 7 7"></path></svg></div>
+    <div class="nav_base h-screen w-full flex flex-col items-center justify-center  relative ">
+
+        <div class="navbar flex items-center justify-between px-2 py-2 h-15 w-full absolute top-0">
+            <div class="logo hover:border-3 rounded-lg px-2 py-1 text-white">
+                <svg class=" h-5  w-35 tds-icon  tds-icon-logo-wordmark tds-site-logo-icon" viewBox="0 0 342 35" xmlns="http://www.w3.org/2000/svg"><path fill="currentColor" d="M0 .1a9.7 9.7 0 0 0 7 7h11l.5.1v27.6h6.8V7.3L26 7h11a9.8 9.8 0 0 0 7-7H0zm238.6 0h-6.8v34.8H263a9.7 9.7 0 0 0 6-6.8h-30.3V0zm-52.3 6.8c3.6-1 6.6-3.8 7.4-6.9l-38.1.1v20.6h31.1v7.2h-24.4a13.6 13.6 0 0 0-8.7 7h39.9v-21h-31.2v-7zm116.2 28h6.7v-14h24.6v14h6.7v-21h-38zM85.3 7h26a9.6 9.6 0 0 0 7.1-7H78.3a9.6 9.6 0 0 0 7 7m0 13.8h26a9.6 9.6 0 0 0 7.1-7H78.3a9.6 9.6 0 0 0 7 7m0 14.1h26a9.6 9.6 0 0 0 7.1-7H78.3a9.6 9.6 0 0 0 7 7M308.5 7h26a9.6 9.6 0 0 0 7-7h-40a9.6 9.6 0 0 0 7 7"></path></svg>
+            </div>
             <div class="nav_icons">
-                <ul>
+                <ul class="flex items-center text-white ">
                     <!-- -----------------------list 1 icon vehical--------------- -->
-                    <li class="vehical_btn">
+                    <li class="vehical_btn ">
                         <!-- -------------vehical button--------------- -->
-                        <button class="nav_icons_btn ">Vehicles</button>
-                        <!-- button hover effect section -->
-                        <div class="info_btn_section">
-                            <div class="vehical_info">
-                                <!-- -------car model section -------- -->
-                                <div class="vehicles_card_base">
-                                    <div class="vehi_cards">
-                                        <div class="model_image modelS_img">
-                                        </div>
-                                        <div class="model_links ">
-                                            <h3>Model S</h3>
-                                            <div class="order_lernmore">
-                                                <a href="">Learn</a>
-                                                <a href="#" onclick="model_S()">Order</a>
-                                                
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="vehi_cards">
-                                        <div class="model_image model3_img">
-                                        </div>
-                                        <div class="model_links">
-                                            <h3>Model 3</h3>
-                                            <div class="order_lernmore">
-                                                <a href="">Learn</a>
-                                                <a href="#" onclick="model_3()">Order</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="vehi_cards">
-                                            <div class="model_image modelY_img">
-                                            </div>
-                                            <div class="model_links">
-                                                <h3>Model Y</h3>
-                                                <div class="order_lernmore">
-                                                    <a href="">Learn</a>
-                                                    <a href="#" onclick="model_Y()">Order</a>                                                    
-                                                </div>
-                                            </div>
-                                    </div>
-                                    <div class="vehi_cards">
-                                            <div class="model_image modelX_img">
-                                            </div>
-                                            <div class="model_links">
-                                                <h3>Model X</h3>
-                                                <div class="order_lernmore">
-                                                    <a href="">Learn</a>
-                                                    <a href="#" onclick="model_X()">Order</a>                                                    
-                                                </div>
-                                            </div>
-                                    </div>
-                                    <div class="vehi_cards">
-                                            <div class="model_image modelCBT_img ">
-                                            </div>
-                                            <div class="model_links">
-                                                <h3>Cyber Truck</h3>
-                                                <div class="order_lernmore">
-                                                    <a href="">Learn</a>
-                                                    <a href="#" onclick="model_CT()">Order</a>                                                
-                                                </div>
-                                            </div>
-                                    </div>
-                                    <div class="vehi_cards">
-                                            <div class="model_image modelINVENTORY_img">
-                                            </div>
-                                            <div class="model_links">
-                                                <h3>Inventory</h3>
-                                                <div class="order_lernmore">
-                                                    <a href="">Learn</a>
-                                                    <a href="#">Order</a>                                                    
-                                                </div>
-                                            </div>
-                                    </div>
-
-                                    <div class="vehi_cards">
-                                            <div class="model_image modelself_drive_img">
-                                            </div>
-                                            <div class="model_links">
-                                                <h3 style="display: flex; justify-content:center; align-items: center; padding: 0px 16px;">Full Self-Driving (Supervised)</h3>
-                                                <div class="order_lernmore">
-                                                    <a href="">Learn</a>
-                                                    <a href="#" onclick="demo_drive()">Order</a>                                                    
-                                                </div>
-                                            </div>
-                                    </div>
-
-                                </div>
-                                <!-- ----------- links-------------- -->
-                                <div class="vehical_links">
-                                        <a href="">Current Offers</a>
-                                        <a href="">Demo Drive</a>
-                                        <a href="">Trade-in</a>
-
-                                        <a href="">Vehicle Safety Report</a>
-                                        <a href="">Pre-Owned</a>
-                                        <a href="">Trip Planner</a>
-                                        <a href="">Features</a>
-                                        <a href="">Help Me Choose</a>
-                                        <a href="">Compare</a>
-                                        <a href="">Safety</a>
-                                        <a href="">Fleet</a>
-                                        <a href="">Semi</a>
-
-                                </div>
-                            </div>
-
-                        </div>
+                        <button class="nav_icons_btn px-5 py-1 rounded hover:bg-[#f0f0f0] font-medium transition-all duration-300 ">Vehicles</button>
+                        
                     </li>
 
                     <!-- -----------------------list 2 icon Energy--------------- -->
                     <li class="Energy_btn">
-                        <button class="nav_icons_btn">Energy</button>
-                         <!-- button hover effect section -->
-                        <div class="info_btn_section">
-                            <div class="Energy_info">
-                                <!-- -------car model section -------- -->
-                                <div class="Energy_card_base">
-
-                                    <div class="vehi_cards">
-                                        <div class="model_image solar_pannel_img">
-                                        </div>
-                                        <div class="model_links ">
-                                            <h3>Solar Panels</h3>
-                                            <div class="order_lernmore">
-                                                <a href="">Learn</a>
-                                                <a href="solar_panels()">Order</a>
-                                                
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="vehi_cards">
-                                        <div class="model_image solar_roof_img">
-                                        </div>
-                                        <div class="model_links">
-                                            <h3>Solar Roof</h3>
-                                            <div class="order_lernmore">
-                                                <a href="">Learn</a>
-                                                <a href="solar_roof()">Order</a>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="vehi_cards">
-                                            <div class="model_image powerwall_img">
-                                            </div>
-                                            <div class="model_links">
-                                                <h3>Powerwall</h3>
-                                                <div class="order_lernmore">
-                                                    <a href="">Learn</a>
-                                                    <a href="powerwell()">Order</a>                                                    
-                                                </div>
-                                            </div>
-                                    </div>
-
-                                    <div class="vehi_cards">
-                                            <div class="model_image megapack_img">
-                                            </div>
-                                            <div class="model_links">
-                                                <h3>Megapack</h3>
-                                                <div class="order_lernmore">
-                                                    <a href="">Learn</a>
-                                                    <a href="">Order</a>                                                    
-                                                </div>
-                                            </div>
-                                    </div>
-                                    
-                                </div>
-
-
-
-                                <!-- ----------- links-------------- -->
-                                <div class="vehical_links">
-                                        <a href="">Schedule a Consultation</a>
-                                        <a href="">Why Solar</a>
-                                        <a href="">Incentives</a>
-
-                                        <a href="">Support</a>
-                                        <a href="">Partner with Tesla</a>
-                                        <a href="">Commercial</a>
-                                        <a href="">Utilities</a>
-                                </div>
-                            </div>
-
-                        </div>
+                        <button class="nav_icons_btn px-5 py-1 rounded hover:bg-[#f0f0f0] font-medium transition-all duration-300">Energy</button>
+                         
                     </li>
 
                     <!-- -----------------------list 3 icon Charging--------------- -->
                     <li class="Charging_btn">
-                        <button class="nav_icons_btn">Charging</button>
-                                  <!-- button hover effect section -->
-                        <div class="info_btn_section">
-                            <div class="Charging_base">
-                                <!-- -------car model section -------- -->
-                                <div class="charging_card_base">
-
-                                    <div class="vehi_cards">
-                                        <div class="model_image charging_img">
-                                        </div>
-                                        <div class="model_links ">
-                                            <h3>Charging</h3>
-                                            <div class="order_lernmore">
-                                                <a href="">Learn</a>
-                                                <a href="">Order</a>
-                                                
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="vehi_cards">
-                                        <div class="model_image Home_Charging_img">
-                                        </div>
-                                        <div class="model_links">
-                                            <h3>Home Charging</h3>
-                                            <div class="order_lernmore">
-                                                <a href="">Learn</a>
-                                                <a href="">Order</a>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="vehi_cards">
-                                            <div class="model_image Supercharging_img">
-                                            </div>
-                                            <div class="model_links">
-                                                <h3>Supercharging</h3>
-                                                <div class="order_lernmore">
-                                                    <a href="">Learn</a>
-                                                    <a href="">Order</a>                                                    
-                                                </div>
-                                            </div>
-                                    </div>
-                                    <div class="vehi_cards">
-                                            <div class="model_image Wall_Connector_img">
-                                            </div>
-                                            <div class="model_links">
-                                                <h3 style="display: flex; justify-content:center; align-items: center; padding: 0px 16px;">Wall Connector for Business</h3>
-                                                <div class="order_lernmore">
-                                                    <a href="">Learn</a>
-                                                    <a href="">Order</a>                                                    
-                                                </div>
-                                            </div>
-                                    </div>
-
-                                    <div class="vehi_cards">
-                                            <div class="model_image Business_charging_img">
-                                            </div>
-                                            <div class="model_links">
-                                                <h3 style="display: flex; justify-content:center; align-items: center; padding: 0px 16px;">Supercharger for Business</h3>
-                                                <div class="order_lernmore">
-                                                    <a href="">Learn</a>
-                                                    <a href="">Order</a>                                                    
-                                                </div>
-                                            </div>
-                                    </div>
-                                    
-                                </div>
-
-
-                                
-                                <!-- ----------- links-------------- -->
-                                <div class="vehical_links">
-                                        <a href="">Help Me Charge</a>
-                                        <a href="">Charging Calculator</a>
-                                        <a href="">Charging With NACS</a>
-
-                                        <a href="">Supercharger Voting</a>
-                                        <a href="">Host a Supercharger</a>
-                                </div>
-                            </div>
-
-                        </div>
+                        <button class="nav_icons_btn px-5 py-1 rounded hover:bg-[#f0f0f0] font-medium transition-all duration-300">Charging</button>
+                                  
                     </li>
 
                     <!-- -----------------------list 4 icon Discover--------------- -->
                     <li class="Discover_btn">
-                        <button class="nav_icons_btn">Discover</button>
+                        <button class="nav_icons_btn px-5 py-1 rounded hover:bg-[#f0f0f0] font-medium transition-all duration-300">Discover</button>
                         
-                        <div class="info_btn_section">
-                            <div class="discover_card_base">
-                            <div class="discover_card">
-                                <div class="d_cards">
-                                    <div class="d_card_heading">
-                                        <h3>
-                                            Resources
-                                        </h3>
-                                    </div>
-                                    <div class="d_card_links">
-                                        <a href="" class="">Demo Drive</a>
-                                        <a href="" class="">Insurance</a>
-                                        <a href="" class="">Current Offers</a>
-                                        <a href="" class=""> Learn</a>
-                                        <a href="" class=""> Video Guides</a>
-                                        <a href="" class="">Customer Stories</a>
-                                        <a href="" class="">Events</a>
-                                        <a href="" class="">Safety</a>
-                                    </div>
-                                </div>
-                                <div class="d_cards">
-                                    <div class="d_card_heading">
-                                        <h3>
-                                            Location Services
-                                        </h3>
-                                    </div>
-                                    <div class="d_card_links">
-                                        <a href="" class="">Find Us</a>
-                                        <a href="" class="">Find a Collision Center</a>
-                                        <a href="" class="">Find a Certified Installer</a>
-                                    </div>
-                                </div>
-                                <div class="d_cards">
-                                    <div class="d_card_heading">
-                                        <h3>
-                                             Company
-                                        </h3>
-                                    </div>
-                                    <div class="d_card_links">
-                                        <a href="" class="">About</a>
-                                        <a href="" class="">Careers</a>
-                                        <a href="" class="">Investor Relations</a>
-                                    </div>
-                                </div>
-                            </div>
-                            </div>
-                        </div>
                     </li>
 
                     <!-- -----------------------list 5 icon Shop--------------- -->
                     <li class="Shop_btn">
-                        <button class="nav_icons_btn">Shop</button>
-                        <div class="info_btn_section">
-                            <div class="shop_card_base">
-                                <div class="shop_card">
-                                    <div class="shop_card_img_base">
-                                        <div class="shop_card_img shop_charg_img">
-                                        </div>
-                                        <h4 style="text-align: center;">
-                                            Charging
-                                        </h4>
-                                    </div>
-
-                                    <div class="shop_card_img_base">
-                                        <div class="shop_card_img vehical_accssery_img">
-                                        </div>
-                                        <h4 style="text-align: center;">
-                                            Vehicle accessories
-                                        </h4>
-                                    </div>
-
-                                    <div class="shop_card_img_base">
-                                        <div class="shop_card_img aparel_img">
-                                        
-                                        </div>
-                                        <h4 style="text-align: center;">
-                                            Apparel
-                                        </h4>
-                                    </div>
-
-                                    <div class="shop_card_img_base">
-                                        <div class="shop_card_img lifestyle_img">
-                                        
-                                        </div>
-                                        <h4 style="text-align: center;">
-                                            Lifestyle
-                                        </h4>
-                                    </div>
-                                    
-                                    
-                                    
-                                    
-                                </div>
-                            </div>
-                        </div>
+                        <button class="nav_icons_btn px-5 py-1 rounded hover:bg-[#f0f0f0] font-medium transition-all duration-300">Shop</button>
                     </li>
                 </ul>
             </div>
-            <div class="menu_section">
-                <button onclick="open_menu_section()" class=" menu_button">Menu</button>
-                <div class="max_width_btn">
-                    <button type="button" onclick="tesla_support()">
-                        <svg class="tds-icon tds-icon-help" style="height: 22px; width:22px;"viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="currentColor" d="M12 20.5a8.5 8.5 0 1 1 0-17 8.5 8.5 0 0 1 0 17m0 1.5c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10m0-6a1 1 0 1 0 0 2 1 1 0 0 0 0-2m.053-3.533a8 8 0 0 1 .92-.767 7 7 0 0 0 .746-.61 2.3 2.3 0 0 0 .468-.635q.189-.38.188-.883 0-.56-.246-1.048-.237-.486-.771-.792-.534-.305-1.362-.305-.862 0-1.411.347a2 2 0 0 0-.788.89q-.09.201-.148.413c-.111.414-.445.767-.874.767-.428 0-.784-.35-.71-.772q.106-.61.386-1.15.452-.875 1.37-1.394Q10.742 6 12.07 6q1.395 0 2.273.544.885.536 1.271 1.337T16 9.489q0 .817-.254 1.403-.255.577-.616.94-.353.363-.943.817-.468.372-.747.635-.27.264-.451.627-.075.149-.113.302c-.108.424-.422.787-.86.787-.437 0-.806-.356-.76-.79a2.95 2.95 0 0 1 .797-1.743"></path></svg>
+            <div class="menu_section flex justify-between">
+                <!-- <button onclick="open_menu_section()" class=" menu_button">Menu</button> -->
+                <div class="max_width_btn flex text-white  ">
+                    <button type="button" onclick="tesla_support()" class="px-3 py-2 rounded hover:bg-[#f0f0f0] transition-all duration-300 ">
+                        <svg class="tds-icon tds-icon-help" style="height: 25px; width:25px;"viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="currentColor" d="M12 20.5a8.5 8.5 0 1 1 0-17 8.5 8.5 0 0 1 0 17m0 1.5c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10m0-6a1 1 0 1 0 0 2 1 1 0 0 0 0-2m.053-3.533a8 8 0 0 1 .92-.767 7 7 0 0 0 .746-.61 2.3 2.3 0 0 0 .468-.635q.189-.38.188-.883 0-.56-.246-1.048-.237-.486-.771-.792-.534-.305-1.362-.305-.862 0-1.411.347a2 2 0 0 0-.788.89q-.09.201-.148.413c-.111.414-.445.767-.874.767-.428 0-.784-.35-.71-.772q.106-.61.386-1.15.452-.875 1.37-1.394Q10.742 6 12.07 6q1.395 0 2.273.544.885.536 1.271 1.337T16 9.489q0 .817-.254 1.403-.255.577-.616.94-.353.363-.943.817-.468.372-.747.635-.27.264-.451.627-.075.149-.113.302c-.108.424-.422.787-.86.787-.437 0-.806-.356-.76-.79a2.95 2.95 0 0 1 .797-1.743"></path></svg>
                     </button>
-                    <button class="language_icon" type="button">
-                        <svg class="tds-icon tds-icon-globe" style="height: 22px; width:22px;"viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="currentColor" d="M22 12c0 5.523-4.477 10-10 10S2 17.523 2 12 6.477 2 12 2s10 4.477 10 10M9.254 20.047a8 8 0 0 1-.768-1.378c-.404-.91-.722-1.985-.935-3.169h-3.3a8.53 8.53 0 0 0 5.003 4.547m.603-1.988c.336.757.718 1.324 1.103 1.69.382.364.732.501 1.04.501s.658-.137 1.04-.5c.385-.367.767-.934 1.103-1.69.321-.723.588-1.59.78-2.56H9.076c.192.97.459 1.837.78 2.56ZM8.75 12q.001 1.038.103 2h6.294q.102-.962.103-2-.001-1.038-.103-2H8.853q-.102.962-.103 2m-1.405-2H3.737a8.5 8.5 0 0 0-.237 2c0 .689.082 1.359.237 2h3.608a21 21 0 0 1 0-4m1.732-1.5h5.845c-.19-.97-.458-1.837-.779-2.56-.336-.756-.718-1.323-1.103-1.69-.382-.363-.732-.5-1.04-.5s-.658.137-1.04.5c-.385.367-.767.934-1.103 1.69-.321.723-.588 1.59-.78 2.56m7.577 1.5a20.7 20.7 0 0 1 0 4h3.61a8.5 8.5 0 0 0 .236-2 8.5 8.5 0 0 0-.237-2zm3.094-1.5a8.53 8.53 0 0 0-5.002-4.547c.287.408.543.873.768 1.378.404.91.722 1.985.935 3.169h3.3Zm-12.197 0c.213-1.184.531-2.26.935-3.169.225-.505.48-.97.768-1.378A8.53 8.53 0 0 0 4.252 8.5zm7.963 10.169c-.225.505-.48.97-.768 1.378a8.53 8.53 0 0 0 5.002-4.547h-3.3c-.212 1.184-.53 2.26-.934 3.169"></path></svg>
+                    <button class="language_icon px-3 py-2 rounded hover:bg-[#f0f0f0] transition-all duration-300" type="button">
+                        <svg class="tds-icon tds-icon-globe" style="height: 25px; width:25px;"viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="currentColor" d="M22 12c0 5.523-4.477 10-10 10S2 17.523 2 12 6.477 2 12 2s10 4.477 10 10M9.254 20.047a8 8 0 0 1-.768-1.378c-.404-.91-.722-1.985-.935-3.169h-3.3a8.53 8.53 0 0 0 5.003 4.547m.603-1.988c.336.757.718 1.324 1.103 1.69.382.364.732.501 1.04.501s.658-.137 1.04-.5c.385-.367.767-.934 1.103-1.69.321-.723.588-1.59.78-2.56H9.076c.192.97.459 1.837.78 2.56ZM8.75 12q.001 1.038.103 2h6.294q.102-.962.103-2-.001-1.038-.103-2H8.853q-.102.962-.103 2m-1.405-2H3.737a8.5 8.5 0 0 0-.237 2c0 .689.082 1.359.237 2h3.608a21 21 0 0 1 0-4m1.732-1.5h5.845c-.19-.97-.458-1.837-.779-2.56-.336-.756-.718-1.323-1.103-1.69-.382-.363-.732-.5-1.04-.5s-.658.137-1.04.5c-.385.367-.767.934-1.103 1.69-.321.723-.588 1.59-.78 2.56m7.577 1.5a20.7 20.7 0 0 1 0 4h3.61a8.5 8.5 0 0 0 .236-2 8.5 8.5 0 0 0-.237-2zm3.094-1.5a8.53 8.53 0 0 0-5.002-4.547c.287.408.543.873.768 1.378.404.91.722 1.985.935 3.169h3.3Zm-12.197 0c.213-1.184.531-2.26.935-3.169.225-.505.48-.97.768-1.378A8.53 8.53 0 0 0 4.252 8.5zm7.963 10.169c-.225.505-.48.97-.768 1.378a8.53 8.53 0 0 0 5.002-4.547h-3.3c-.212 1.184-.53 2.26-.934 3.169"></path></svg>
                     </button>
-                    <button onclick="signin()">
-                        <svg class="tds-icon tds-icon-person" style="height: 22px; width:22px;"viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="currentColor" d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2M6.858 18.752c.605-1.868 2.722-3.24 5.142-3.24s4.537 1.372 5.142 3.24C15.712 19.844 13.933 20.5 12 20.5s-3.712-.656-5.142-1.748m11.469-1.095c-1.02-2.165-3.483-3.645-6.327-3.645s-5.307 1.48-6.327 3.645A8.46 8.46 0 0 1 3.5 12c0-4.687 3.813-8.5 8.5-8.5s8.5 3.813 8.5 8.5a8.46 8.46 0 0 1-2.173 5.657M12 6a3.5 3.5 0 1 0 0 7 3.5 3.5 0 0 0 0-7m0 5.5c-1.103 0-2-.897-2-2s.897-2 2-2 2 .897 2 2-.897 2-2 2"></path></svg>
+                    <button class="px-3 py-2 rounded hover:bg-[#f0f0f0] transition-all duration-300" onclick="signin()">
+                        <svg class="tds-icon tds-icon-person" style="height: 25px; width:25px;"viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="currentColor" d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2M6.858 18.752c.605-1.868 2.722-3.24 5.142-3.24s4.537 1.372 5.142 3.24C15.712 19.844 13.933 20.5 12 20.5s-3.712-.656-5.142-1.748m11.469-1.095c-1.02-2.165-3.483-3.645-6.327-3.645s-5.307 1.48-6.327 3.645A8.46 8.46 0 0 1 3.5 12c0-4.687 3.813-8.5 8.5-8.5s8.5 3.813 8.5 8.5a8.46 8.46 0 0 1-2.173 5.657M12 6a3.5 3.5 0 1 0 0 7 3.5 3.5 0 0 0 0-7m0 5.5c-1.103 0-2-.897-2-2s.897-2 2-2 2 .897 2 2-.897 2-2 2"></path></svg>
                     </button>
                     
                 </div>
                 
             </div>
-            <div class="language_container">
-                <div class="lang_base">
-                    <div class="row">
-                        <div class="lg_card">
-                            <h2>
-                                North America
-                            </h2>
-                            <div class="lg_row">
-                                <h4>United States</h4>
-                                <div class="lg_link">
-                                <a href="#">English</a>
-                                </div>
-                            </div>
-                            <div class="lg_row">
-                                <h4>Canada</h4>
-                                <div class="lg_link">
-                                <a href="#">English</a>
-                                <a href="#">Francais</a>
-                                </div>
-                            </div>
-                            <div class="lg_row">
-                                <h4>Maxico</h4>
-                                <div class="lg_link">
-                                <a href="#">Espanol</a>
-                                </div>
-                            </div>
-                            <div class="lg_row">
-                                <h4>Puerto Rico</h4>
-                                <div class="lg_link">
-                                <a href="#">English</a>
-                                <a href="#">Espanol</a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="lg_card">
-                            <h2>
-                                South America
-                            </h2>
-                            <div class="lg_row">
-                                <h4>Chile</h4>
-                                <div class="lg_link">
-                                <a href="#">Espanol</a>
-                                </div>
-                            </div>
-                            <div class="lg_row">
-                                <h4>Colombia</h4>
-                                <div class="lg_link">
-                                <a href="#">Espanol</a>
-                                </div>
-                            </div>
-                            
-                        </div>
-
-
-                        <div class="lg_card">
-                            <h2>
-                                Middle-East
-                            </h2>
-                            <div class="lg_row">
-                                <h4>ישראל</h4>
-                                <div class="lg_link">
-                                <a href="#">עִברִית</a>
-                                </div>
-                            </div>
-                            <div class="lg_row">
-                                <h4>UAE</h4>
-                                <div class="lg_link">
-                                <a href="#">English</a>
-                                <a href="#">اَلْعَرَبِيَّةُ</a>
-                                </div>
-                            </div>
-                            <div class="lg_row">
-                                <h4>Jordan</h4>
-                                <div class="lg_link">
-                                <a href="#">English</a>
-                                </div>
-                            </div>
-                            <div class="lg_row">
-                                <h4>Qatar</h4>
-                                <div class="lg_link">
-                                <a href="#">English</a>
-                                <a href="#">اَلْعَرَبِيَّةُ</a>
-                                </div>
-                            </div>
-                            <div class="lg_row">
-                                <h4>Saudi Arabia</h4>
-                                <div class="lg_link">
-                                <a href="#">English</a>
-                                <a href="#">اَلْعَرَبِيَّةُ</a>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        
-
-
-
-                    </div>
-                    <div class="row">
-                        <div class="lg_card">
-                            <h2>
-                               Asia Pacific
-                            </h2>
-                            <div class="lg_row">
-                                <h4>中国大陆</h4>
-                                <div class="lg_link">
-                                <a href="#">简体中文</a>
-                                </div>
-                            </div>
-                            <div class="lg_row">
-                                <h4>Hong Kong</h4>
-                                <div class="lg_link">
-                                <a href="#">繁體中文</a>
-                                <a href="#">English</a>
-                                </div>
-                            </div>
-
-                            <div class="lg_row">
-                                <h4>Macau</h4>
-                                <div class="lg_link">
-                                <a href="#">繁體中文</a>
-                                <a href="#">English</a>
-                                </div>
-                            </div>
-
-
-                            <div class="lg_row">
-                                <h4>台灣</h4>
-                                <div class="lg_link">
-                                <a href="#">繁體中文</a>
-                                </div>
-                            </div>
-
-
-                            <div class="lg_row">
-                                <h4>India</h4>
-                                <div class="lg_link">
-                                <a href="#">English</a>
-                                </div>
-                            </div>
-
-
-                            <div class="lg_row">
-                                <h4>日本</h4>
-                                <div class="lg_link">
-                                <a href="#">日本語</a>
-                                </div>
-                            </div>
-
-
-                            <div class="lg_row">
-                                <h4>Malaysia</h4>
-                                <div class="lg_link">
-                                <a href="#">English</a>
-                                </div>
-                            </div>
-
-
-                            <div class="lg_row">
-                                <h4>Singapore</h4>
-                                <div class="lg_link">
-                                <a href="#">English</a>
-                                </div>
-                            </div>
-
-
-                            <div class="lg_row">
-                                <h4>Thailand</h4>
-                                <div class="lg_link">
-                                <a href="#">ภาษาไทย</a>
-                                <a href="#">English</a>
-                                </div>
-                            </div>
-
-                            <div class="lg_row">
-                                <h4>대한민국</h4>
-                                <div class="lg_link">
-                                <a href="#">한국어</a>
-                                </div>
-                            </div>
-
-
-                            <div class="lg_row">
-                                <h4>Australia</h4>
-                                <div class="lg_link">
-                                <a href="#">English</a>
-                                </div>
-                            </div>
-
-                            <div class="lg_row">
-                                <h4>New Zealand</h4>
-                                <div class="lg_link">
-                                <a href="#">English</a>
-                                </div>
-                            </div>
-                            <div class="lg_row">
-                                <h4>Philippines</h4>
-                                <div class="lg_link">
-                                <a href="#">English</a>
-                                </div>
-                            </div>
-                            
-                        </div>
-                       
-                    </div>
-
-                    <div class="row">
-                        <div class="lg_card">
-                            <h2>
-                               Europe
-                            </h2>
-                            <div class="lg_row">
-                                <h4>Belgium</h4>
-                                <div class="lg_link">
-                                <a href="#">Nederlands</a>
-                                <a href="#">Français</a>
-                                </div>
-                            </div>
-                            <div class="lg_row">
-                                <h4>Česká republika</h4>
-                                <div class="lg_link">
-                                <a href="#">Čeština</a>
-        
-                                </div>
-                            </div>
-
-                            <div class="lg_row">
-                                <h4>Danmark</h4>
-                                <div class="lg_link">
-                                <a href="#">Dansk</a>
-                                
-                                </div>
-                            </div>
-                            <div class="lg_row">
-                                <h4>Deutschland</h4>
-                                <div class="lg_link">
-                                <a href="#">Deutsch</a>
-                                
-                                </div>
-                            </div>
-                            <div class="lg_row">
-                                <h4>Ελλάδα</h4>
-                                <div class="lg_link">
-                                <a href="#">Ελληνικά</a>
-                
-                                </div>
-                            </div>
-                            <div class="lg_row">
-                                <h4>España</h4>
-                                <div class="lg_link">
-                                <a href="#">Español</a>
-                                
-                                </div>
-                            </div>
-                            <div class="lg_row">
-                                <h4>France</h4>
-                                <div class="lg_link">
-                                <a href="#">Français</a>
-                                
-                                </div>
-                            </div>
-                            <div class="lg_row">
-                                <h4>Hrvatska</h4>
-                                <div class="lg_link">
-                                <a href="#">Hrvatska</a>
-                            
-                                </div>
-                            </div>
-                            <div class="lg_row">
-                                <h4>Magyarország</h4>
-                                <div class="lg_link">
-                                <a href="#">Magyar</a>
-                                
-                                </div>
-                            </div>
-                            <div class="lg_row">
-                                <h4>Ireland</h4>
-                                <div class="lg_link">
-                                <a href="#">English</a>
-        
-                                </div>
-                            </div>
-
-                            <div class="lg_row">
-                                <h4>Ísland</h4>
-                                <div class="lg_link">
-                                <a href="#">Íslenska</a>
-                                
-                                </div>
-                            </div>
-
-                            <div class="lg_row">
-                                <h4>Italia</h4>
-                                <div class="lg_link">
-                                <a href="#">Italiano</a>
-                                
-                                </div>
-                            </div>
-
-                            <div class="lg_row">
-                                <h4>Lietuva</h4>
-                                <div class="lg_link">
-                                <a href="#">Lietuvių</a>
-                            
-                                </div>
-                            </div>
-
-                            <div class="lg_row">
-                                <h4>Luxembourg</h4>
-                                <div class="lg_link">
-                                <a href="#">Français</a>
-                                <a href="#">Deutsch</a>
-                                </div>
-                            </div>
-                        </div>
-
-                        
-                    </div>
-                    <div class="row">
-                        <div class="lg_card">
-                            <h2>
-                               Africa
-                            </h2>
-
-                            <div class="lg_row">
-                                <h4>Morocco</h4>
-                                <div class="lg_link">
-                                <a href="#">اَلْعَرَبِيَّةُ</a>
-                                <a href="#">Français</a>
-                                </div>
-                            </div>
-
-                            <div class="lg_row">
-                                <h4>Nederland</h4>
-                                <div class="lg_link">
-                                <a href="#">Nederlands</a>
-                
-                                </div>
-                            </div>
-
-                            <div class="lg_row">
-                                <h4>Norge</h4>
-                                <div class="lg_link">
-                                <a href="#">Norsk</a>
-                                </div>
-                            </div>
-
-                            <div class="lg_row">
-                                <h4>Österreich</h4>
-                                <div class="lg_link">
-                                <a href="#">Deutsch</a>
-                                </div>
-                            </div>
-
-                            <div class="lg_row">
-                                <h4>Polska</h4>
-                                <div class="lg_link">
-                                <a href="#">Polski</a>
-                                </div>
-                            </div>
-
-                            <div class="lg_row">
-                                <h4>Portugal</h4>
-                                <div class="lg_link">
-                                <a href="#">Português</a>
-                                </div>
-                            </div>
-
-                            <div class="lg_row">
-                                <h4>România</h4>
-                                <div class="lg_link">
-                                <a href="#">Română</a>
-                                </div>
-                            </div>
-
-                            <div class="lg_row">
-                                <h4>Slovensko</h4>
-                                <div class="lg_link">
-                                <a href="#">Slovenščina</a>
-                                </div>
-                            </div>
-
-                            <div class="lg_row">
-                                <h4>Slovenija</h4>
-                                <div class="lg_link">
-                                <a href="#">Slovenščina</a>
-                                </div>
-                            </div>
-
-                            <div class="lg_row">
-                                <h4>Switzerland</h4>
-                                <div class="lg_link">
-                                <a href="#">Français</a>
-                                <a href="#">Deutsch</a>
-                                <a href="#">Italiano</a>
-                                </div>
-                            </div>
-
-                            <div class="lg_row">
-                                <h4>Sverige</h4>
-                                <div class="lg_link">
-                                <a href="#">Svenska</a>
-                                </div>
-                            </div>
-
-                            <div class="lg_row">
-                                <h4>Suomi</h4>
-                                <div class="lg_link">
-                                <a href="#">Suomi</a>
-                                </div>
-                            </div>
-
-                            <div class="lg_row">
-                                <h4>Türkiye</h4>
-                                <div class="lg_link">
-                                <a href="#">Türkçe</a>
-                                </div>
-                            </div>
-
-                            <div class="lg_row">
-                                <h4>United Kingdom</h4>
-                                <div class="lg_link">
-                                <a href="#">English</a>
-                                </div>
-                            </div>
-
-                            <div class="lg_row">
-                                <h4>Other Europe</h4>
-                                <div class="lg_link">
-                                <a href="#">English</a>
-                                
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
         </div>
-        <video preload muted poster="https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Megapack-Hero-V5-Tablet-Poster.jpg" autoplay playsinline  loop class="tcl-react-media__asset" crossorigin  src="https://digitalassets.tesla.com/tesla-contents/video/upload/f_auto,q_auto:best/v1759521007/Megapack_Hero_Tablet_V6.mp4"><source src="https://digitalassets.tesla.com/tesla-contents/video/upload/f_auto,q_auto:best/v1759521007/Megapack_Hero_Tablet_V6.mp4" type="video/mp4"></video>
-        
-        <div class="megapack_card flex flex-col gap-8 w-1/2 justify-center align-center ">
+        <video class="  h-full w-full  object-cover " preload muted poster="https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Megapack-Hero-V5-Mobile-Poster.jpg" autoplay playsinline loopclass="tcl-react-media__asset" crossorigin="" src="https://digitalassets.tesla.com/tesla-contents/video/upload/f_auto,q_auto:best/v1759521029/Megapack_Hero_Mobile_V6.mp4"><source src="https://digitalassets.tesla.com/tesla-contents/video/upload/f_auto,q_auto:best/v1759521029/Megapack_Hero_Mobile_V6.mp4" type="video/mp4"></video>
 
-            <div class="herotext flex flex-col gap-1 ">
-                <h1 class="text-7xl font-semibold text-white text-center">Megapack</h1>
-                <span class="text-s text-white font-lighter text-center">Large-Scale Energy Storage</span>
+        <div class="videoSection top-30 absolute  flex flex-col gap-4 items-center w-130">
+            <div class="flex flex-col gap-4 ">
+                <h1 class="text-7xl text-white font-medium">Megapack</h1>
+                <p class="text-center text-white text-lg font-semibold">Large-Scale Energy Storage</p>
             </div>
-
-            <div class="meg_btn  flex gap-4 align-center justify-center gap-4">
-                <button class="mb-1 w-full rounded text-xs text-white bg-blue-600">Get Updates</button>
-                <button class="mb-2 w-full rounded text-xs text-[#171a0b] bg-gray-300">Learn More</button>
+            <div class="btn flex gap-4 w-full items-center justify-center">
+                <button class="py-2 w-full px-8 rounded bg-blue-500 text-white font-medium">Get Updates</button>
+                <button class="py-2 px-8 w-full rounded bg-white text-black font-medium">Learn More</button>
             </div>
-
+            
         </div>
+    </div>
 
-        </div> <!-- navheader closed here -->
-
-        <div class="mg_card1 h-90 w-full flex justify-center py-20 mb-15 mt-10 ">
+    <div class="mg_card1 h-70 w-full flex justify-center py-20 mb-15 mt-10 ">
 
             <div class="flex flex-col px-20 justify-center border-r border-[#5c5e62]">
                 <h1 class="text-7xl font-semibold">>47<span class="text-3xl">GWh</span></h1>
@@ -906,9 +116,9 @@
 
 
         <div class="mg_card2 w-full mb-20 mt-20  p-10 flex flex-col gap-10 ">
-            <img class="rounded shadow-black h-full w-full " src="https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Megapack-Building-a-Sustainable-V1-Desktop.png" alt="">
+            <img class="border border-black/10 rounded-xl h-full w-full " src="https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Megapack-Building-a-Sustainable-V1-Desktop.png" alt="">
             <div class="mg_card2_text px-20 py-2 flex flex-col align-center justify-center ">
-                <h1 class="text-4xl p-2">
+                <h1 class="text-4xl p-2 font-semibold">
                     Building a Sustainable, More Resilient Grid
                 </h1>
                 <p class="text-[#5c5e62] font-normal text-[20px] p-2 leading-relaxed ">The future of renewable energy relies on large-scale industrial energy storage. Megapack is a powerful, integrated battery system that provides clean, reliable, cost-effective energy storage to help stabilize the grid and prevent outages. Reducing our reliance on fossil fuels and strengthening our grid infrastructure will make sustainable energy more accessible and affordable for everyone on Earth. <a href="#" class="underline decoration-1 hover:decoration-2 ">Learn more in our Master Plan Part 3.</a></p>
@@ -919,28 +129,28 @@
                 
                 
 
-        <div class=" mg-card3 p-10 mt-60  flex flex-col gap-10 ">
-                    <img class="rounded shadow-black h-full w-full" src="https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Megapack-Transforming-Industrial-Energy-V1-Desktop.png" alt="">
+        <div class=" mg-card3 p-10 mt-40  flex flex-col gap-10 ">
+                    <img class="border border-black/10 rounded-xl h-full w-full" src="https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Megapack-Transforming-Industrial-Energy-V1-Desktop.png" alt="">
             
             <div class="mg_card2_text px-20 py-2 flex flex-col align-center justify-center">
-                <h1 class="text-4xl p-2">
+                <h1 class="text-4xl p-2 font-semibold">
                     Transforming Industrial Energy Storage
                 </h1>
                 <p class="text-[#5c5e62] font-normal text-[20px] p-2 leading-relaxed ">Megapack is changing the way the grid is powered. Operating in over 65 countries, Megapack provides critical grid support globally and can support multi-GWh projects.</p>
                 
-            <div class="mt-10 flex">
+            <div class="mt-30 flex">
                 <div class="">
                     <h1 class="text-2xl font-medium px-2 mb-4" >
                     Easy to Install
                     </h1>
-                    <p class="px-2 text-[20px]  font-normal  text-[#393c41]"> Each unit ships fully assembled with a built-in foundation and integrated wireways, reducing installation costs by 25%.2 Its flexible configuration allows for faster installation, and over 99% of deployments are delivered on time. We also offer support during installation and throughout operation.</p>
+                    <p class="px-2 text-[18px]  font-normal  text-[#393c41]"> Each unit ships fully assembled with a built-in foundation and integrated wireways, reducing installation costs by 25%.2 Its flexible configuration allows for faster installation, and over 99% of deployments are delivered on time. We also offer support during installation and throughout operation.</p>
                 </div>
 
                 <div class="">
                     <h1 class="text-2xl font-medium px-2 mb-4" >
                     Safe to Operate
                     </h1>
-                    <p class="px-2 text-[20px] font-normal text-[#393c41] ">Megapack offers reliable and safe energy storage. It is designed as a single, vertically integrated system with hardware and controls that reduce fire risk. It meets over 40 global safety requirements, ensuring a safe environment for site workers and local communities.</p>
+                    <p class="px-2 text-[18px] font-normal text-[#393c41] ">Megapack offers reliable and safe energy storage. It is designed as a single, vertically integrated system with hardware and controls that reduce fire risk. It meets over 40 global safety requirements, ensuring a safe environment for site workers and local communities.</p>
                 </div>
 
 
@@ -948,19 +158,19 @@
                     <h1 class="text-2xl font-medium px-2 mb-4 " >
                     Built for Performance
                     </h1>
-                    <p class="px-2 text-[20px] font-normal  text-[#393c41]"> Megapack comes with a 20-year warranty and performance guarantees, ensuring operational capacity throughout the lifetime of the system. Each installation receives 24/7 support and automated diagnostics, with an average uptime of over 99%, even in harsh environments.</p>
+                    <p class="px-2 text-[18px] font-normal  text-[#393c41]"> Megapack comes with a 20-year warranty and performance guarantees, ensuring operational capacity throughout the lifetime of the system. Each installation receives 24/7 support and automated diagnostics, with an average uptime of over 99%, even in harsh environments.</p>
                 </div>
             </div>
         </div>
         </div>
 
         <div class="mg_card-4 h-auto mt-40 w-full  p-10 flex flex-col gap-10">
-            <div class="img ">
-                <img src="https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Megapack-Power-More-V1-Desktop.png" class="rounded-2xl shadow-black h-full w-full p-3 " alt="">
-            </div>
+
+                <img src="https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Megapack-Power-More-V1-Desktop.png" class="border border-black/10 rounded-xl h-full w-full  " alt="">
+
             <div>
                 <div class="flex flex-col gap-2 px-20">
-                    <h1 class="text-4xl p-2">
+                    <h1 class="text-4xl p-2 font-semibold">
                         Power More
                     </h1>
                     <p class="text-[#5c5e62] font-normal text-[20px] p-2 leading-relaxed ">
@@ -981,7 +191,7 @@
                             <h1 class="text-3xl font-medium px-2 ">
                                 Standalone Utilities
                             </h1>
-                            <p class="px-2 text-[20px] font-normal leading-relaxed text-[#393c41]">
+                            <p class="px-2 text-[18px] font-normal leading-relaxed text-[#393c41]">
                                 Stabilizes grid voltage, frequency and capacity levels, replacing fossil-fuel peaker plants and keeping the grid running smoothly.
                             </p>
                         </div>
@@ -990,7 +200,7 @@
                             <h1 class="text-3xl font-medium px-2 ">
                                 Renewable Paired
                             </h1>
-                            <p class="px-2 text-[20px] font-normal  text-[#393c41]">
+                            <p class="px-2 text-[18px] font-normal  text-[#393c41]">
                                 Maintains the stability and reliability of renewable energy sources on the grid by storing and discharging energy depending on the availability of solar and wind energy.
                             </p>
                         </div>
@@ -999,16 +209,16 @@
                             <h1 class="text-3xl font-medium px-2 ">
                                 Commercial and Industrial
                             </h1>
-                            <p class="px-2 text-[20px] font-normal  text-[#393c41]">
+                            <p class="px-2 text-[18px] font-normal  text-[#393c41]">
                                 Offers commercial businesses more reliable energy access and allows them to share excess energy with the grid during peak demand hours.
                             </p>
                         </div>
 
-                        <div class="w-96 rounded-xl bg-[#ebeaea]/60  transition-all duration-300 h-60 border border-black/20 flex flex-col gap-6  p-4 ">
+                        <div class="w-96 rounded-xl bg-[#ebeaea]/60  transition-all duration-300 h-60 border border-black/20 flex flex-col gap-4 p-4 ">
                             <h1 class="text-3xl font-medium px-2 ">
                                 Microgrids
                             </h1>
-                            <p class="px-2 text-[20px] font-normal  text-[#393c41]">
+                            <p class="px-2 text-[18px] font-normal  text-[#393c41]">
                                 Allows electricity to be pooled and then distributed or managed without a connection to the grid.
                             </p>
                         </div>
@@ -1032,13 +242,13 @@
         </div> <!-- card 4 end here -->
 
         <div class="mg_card-5  mt-40 w-full  p-10 flex flex-col gap-10 ">
-            <div class="card5-video h-screen border border-black/30 rounded-xl overflow-hidden relative  ">
+            <div class="card5-video h-screen border border-black/10 rounded-xl overflow-hidden relative  ">
                 <button class="absolute bottom-[7%] left-[3%] bg-white/30 p-2 rounded border border-white/20 flex align-center justify-center"><svg class="h-6 text-white w-6 tds-icon tds-icon-play-filled" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="currentColor" d="M19.057 13.62 6.815 20.747c-1.248.72-2.808-.18-2.808-1.62V4.874c0-1.44 1.56-2.34 2.808-1.62l12.242 7.125c1.247.72 1.247 2.521 0 3.242z"></path></svg></button>
                 <video preload muted class="h-full w-full object-cover " poster="https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Megapack-We-Build-Big-V1-Tablet-Poster.png" autoplay="" playsinline="" loop="" class="tcl-react-media__asset" crossorigin="" src="https://digitalassets.tesla.com/tesla-contents/video/upload/f_auto,q_auto:best/Megapack-We-Build-Big-V1-Tablet.mp4"><source src="https://digitalassets.tesla.com/tesla-contents/video/upload/f_auto,q_auto:best/Megapack-We-Build-Big-V1-Tablet.mp4" type="video/mp4"></video> 
             </div>
             <div>
                 <div class="flex flex-col gap-2 px-20">
-                    <h1 class="text-4xl p-2">
+                    <h1 class="text-4xl p-2 font-semibold">
                         We Build Big Batteries
                     </h1>
                     <p class="text-[#5c5e62] font-normal text-[20px] p-2 leading-relaxed ">
@@ -1055,19 +265,19 @@
         </div> <!-- card 5 end here -->
 
         <div class="mg_card6 w-full mb-20 mt-20  p-10 flex flex-col gap-10 ">
-            <img class="rounded shadow-black h-full w-full " src="https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Megapack-Fully-Integrated-Software-V1-Desktop.png" alt="">
+            <img class="rounded-xl border border-black/10 h-full w-full " src="https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Megapack-Fully-Integrated-Software-V1-Desktop.png" alt="">
             <div class="mg_card2_text px-20 py-2 flex flex-col align-center justify-center ">
-                <h1 class="text-4xl p-2">
+                <h1 class="text-4xl p-2 font-semibold">
                     Fully Integrated Software
                 </h1>
                 <p class="text-[#5c5e62] font-normal text-[20px] p-2 leading-relaxed ">From design to commissioning and long-term management, Megapack is equipped with software that maximizes system storage performance and minimizes risk while increasing revenue potential over time. Our software is vertically integrated and can control, monitor and optimize the entire Megapack system. This software constantly improves through over-the-air updates and hardware-in-loop testing.</p>
         </div> 
         </div><!-- mg_card6 end here -->
 
-        <div class="mg_card7 w-full  mt-20  p-10 flex flex-col gap-10 ">
-            <img class="rounded shadow-black h-full w-full " src="https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Megapack-Streamlined-Service-Maximum-V1-Desktop.png" alt="">
+        <div class="mg_card7 w-full  mt-20  p-10 flex flex-col gap-10  ">
+            <img class="rounded-xl border border-black/10 h-full w-full " src="https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Megapack-Streamlined-Service-Maximum-V1-Desktop.png" alt="">
             <div class="mg_card2_text px-20 py-2 flex flex-col align-center justify-center ">
-                <h1 class="text-4xl p-2">
+                <h1 class="text-4xl p-2 font-semibold">
                     Streamlined Service, Maximum Performance
 
                 </h1>
@@ -1078,20 +288,20 @@
 
 
 
-        <div class="mg_card8 flex p-10 gap-3">
-            <div class="mg_card2_text pl-20 py-2  flex flex-col align-center justify-center ">
-                <h1 class="text-3xl p-2 ">
+        <div class="mg_card8 flex p-10 justify-between">
+            <div class="mg_card2_text pl-20 py-2  flex flex-col justify-between">
+                <h1 class="text-3xl p-2 font-semibold ">
                    Serviced by Tesla
 
                 </h1>
-                <p class="text-[#5c5e62] font-normal text-[20px] p-2 leading-relaxed ">Tesla handles all service tasks for you, including corrective and preventative maintenance. Our service technicians continuously monitor, diagnose and resolve system issues remotely or on-site to ensure maximum performance.</a></p>
+                <p class="text-[#5c5e62] font-normal text-[18px] p-2 leading-relaxed ">Tesla handles all service tasks for you, including corrective and preventative maintenance. Our service technicians continuously monitor, diagnose and resolve system issues remotely or on-site to ensure maximum performance.</a></p>
             </div>
 
             <div class="mg_card2_text pr-20 py-2 flex flex-col align-center justify-center  ">
-                <h1 class="text-3xl p-2">
+                <h1 class="text-3xl p-2 font-semibold">
                     Certified by Tesla
                 </h1>
-                <p class="text-[#5c5e62] font-normal  text-[20px] p-2 leading-relaxed ">If you choose not to use Tesla Servicing, Tesla can certify your in-house or third-party team to service your system, giving them access to the same documentation and tools used by Tesla technicians.</a></p>
+                <p class="text-[#5c5e62] font-normal  text-[18px] p-2 leading-relaxed ">If you choose not to use Tesla Servicing, Tesla can certify your in-house or third-party team to service your system, giving them access to the same documentation and tools used by Tesla technicians.</a></p>
             </div>
         </div> <!-- mg_card8 end here -->
 
@@ -1100,38 +310,38 @@
 
         <div class="mg_card9 w-full  mt-20  p-10 flex flex-col gap-10 ">
             <div>
-                <img src=" https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Megapack-Additional-Resources-V1-Desktop.png" alt="" class="rounded shadow-black h-full w-full ">
+                <img src=" https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Megapack-Additional-Resources-V1-Desktop.png" alt="" class="rounded-xl border border-black/10 h-full w-full ">
             </div>
             <div class="mg_card2_text px-20 py-2 flex flex-col align-center justify-center ">
-                <h1 class="text-4xl p-2">
+                <h1 class="text-4xl p-2 font-semibold">
                     Streamlined Service, Maximum Performance
 
                 </h1>
                 <p class="text-[#5c5e62] font-normal text-[20px] p-2 leading-relaxed ">Tesla provides performance guarantees and lifetime support for all Megapack systems, with the option to let Tesla service your system or your own team, certified by us.</p>
             </div>
-            <div class="flex flex-col p-10 gap-3">
-                <div class=" flex gap-3 ">
-                    <div class=" pl-20 py-2  flex flex-col align-center justify-center ">
-                        <h1 class="text-3xl p-2 ">
+            <div class="flex flex-col p-10 gap-4 items-center">
+                <div class=" flex justify-between ">
+                    <div class=" pl-20 py-2  flex flex-col  justify-center  ">
+                        <h1 class="text-3xl p-2 font-semibold ">
                             Safety
                         </h1>
-                        <p class="text-[#5c5e62] font-normal text-[20px] p-2 leading-relaxed ">Designed, tested and monitored to maximize safety.</p>
+                        <p class="text-[#5c5e62] font-normal text-[18px] p-2 leading-relaxed ">Designed, tested and monitored to maximize safety.</p>
                     </div>
 
-                    <div class=" pr-20 py-2 flex flex-col align-center justify-center  ">
-                        <h1 class="text-3xl p-2">
+                    <div class="py-2 flex flex-col justify-center  ">
+                        <h1 class="text-3xl p-2 font-semibold">
                             Grid Forming
                         </h1>
-                        <p class="text-[#5c5e62] font-normal  text-[20px] p-2 leading-relaxed ">Developing technology for a more stable, reliable, resilient grid.</p>
+                        <p class="text-[#5c5e62] font-normal  text-[18px] p-2 leading-relaxed ">Developing technology for a more stable, reliable, resilient grid.</p>
                     </div>
                     <div class=" pr-20 py-2 flex flex-col align-center justify-center  ">
-                        <h1 class="text-3xl p-2">
+                        <h1 class="text-3xl p-2 font-semibold">
                             Data Centers
                         </h1>
-                        <p class="text-[#5c5e62] font-normal  text-[20px] p-2 leading-relaxed ">Powering cloud computing and artificial intelligence infrastructure.</p>
+                        <p class="text-[#5c5e62] font-normal  text-[18px] p-2 leading-relaxed ">Powering cloud computing and artificial intelligence infrastructure.</p>
                     </div>
                 </div>
-                <div class="flex pl-20 gap-2">
+                <div class="flex pl-20 gap-2 items-left w-full ">
                     <button class="bg-[#171a0b] shadow-xl px-10 py-1 rounded text-white font-normal hover:bg-[#171a0b]/60 trasition-all duration-300 active:scale-110">
                         Learn More
                     </button>
@@ -1146,17 +356,17 @@
 
         <div class="w-full  mt-20  p-10 flex flex-col gap-10 ">
             <div>
-                <img src="https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Megapack-Megapack-Delivers-V1-Desktop.png" alt="" class="rounded shadow-black h-full w-full ">
+                <img src="https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Megapack-Megapack-Delivers-V1-Desktop.png" alt="" class="rounded-xl border border-black/10 h-full w-full ">
             </div>
             <div class="flex flex-col gap-2 px-20">
-                <h1 class="text-4xl p-2">
+                <h1 class="text-4xl p-2 font-semibold" >
                     Megapack Delivers
                 </h1>
                 <p class="text-[#5c5e62] font-normal text-[20px] p-2 leading-relaxed ">
                     Megapack is making clean industrial energy storage more accessible and affordable. As the world adopts more renewable energy sources like solar and wind, batteries help balance supply and demand on the grid. This offers greater stability, preventing grid outages and reducing reliance on fossil fuel peaker plants. Each Megapack 2 XL avoids 88,000 tons of CO<sub>2</sub>e.
                 </p>
                 <div class="p-2 mt-8">
-                    <button class="bg-[#171a0b] shadow-xl px-16 py-2 rounded text-white text-xs font-normal hover:bg-[#171a0b]/60 trasition-all duration-300 active:scale-110">
+                    <button class="bg-[#171a0b] shadow-xl px-16 py-3 rounded text-white text-s font-normal hover:bg-[#171a0b]/60 trasition-all duration-300 active:scale-110">
                     View Impact Report
                     </button>
                 </div>
@@ -1164,7 +374,29 @@
             </div>
         </div>
 
-    </div> <!-- window container end here -->
-    <script src="tesla_megapack.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
 </body>
 </html>
