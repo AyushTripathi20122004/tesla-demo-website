@@ -24,11 +24,11 @@
     <!-- navbar -->
     <div class="nav_base h-screen w-full flex flex-col items-center justify-center  relative ">
 
-        <div class="navbar flex items-center justify-between px-2 py-2 h-15 w-full absolute top-0">
+        <div class="navbar flex items-center justify-between px-2 py-2 h-15 w-full absolute top-0 ">
             <div class="logo hover:border-2 hover:hover:bg-[#f4f4f4]/30 transition-all duration-300 rounded-lg px-2 py-1 text-white">
                 <svg class=" h-5  w-35 tds-icon  tds-icon-logo-wordmark tds-site-logo-icon" viewBox="0 0 342 35" xmlns="http://www.w3.org/2000/svg"><path fill="currentColor" d="M0 .1a9.7 9.7 0 0 0 7 7h11l.5.1v27.6h6.8V7.3L26 7h11a9.8 9.8 0 0 0 7-7H0zm238.6 0h-6.8v34.8H263a9.7 9.7 0 0 0 6-6.8h-30.3V0zm-52.3 6.8c3.6-1 6.6-3.8 7.4-6.9l-38.1.1v20.6h31.1v7.2h-24.4a13.6 13.6 0 0 0-8.7 7h39.9v-21h-31.2v-7zm116.2 28h6.7v-14h24.6v14h6.7v-21h-38zM85.3 7h26a9.6 9.6 0 0 0 7.1-7H78.3a9.6 9.6 0 0 0 7 7m0 13.8h26a9.6 9.6 0 0 0 7.1-7H78.3a9.6 9.6 0 0 0 7 7m0 14.1h26a9.6 9.6 0 0 0 7.1-7H78.3a9.6 9.6 0 0 0 7 7M308.5 7h26a9.6 9.6 0 0 0 7-7h-40a9.6 9.6 0 0 0 7 7"></path></svg>
             </div>
-            <div class="nav_icons">
+            <div class="nav_icons hidden md:visible lg-visible">
                 <ul class="flex items-center text-white ">
                     <!-- -----------------------list 1 icon vehical--------------- -->
                     <li class="vehical_btn ">
@@ -78,14 +78,15 @@
                 
             </div>
         </div>
+
         <video class="  h-full w-full  object-cover " preload muted poster="https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Megapack-Hero-V5-Mobile-Poster.jpg" autoplay playsinline loopclass="tcl-react-media__asset" crossorigin="" src="https://digitalassets.tesla.com/tesla-contents/video/upload/f_auto,q_auto:best/v1759521029/Megapack_Hero_Mobile_V6.mp4"><source src="https://digitalassets.tesla.com/tesla-contents/video/upload/f_auto,q_auto:best/v1759521029/Megapack_Hero_Mobile_V6.mp4" type="video/mp4"></video>
 
-        <div class="videoSection top-30 absolute  flex flex-col gap-4 items-center w-130">
+        <div class="videoSection top-30 absolute  flex flex-col gap-4 items-center w-screen md:w-130 lg:w-130">
             <div class="flex flex-col gap-4 ">
                 <h1 class="text-7xl text-white font-medium">Megapack</h1>
                 <p class="text-center text-white text-lg font-semibold">Large-Scale Energy Storage</p>
             </div>
-            <div class="btn flex gap-4 w-full items-center justify-center">
+            <div class="btn flex gap-4 w-full px-2    items-center justify-center">
                 <button class="py-2 w-full px-8 rounded bg-blue-600 text-white font-medium">Get Updates</button>
                 <button class="py-2 px-8 w-full rounded bg-white text-black font-medium">Learn More</button>
             </div>
@@ -93,20 +94,20 @@
         </div>
     </div>
 
-    <div class="mg_card1 h-70 w-full flex justify-center py-20 mb-15 mt-10 ">
+    <div class="mg_card1 h-70 w-screen md:w-full flex justify-center py-20 mb-15 mt-10 ">
 
-            <div class="flex flex-col px-20 justify-center border-r border-[#5c5e62]">
-                <h1 class="text-7xl font-semibold">>47<span class="text-3xl">GWh</span></h1>
+            <div class="flex flex-col  justify-center border-r border-[#5c5e62]">
+                <h1 class="text-3xl md:text-5xl lg-7xl font-semibold">>47<span >GWh</span></h1>
                 <span class="text-lg text-[#393c41] font-medium">Operational Globally</span>
             </div>
 
-            <div class="flex flex-col px-20  justify-center ">
-                <h1 class="text-7xl font-semibold">99.2<span class="text-3xl">%</span></h1>
+            <div class="flex flex-col md:px-20 lg:px-20  justify-center ">
+                <h1 class="text-3xl md:text-5xl lg-7xl font-semibold">99.2<span>%</span></h1>
                 <span class="text-lg text-[#393c41] font-medium">Uptime<sup>1</sup></span>
             </div >
 
-            <div class="flex flex-col px-20  border-l border-[#5c5e62]  justify-center">
-                <h1 class="text-7xl font-semibold">99.2<span class="text-3xl">%</span></h1>
+            <div class="flex flex-col   border-l border-[#5c5e62]  justify-center">
+                <h1 class="text-3xl md:text-5xl lg-7xl font-semibold">99.2<span>%</span></h1>
                 <span class="text-lg text-[#393c41] font-medium">Real-World Tested</span>
             </div>
     
@@ -115,9 +116,9 @@
 
 
 
-        <div class="mg_card2 w-full mb-20 mt-20  p-10 flex flex-col gap-10 ">
+        <div class="mg_card2 w-full mb-20 mt-20  md:p-10 lg:p-10 flex flex-col gap-10 ">
             <img class="border border-black/10 rounded-xl h-full w-full " src="https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Megapack-Building-a-Sustainable-V1-Desktop.png" alt="">
-            <div class="mg_card2_text px-20 py-2 flex flex-col align-center justify-center ">
+            <div class="mg_card2_text px-2 md:px-20 lg:px-20 py-2 flex flex-col  justify-center gap-10 ">
                 <h1 class="text-4xl p-2 font-semibold">
                     Building a Sustainable, More Resilient Grid
                 </h1>
@@ -129,16 +130,16 @@
                 
                 
 
-        <div class=" mg-card3 p-10 mt-40  flex flex-col gap-10 ">
+        <div class=" mg-card3 md:p-10 lg:p-10  mt-40  flex flex-col gap-10 ">
                     <img class="border border-black/10 rounded-xl h-full w-full" src="https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Megapack-Transforming-Industrial-Energy-V1-Desktop.png" alt="">
             
-            <div class="mg_card2_text px-20 py-2 flex flex-col align-center justify-center">
+            <div class="mg_card2_text px-2 md:px-20 lg:px-20 py-2 flex flex-col align-center justify-center">
                 <h1 class="text-4xl p-2 font-semibold">
                     Transforming Industrial Energy Storage
                 </h1>
                 <p class="text-[#5c5e62] font-normal text-[20px] p-2 leading-relaxed ">Megapack is changing the way the grid is powered. Operating in over 65 countries, Megapack provides critical grid support globally and can support multi-GWh projects.</p>
                 
-            <div class="mt-30 flex">
+            <div class="mt-30 flex flex-col md:flex-row lg:flex-row gap-20 lg:gap-0 md:gap-0">
                 <div class="">
                     <h1 class="text-2xl font-medium px-2 mb-4" >
                     Easy to Install
@@ -164,12 +165,12 @@
         </div>
         </div>
 
-        <div class="mg_card-4 h-auto mt-40 w-full  p-10 flex flex-col gap-10">
+        <div class="mg_card-4 h-auto mt-40 w-full  md:p-10 lg:p-10 flex flex-col gap-10">
 
                 <img src="https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Megapack-Power-More-V1-Desktop.png" class="border border-black/10 rounded-xl h-full w-full  " alt="">
 
             <div>
-                <div class="flex flex-col gap-2 px-20">
+                <div class="flex flex-col gap-2 md:px-20 lg:px-20 px-2">
                     <h1 class="text-4xl p-2 font-semibold">
                         Power More
                     </h1>
@@ -178,7 +179,7 @@
                     </p>
                 </div>
 
-                <div class="flex flex-col gap-2 pl-20 ">
+                <div class="flex flex-col gap-2  mg:pl-20 lg:pl-20 ">
                 <div class="p-4 overflow-scroll flex relative">
 
                     <div class="absolute top-[40%] px-4 flex justify-between w-full">
@@ -241,13 +242,13 @@
 
         </div> <!-- card 4 end here -->
 
-        <div class="mg_card-5  mt-40 w-full  p-10 flex flex-col gap-10 ">
+        <div class="mg_card-5  mt-40 w-full  md:p-10 lg:p-10  flex flex-col gap-10 ">
             <div class="card5-video h-screen border border-black/10 rounded-xl overflow-hidden relative  ">
                 <button class="absolute bottom-[7%] left-[3%] bg-white/30 p-2 rounded border border-white/20 flex align-center justify-center"><svg class="h-6 text-white w-6 tds-icon tds-icon-play-filled" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="currentColor" d="M19.057 13.62 6.815 20.747c-1.248.72-2.808-.18-2.808-1.62V4.874c0-1.44 1.56-2.34 2.808-1.62l12.242 7.125c1.247.72 1.247 2.521 0 3.242z"></path></svg></button>
                 <video preload muted class="h-full w-full object-cover " poster="https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Megapack-We-Build-Big-V1-Tablet-Poster.png" autoplay="" playsinline="" loop="" class="tcl-react-media__asset" crossorigin="" src="https://digitalassets.tesla.com/tesla-contents/video/upload/f_auto,q_auto:best/Megapack-We-Build-Big-V1-Tablet.mp4"><source src="https://digitalassets.tesla.com/tesla-contents/video/upload/f_auto,q_auto:best/Megapack-We-Build-Big-V1-Tablet.mp4" type="video/mp4"></video> 
             </div>
             <div>
-                <div class="flex flex-col gap-2 px-20">
+                <div class="flex flex-col gap-2 md:px-20 lg:px-20 px-2">
                     <h1 class="text-4xl p-2 font-semibold">
                         We Build Big Batteries
                     </h1>
@@ -264,9 +265,10 @@
             </div>
         </div> <!-- card 5 end here -->
 
-        <div class="mg_card6 w-full mb-20 mt-20  p-10 flex flex-col gap-10 ">
+        <div class="mg_card6 w-full mb-20 mt-20   md:p-10 lg:p-10 flex flex-col gap-10 ">
             <img class="rounded-xl border border-black/10 h-full w-full " src="https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Megapack-Fully-Integrated-Software-V1-Desktop.png" alt="">
-            <div class="mg_card2_text px-20 py-2 flex flex-col align-center justify-center ">
+            
+            <div class="mg_card2_text md:px-20 lg:px-20 px-2 py-2 flex flex-col align-center justify-center ">
                 <h1 class="text-4xl p-2 font-semibold">
                     Fully Integrated Software
                 </h1>
@@ -274,9 +276,10 @@
         </div> 
         </div><!-- mg_card6 end here -->
 
-        <div class="mg_card7 w-full  mt-20  p-10 flex flex-col gap-10  ">
+        <div class="mg_card7 w-full  mt-20  md:p-10 lg:p-10 flex flex-col gap-10  ">
             <img class="rounded-xl border border-black/10 h-full w-full " src="https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Megapack-Streamlined-Service-Maximum-V1-Desktop.png" alt="">
-            <div class="mg_card2_text px-20 py-2 flex flex-col align-center justify-center ">
+            
+            <div class="mg_card2_text  md:px-20 lg:px-20 px-2 py-2 flex flex-col align-center justify-center ">
                 <h1 class="text-4xl p-2 font-semibold">
                     Streamlined Service, Maximum Performance
 
@@ -288,8 +291,8 @@
 
 
 
-        <div class="mg_card8 flex p-10 justify-between">
-            <div class="mg_card2_text pl-20 py-2  flex flex-col justify-between">
+        <div class="mg_card8 flex flex-col md:flex-row lg:flex-row md:p-10 lg:p-10 justify-between">
+            <div class="mg_card2_text md:pl-20 lg:pl-20 py-2  flex flex-col justify-between">
                 <h1 class="text-3xl p-2 font-semibold ">
                    Serviced by Tesla
 
@@ -297,7 +300,7 @@
                 <p class="text-[#5c5e62] font-normal text-[18px] p-2 leading-relaxed ">Tesla handles all service tasks for you, including corrective and preventative maintenance. Our service technicians continuously monitor, diagnose and resolve system issues remotely or on-site to ensure maximum performance.</a></p>
             </div>
 
-            <div class="mg_card2_text pr-20 py-2 flex flex-col align-center justify-center  ">
+            <div class="mg_card2_text md:pr-20 lg:pr-20 py-2 flex flex-col align-center justify-center  ">
                 <h1 class="text-3xl p-2 font-semibold">
                     Certified by Tesla
                 </h1>
@@ -308,20 +311,20 @@
 
 
 
-        <div class="mg_card9 w-full  mt-20  p-10 flex flex-col gap-10 ">
+        <div class="mg_card9 w-full  mt-20  md:p-10 lg:p-10 flex flex-col gap-10 ">
             <div>
                 <img src=" https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Megapack-Additional-Resources-V1-Desktop.png" alt="" class="rounded-xl border border-black/10 h-full w-full ">
             </div>
-            <div class="mg_card2_text px-20 py-2 flex flex-col align-center justify-center ">
+            <div class=" md:px-20 lg:px-20 px-2 py-2 flex flex-col align-center justify-center ">
                 <h1 class="text-4xl p-2 font-semibold">
                     Streamlined Service, Maximum Performance
 
                 </h1>
                 <p class="text-[#5c5e62] font-normal text-[20px] p-2 leading-relaxed ">Tesla provides performance guarantees and lifetime support for all Megapack systems, with the option to let Tesla service your system or your own team, certified by us.</p>
             </div>
-            <div class="flex flex-col p-10 gap-4 items-center">
-                <div class=" flex justify-between ">
-                    <div class=" pl-20 py-2  flex flex-col  justify-center  ">
+            <div class="flex flex-col md:p-10 lg:p-10 gap-4 items-center">
+                <div class=" flex lg:flex-row md:flex-row flex-col justify-between p">
+                    <div class=" lg:pl-20 md:pl-20 py-2  flex flex-col  justify-center  ">
                         <h1 class="text-3xl p-2 font-semibold ">
                             Safety
                         </h1>
@@ -334,18 +337,20 @@
                         </h1>
                         <p class="text-[#5c5e62] font-normal  text-[18px] p-2 leading-relaxed ">Developing technology for a more stable, reliable, resilient grid.</p>
                     </div>
-                    <div class=" pr-20 py-2 flex flex-col align-center justify-center  ">
+                    <div class=" md:pr-20 lg:pr-20 py-2 flex flex-col align-center justify-center  ">
                         <h1 class="text-3xl p-2 font-semibold">
                             Data Centers
                         </h1>
                         <p class="text-[#5c5e62] font-normal  text-[18px] p-2 leading-relaxed ">Powering cloud computing and artificial intelligence infrastructure.</p>
                     </div>
                 </div>
-                <div class="flex pl-20 gap-2 items-left w-full ">
-                    <button class="bg-[#171a0b] shadow-xl px-10 py-1 rounded text-white font-normal hover:bg-[#171a0b]/60 trasition-all duration-300 active:scale-110">
+                <div class="flex mg:pl-20 lg:pl-20 gap-2 items-center justify-between px-2 lg:px-0 md:px-0 lg:justify-start md;justify-start  lg:items-left md:items-left w-full ">
+                    
+                    <button class="bg-[#171a0b] shadow-xl px-10 py-1 rounded text-white font-normal hover:bg-[#171a0b]/60 trasition-all duration-300 active:scale-95">
                         Learn More
                     </button>
-                    <button class="bg-[#fff] shadow-xl border-2 border-[#171a0b] px-10 py-1 rounded text-[#171a0b] font-semibold hover:font-normal hover:border-white hover:bg-[#171a0b] hover:text-white trasition-all duration-500 active:scale-110">Get Updates</button>
+
+                    <button class="bg-[#fff] shadow-xl border-2 border-[#171a0b] px-10 py-1 rounded text-[#171a0b] font-semibold hover:font-normal hover:border-white hover:bg-[#171a0b] hover:text-white trasition-all duration-500 active:scale-95">Get Updates</button>
                 </div>
             </div>
             
