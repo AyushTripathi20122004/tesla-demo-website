@@ -181,16 +181,28 @@
                     </p>
                 </div>
 
-                <div class="flex flex-col gap-2 md:ml-20  ">
-                <div class=" p-4 overflow-scroll [&::-webkit-scrollbar]:hidden flex relative">
+                <div class="flex flex-col gap-2 md:ml-20 r  ">
 
-                    <div class="absolute top-[40%]    px-4 flex justify-between w-full hidden lg:flex md:flex">
-                        <button class="px-2 py-4 shadow-xl border border-black/30 bg-[#fff] rounded overflow-hidden "><svg class="h-6 w-6 text-black tds-icon tds-icon-chevron-270" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="currentColor" d="m15.057 4.22-7.213 7.232a.75.75 0 0 0 0 1.06l7.25 7.268a.75.75 0 0 0 1.062-1.06l-6.721-6.739 6.684-6.701a.75.75 0 0 0-1.062-1.06"></path></svg></button>
-                        <button class="px-2 py-4 mr-9 md:mr-3 shadow-xl  border border-black/30 rounded  bg-[#fff] "><svg class=" h-6 w-6 text-black tds-icon tds-icon-chevron-90" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="currentColor" d="m8.943 19.78 7.213-7.232a.75.75 0 0 0 0-1.06L8.906 4.22a.75.75 0 0 0-1.062 1.06l6.721 6.739-6.684 6.701a.75.75 0 0 0 1.062 1.06"></path></svg></button>
+                <div class="py-4 pl-10 overflow-hidden relative ">
+                    
+                    <div class="btnCard absolute top-[40%] left-0 z-1 px-4 flex justify-between w-full hidden lg:flex md:flex">
+
+
+                       <!-- left btn -->
+                        <button class="left_btn px-2 py-4 shadow-xl border border-black/30 bg-[#fff] rounded overflow-hidden "><svg class="h-6 w-6 text-black tds-icon tds-icon-chevron-270" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="currentColor" d="m15.057 4.22-7.213 7.232a.75.75 0 0 0 0 1.06l7.25 7.268a.75.75 0 0 0 1.062-1.06l-6.721-6.739 6.684-6.701a.75.75 0 0 0-1.062-1.06"></path></svg></button>
+
+                        <!-- right btn -->
+                        <button class=" right_btn px-2 py-4 mr-9 md:mr-3 shadow-xl  border border-black/30 rounded  bg-[#fff] "><svg class=" h-6 w-6 text-black tds-icon tds-icon-chevron-90" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="currentColor" d="m8.943 19.78 7.213-7.232a.75.75 0 0 0 0-1.06L8.906 4.22a.75.75 0 0 0-1.062 1.06l6.721 6.739-6.684 6.701a.75.75 0 0 0 1.062 1.06"></path></svg></button>
+
                     </div>
 
-                    <div class="flex gap-6  ">
-                            <div class=" w-85 rounded-xl bg-[#ebeaea]/60  transition-all duration-300 h-80 lg:h-60 md:h-60 border border-black/20 flex flex-col gap-6 p-4">
+                    <div class=" mg_card4Scroll  transition-all duration-300  flex relative">
+
+                    
+
+                    <div class=" scrollCard  lg:overflow-visible md:overflow-visible overflow-scroll   flex gap-6 w-full  ">
+                        
+                            <div class="s_card w-130 lg:w-85 md:w-85 w-[100rem] rounded-xl bg-[#ebeaea]/60  transition-all duration-300  lg:h-60 md:h-60 border border-black/20 flex flex-col gap-6 p-4">
                             <h1 class="text-3xl font-medium px-2 ">
                                 Standalone Utilities
                             </h1>
@@ -199,7 +211,7 @@
                             </p>
                         </div>
 
-                        <div class="w-96 rounded-xl bg-[#ebeaea]/60  transition-all duration-300 h-80 lg:h-60 md:h-60 border border-black/20 flex flex-col gap-6  p-4 ">
+                        <div class=" s_card w-96 rounded-xl bg-[#ebeaea]/60  transition-all duration-300 h-80 lg:h-60 md:h-60 border border-black/20 flex flex-col gap-6  p-4 ">
                             <h1 class="text-3xl font-medium px-2 ">
                                 Renewable Paired
                             </h1>
@@ -207,8 +219,16 @@
                                 Maintains the stability and reliability of renewable energy sources on the grid by storing and discharging energy depending on the availability of solar and wind energy.
                             </p>
                         </div>
+                        <div class=" s_card w-96 rounded-xl bg-[#ebeaea]/60  transition-all duration-300 h-80 lg:h-60 md:h-60 border border-black/20 flex flex-col gap-6  p-4 ">
+                            <h1 class="text-3xl font-medium px-2 ">
+                                Data Centers
+                            </h1>
+                            <p class="px-2 text-[18px] font-normal  text-[#393c41]">
+                                Provides reliable power to data centers, ensuring continuous power, preventing costly downtime and data loss due to outages.
+                            </p>
+                        </div>
 
-                        <div class="w-96 rounded-xl bg-[#ebeaea]/60  transition-all duration-300 h-80 lg:h-60 md:h-60 border border-black/20 flex flex-col gap-6  p-4 ">
+                        <div class=" s_card w-96 rounded-xl bg-[#ebeaea]/60  transition-all duration-300 h-80 lg:h-60 md:h-60 border border-black/20 flex flex-col gap-6  p-4 ">
                             <h1 class="text-3xl font-medium px-2 ">
                                 Commercial and Industrial
                             </h1>
@@ -217,7 +237,7 @@
                             </p>
                         </div>
 
-                        <div class="w-96 rounded-xl bg-[#ebeaea]/60  transition-all duration-300 h-80 lg:h-60 md:h-60 border border-black/20 flex flex-col gap-4 p-4 ">
+                        <div class=" s_card w-96 rounded-xl bg-[#ebeaea]/60  transition-all duration-300 h-80 lg:h-60 md:h-60 border border-black/20 flex flex-col gap-4 p-4 ">
                             <h1 class="text-3xl font-medium px-2 ">
                                 Microgrids
                             </h1>
@@ -230,12 +250,13 @@
                     </div>
 
                 </div>
+                </div>
                 <!-- scroll btn  -->
-                <div class="flex align-center justify-center gap-2 hidden lg:flex md:flex ">
+                <div class="scrollCard_btn flex align-center justify-center gap-2 hidden lg:flex md:flex ">
+                    <!-- <button class="rounded-full p-2 bg-gray-400 hover:bg-gray-700"></button>
                     <button class="rounded-full p-2 bg-gray-400 hover:bg-gray-700"></button>
                     <button class="rounded-full p-2 bg-gray-400 hover:bg-gray-700"></button>
-                    <button class="rounded-full p-2 bg-gray-400 hover:bg-gray-700"></button>
-                    <button class="rounded-full p-2 bg-gray-400 hover:bg-gray-700"></button>
+                    <button class="rounded-full p-2 bg-gray-400 hover:bg-gray-700"></button> -->
                 </div>
 
                 </div>
@@ -476,5 +497,6 @@
 
 
 </div>
+<script src="tesla_megapack.js"></script>
 </body>
 </html>
