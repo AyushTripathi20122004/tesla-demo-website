@@ -1,5 +1,3 @@
-
-
 // nav logo tranformation
 let nav_logo=document.querySelector(".logo");
 nav_logo.addEventListener("click",()=>{
@@ -77,7 +75,7 @@ RightBtn.addEventListener("click",()=>{
 
 // scrolling window updation  function
 let scrollCard_fcn=()=>{
-    mg_card4Scroll.style.transform=`translateX(-${index*20}%)`;
+    mg_card4Scroll.style.transform=`translateX(-${index*30}%)`;
     Btn.forEach(b=>b.style.backgroundColor="");
     Btn[index].style.backgroundColor="#5c5e62";
 
