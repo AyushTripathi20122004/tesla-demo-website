@@ -82,7 +82,34 @@ let scrollCard_fcn=()=>{
 }
 
 
+// video pause1 and play code here
 
+let video1=document.querySelector(".Introvideo")
+let videoBtn1=document.querySelector(".videoCardBtn1");
+function pausePlay1(){
+   if (!video1.paused) {
+        video1.pause();
+        videoBtn1.innerHTML=`<svg class="h-6 text-white w-6 tds-icon tds-icon-play-filled" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="white" d="M19.057 13.62 6.815 20.747c-1.248.72-2.808-.18-2.808-1.62V4.874c0-1.44 1.56-2.34 2.808-1.62l12.242 7.125c1.247.72 1.247 2.521 0 3.242z"></path></svg>`
+    } else {
+        video1.play();
+        videoBtn1.innerHTML=`<svg xmlns="http://www.w3.org/2000/svg"  fill="white" class=" h-6 text-white w-6  bi bi-pause-fill" viewBox="0 0 16 16"><path d="M5.5 3.5A1.5 1.5 0 0 1 7 5v6a1.5 1.5 0 0 1-3 0V5a1.5 1.5 0 0 1 1.5-1.5m5 0A1.5 1.5 0 0 1 12 5v6a1.5 1.5 0 0 1-3 0V5a1.5 1.5 0 0 1 1.5-1.5"/></svg>`
+    }
+}
+
+
+// video pause2 and play code here
+
+let video2=document.querySelector(".Battryvideo")
+let videoBtn2=document.querySelector(".videoCardBtn2");
+function pausePlay2(){
+   if (!video2.paused) {
+        video2.pause();
+        videoBtn2.innerHTML=`<svg class="h-6 text-white w-6 tds-icon tds-icon-play-filled" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="white" d="M19.057 13.62 6.815 20.747c-1.248.72-2.808-.18-2.808-1.62V4.874c0-1.44 1.56-2.34 2.808-1.62l12.242 7.125c1.247.72 1.247 2.521 0 3.242z"></path></svg>`
+    } else {
+        video2.play();
+        videoBtn2.innerHTML=`<svg xmlns="http://www.w3.org/2000/svg"  fill="white" class=" h-6 text-white w-6  bi bi-pause-fill" viewBox="0 0 16 16"><path d="M5.5 3.5A1.5 1.5 0 0 1 7 5v6a1.5 1.5 0 0 1-3 0V5a1.5 1.5 0 0 1 1.5-1.5m5 0A1.5 1.5 0 0 1 12 5v6a1.5 1.5 0 0 1-3 0V5a1.5 1.5 0 0 1 1.5-1.5"/></svg>`
+    }
+}
 
 
 
