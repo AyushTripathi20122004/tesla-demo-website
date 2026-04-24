@@ -48,9 +48,14 @@ html body{
     border: none;
     color: #171a20;
     font-weight: light;
+    font-size: 16px;
+    border-radius: 4px;
+    transition: all;
+    
 }
 .menu_section button:hover{
     background-color: rgb(236, 235, 235);
+    
 }
 
 /* resposnsive for mobile */
@@ -79,7 +84,7 @@ html body{
     max-height: 100%;
     display: grid;
     grid-auto-flow: row;
-    row-gap: 150px;
+    row-gap: 120px;
     /* border: 1px solid black; */
 }
 
@@ -92,7 +97,7 @@ html body{
 
 /* ----------------------------------schdule_drive_heading-------------------------- */
 .schdule_drive_heading{
-    font-size:40px;
+    font-size:52px; 
     padding :40px 40px 40px 10px ;
     color: #171a20;
 }
@@ -122,7 +127,7 @@ html body{
 }
 
 .card1-statement{
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 400;
     color:#393c41;
 }
@@ -173,11 +178,11 @@ html body{
     filter: none;
 } */
 .card_section h4{
-    font-size: 17px;
+    font-size: 20px;
     color: #171a20;
 }
 .card_section p{
-    font-size: 12px;
+    font-size: 14px;
     color:#171a20;
     font-weight: 400;
 }
@@ -211,8 +216,11 @@ html body{
     .card2 {
         display: flex;
         grid-row: 2;
-        padding: 0px 16px;
+        padding: 4px 16px;
         overflow: scroll;
+    }
+    .card2::-webkit-scrollbar{
+        scrollbar-width: none;
     }
     .select_model_heading {
     color: #171a20;
@@ -247,8 +255,11 @@ html body{
         padding: 0px 0px 0px 64px;
         overflow: scroll;
     }
+    .card2::-webkit-scrollbar{
+        scrollbar-width: none;
+    }
     .card_section{
-        height: 8rem;
+        height: 12rem;
         width: 18rem;
         display: flex;
         flex-direction: column;
@@ -263,18 +274,20 @@ html body{
     padding: 0px 80px 0px 80px;
     display: grid;
     grid-auto-flow: row;
-    gap: 10px;
+    gap: 5px;
 }
 .Input{
-    width: 40vw;
+    width: 40rem;
     display: flex;
     flex-direction: row;
     border: 1px solid black;
+    border-radius: 4px;
+    overflow: hidden;
 }
 .Input input{
     font-size: 14px;
     padding: 14px 14px 14px 0px;
-    width: 40vw;
+    width: 100%;
     border: none;
 
 }
@@ -297,10 +310,12 @@ html body{
         width: 100%;
     }
     .location_selct_base{
-        padding: 16px;
+        padding:0px 16px;
+        gap: 0;
     }
     .Input input{
         width: 100%;
+        padding: 2px;
     }
 }
 
@@ -319,7 +334,7 @@ html body{
     .location_selct_base{
         padding: 0px 20px;
     }
-    .location_selct_base h2{
+    .location_selct_base h1{
         text-align: center;
     }
     .location_selct_base p{
@@ -454,15 +469,15 @@ html body{
 
 .para_base{
     padding: 0px 80px 0px 80px;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 400;
     color:#393c41;
-    text-align: justify;
+    text-align: center;
 }
 
 @media (min-width: 300px) and (max-width: 600px) {
     .para_base{
-        padding: 16px;
+        padding: 14px;
     }
 }
 /*------------ responsive for tablets ------------------ */
@@ -478,8 +493,6 @@ html body{
 
 /* -------section 6 styling  start here------------ */
 .section6{
- 
-    height: 60px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -488,7 +501,6 @@ html body{
 }
 
 .links_base{
-    height: 30px;
     width: 70%;
     padding: 16px;
     /* border: 1px solid black; */
@@ -502,15 +514,28 @@ html body{
     text-decoration: none;
     color: #393c41;
 }
+.footer_container{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    margin-top: 50px;
+    
+}
+
 /* section 6 responsive here */
 @media (min-width: 300px) and (max-width: 600px){
     .section6{
         width: 100vw;
+        height: fit-content;
     }
     .links_base{
         display: grid;
         text-align: center;
         gap: 10px;
+    }
+    .footer_container{
+        gap: 12px;
+        margin-bottom: 20px;
     }
 }
 
