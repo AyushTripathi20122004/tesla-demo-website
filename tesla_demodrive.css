@@ -200,6 +200,10 @@ html body{
 }
 
 @media (min-width: 300px) and (max-width: 600px) {
+    .schdule_drive_heading{
+        text-align: center;
+        padding: 40px;
+    }
     
     .main_base_container{
         row-gap: 100px;
